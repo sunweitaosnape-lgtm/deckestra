@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deckestra Editable Decks"
+  short_description: "Create polished, natively editable PowerPoint decks"
+  default_prompt: "Use $build-editable-decks to turn my source material into a polished, natively editable PowerPoint deck."

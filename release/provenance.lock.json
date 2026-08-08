@@ -1,0 +1,2539 @@
+{
+  "schema_version": 1,
+  "policy": "clean-room-public-release-v1",
+  "upstream": {
+    "name": "hugohe3/ppt-master",
+    "commit": "bbb323f0ebd6a6a230dd6063209326b53bfd2e1d",
+    "license": "MIT"
+  },
+  "files": {
+    ".gitattributes": {
+      "sha256": "ea3c28c37d2b4067824dabd8810c9677600c1b3d15d5e819e7805308b43f2d25",
+      "origin": "project-original"
+    },
+    ".github/PULL_REQUEST_TEMPLATE.md": {
+      "sha256": "933d5d08e33dd9608e504d2253c3c96b4dd905be9973a8b8525614db5a5677e9",
+      "origin": "project-original"
+    },
+    ".github/workflows/release-gate.yml": {
+      "sha256": "795256c2535ac4098e51f6245907bc5d0ec76938fa97891893ecc02e048bb054",
+      "origin": "project-original"
+    },
+    ".gitignore": {
+      "sha256": "ebb6b7cc973ab685f67dcfebcbcb75ee2e143d2e4e767c3313c6cc900de4bf5e",
+      "origin": "project-original"
+    },
+    "AGENTS.md": {
+      "sha256": "c6272f3f59422b5b8df053186bca8daef03005fa6ca03d092fa9cb355b4fd01f",
+      "origin": "project-original"
+    },
+    "CHANGELOG.md": {
+      "sha256": "4bddf19c7e2ebbc911e2af76bf9b2f30189b21adc527a60fff4d0875cd96440c",
+      "origin": "project-original"
+    },
+    "CONTRIBUTING.md": {
+      "sha256": "b349aebb8321792a7e29759fa03d387db7d50f412d709ffd25b618a0444474a7",
+      "origin": "project-original"
+    },
+    "LICENSE": {
+      "sha256": "80cbe7ec5cc59b3369d05c03d930057574d627f020dd1732860667fc20ad1576",
+      "origin": "project-original"
+    },
+    "PRIVACY.md": {
+      "sha256": "faf3c140cc3b67859d6b6704d8f50f14ec072d6282e7fe7abbfd150ac79ca4f7",
+      "origin": "project-original"
+    },
+    "README.md": {
+      "sha256": "93f49bad43b4fc79c8ea9cec1049bc2d9c90ac76cbab48515134853674030a5a",
+      "origin": "project-original"
+    },
+    "README_CN.md": {
+      "sha256": "fb1a4d83fedd68ccb0732c3b5f77e6a5243afebb6ab620947c2c876dcafffa84",
+      "origin": "project-original"
+    },
+    "SECURITY.md": {
+      "sha256": "dea4e66801832940ef80717799b0b5eba2ae035221474f48ce538852d7fc2afe",
+      "origin": "project-original"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "sha256": "51cf17c27c832666e07d4c4d912f265bce2591361fb27c89a9b3c06630a97df2",
+      "origin": "project-original"
+    },
+    "certification/README.md": {
+      "sha256": "bf21c81843bc3de78d9687ddf2f945c2f4614e98a55cf05acefa98f57efc57ac",
+      "origin": "project-original"
+    },
+    "certification/evidence.schema.json": {
+      "sha256": "237eda8a18813d1ef4e79445427a703fdd69bcf6003c5aee9d31cc78d14681cd",
+      "origin": "project-original"
+    },
+    "certification/policy.json": {
+      "sha256": "cd5fbd9fede97f7b9c81ba75fe3a368c72401d89ffa0b1a08e70f3b1e3182d76",
+      "origin": "project-original"
+    },
+    "release/origin-policy.json": {
+      "sha256": "d66f6e23e75978d0677649dbcd7d6688a257b0b9122a49f2f586d668c839f938",
+      "origin": "project-original"
+    },
+    "release/upstream-map.lock.json": {
+      "sha256": "5f42576afac594cb4c49dbb63491c5933df159e535b0fe1b4844659fe1bd3269",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/LICENSE": {
+      "sha256": "80cbe7ec5cc59b3369d05c03d930057574d627f020dd1732860667fc20ad1576",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/PRIVACY.md": {
+      "sha256": "a8e98d636354c8f9b19481db04ac9767b433084ad41932a0ed734e2abf34b773",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/SKILL.md": {
+      "sha256": "a071cd6af4b58f3ecabe2a899091d02401cffb5105e1852757f1e1ea637cfec2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/THIRD_PARTY_NOTICES.md": {
+      "sha256": "9714ca6a9712f15d9514c083e855ce584d068870923ff9188135a51dd88296d8",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/agents/openai.yaml": {
+      "sha256": "69742665a5383a4b4cc76694a5abf80b3ca2cf2f2e1cbc871f5a04a6e88a26e5",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/references/animations.md": {
+      "sha256": "9c950af26010a9e1f73ed74d147a1ed2c717ca2ce50fd45a457e3f1608429e2c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/artifact-ownership.md": {
+      "sha256": "a4aad4decd504f93e4819b958a18d968c86922d6a67b1a942bed49b83e5018ac",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/canvas-formats.md": {
+      "sha256": "381c3ac85d3bcebb18370d6dfe1c83b4a277a3f6002f1d7e05a39c384903b84c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/deck_ir.schema.json": {
+      "sha256": "6c9f9d117aad7d5896ab05f141cb3942ad3ceb0b92dd04cd52d5ddded23fadd6",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/references/deterministic-layout.md": {
+      "sha256": "1adeb5d48bf03eb9b90b9f0381d6c0bbd185883352a7c595b26ae839a4b97655",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/references/executor-base.md": {
+      "sha256": "5f0205fb7ec653d05ad7cbe9257db44ba7d9dee6b1af05e4dadb1099f72b5b97",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/executor-chart.md": {
+      "sha256": "09e0d66db5a57ecc4eb7b49cd26791b75403ef9a7a483d8e59af2619a824488b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/executor-image.md": {
+      "sha256": "12ff562cd813f5da744b79593ced36c0f4b51e4d263376b7b80dcd951518fb14",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/executor-notes.md": {
+      "sha256": "54d6b5a1c8b3b94a023dd1ad80502d33476e27734580a99d4d6f377cd1231e15",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/executor-structured.md": {
+      "sha256": "05248c04a488740d5545473e2cddde32ad67c6709daaf218cb86e000252b649f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/executor-web-image.md": {
+      "sha256": "2404c72c5156d39fac38415bd97f46d8d331e6859f6e0c69d95801a3829fe3e3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-base.md": {
+      "sha256": "5165c7f86740ab414b36b2059b3d6c97c84638124f70ff6be1bc96a5fad1e3da",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-generator.md": {
+      "sha256": "cca6fb624ac6b1c73a4d61095576b8132966ec0a5a65c57e0e651d3cecd355b0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-layout-patterns.md": {
+      "sha256": "180b925795c0554d20896b109765c10887b37bff44d1035923ac598e0507cd9d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-layout-spec.md": {
+      "sha256": "86b527c7218deddf467e9ac6bd1151f7bad8159420965e598cd0c3c9b8ae3831",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/_index.md": {
+      "sha256": "3ac547c13c2aa3d8c3f8324f0a4b5ad88819a0f6e74cc941be8d82589ebff8b7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/cool-corporate.md": {
+      "sha256": "48d291b9d44d6e5724a957485338b75ea6e2f9eb7d8ea6a9fe682af74507edf0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/dark-cinematic.md": {
+      "sha256": "1bcf9ec69127bef8bc73811c1c8355d6b4a548d4908c25664ac6373ac909b2d2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/duotone.md": {
+      "sha256": "c31aee3f1559ba36bf2f8c4260e2c2d76721f9bae5af6ed66aec35e5d2b3db4e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/earthy-dusty.md": {
+      "sha256": "b9f46878d26df015720cb32f3141c5422c848ffcad32957728b3b6b73b2fc99c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/editorial-classic.md": {
+      "sha256": "6954695643aae4b7d027de7e370111b81fdaa87273fb2dcfd035d53edd0ac2b6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/frost-ice.md": {
+      "sha256": "f001039b6e7a9663fe510c918ba44bee724051a21e171e1c4a7320ef99ca033a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/jewel-tone.md": {
+      "sha256": "509fe033f21665d333e899809dcf362c82b430e89e9a732c58d671d39d9fbf90",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/macaron.md": {
+      "sha256": "906c299ae2d5f7c2df074370d01a541ee50115329da3cd18b227699d2ca32464",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/mono-ink.md": {
+      "sha256": "6c9c50fc86996118c476b27ca2baae225d5f43764054e0303048876ca02266a1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/nature-organic.md": {
+      "sha256": "5f06fa2ec47f484898782185b5b66f239d2c764880c3a32e894ab12178d219ff",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/sunset-gradient.md": {
+      "sha256": "dbba66a988abf6ac81b7a2cbc9eb5b6d5cf9e5dff76cea70cc60bbd02cf70bf7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/tech-neon.md": {
+      "sha256": "6dafca7a188f099224e39bc649256b815563e2410629f71a98c492ffb4e611c2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/vivid-launch.md": {
+      "sha256": "5b40b6fd6eff9cb8075ea8c84fd2e8f8aa3fcf95e226df5acc1d0e8c250d8e09",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-palettes/warm-earth.md": {
+      "sha256": "e214da6bffedf4bed88e2c433540969b99f85f5b1817b0e98ba2e785b6c42171",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/3d-isometric.md": {
+      "sha256": "ab1f0158fb0ff02443bd4489f772f4e70353b971c2cf075e46fc5c702c304cd4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/_index.md": {
+      "sha256": "5e90edba47b6b226f580c3a4823c140fdc37337db6dfe2cedbd485a7b5c3bed4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/blueprint.md": {
+      "sha256": "5079c0de315e44a00dafaf4b88a99215c6fd2d524fbbb9c65f3b6b90f7ce0a71",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/chalkboard.md": {
+      "sha256": "cdfcd2aa75628ee2027b4e47b94dc6d3a16b45258168f1b18ebb67f79a9c65d2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/corporate-photo.md": {
+      "sha256": "855d553ee0d0b694d36a85d24be13d4f5148026cf5eebdf515fbe59e45504b5b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/digital-dashboard.md": {
+      "sha256": "a02478f3afed9fbc48158d295834aff2821d2b10bbb4f1e26b5263634c154368",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/editorial.md": {
+      "sha256": "683beeddf6a199ea87a7fba7245b66705148675cdb7e90417e4fabe491c60011",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/fantasy-animation.md": {
+      "sha256": "13f070188434cd63b737271b4b6e8f31db12307b2283d4b7bfa8e11a00131835",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/flat.md": {
+      "sha256": "09c7c6d066fa7886a7cd628dd6b862a1b631cfc53719269e178efc8ddbba1258",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/glassmorphism.md": {
+      "sha256": "a321e171e1cf0f86d3575a6d7a9f2dd8ada46a59582af290190019d83cb44bc6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/ink-notes.md": {
+      "sha256": "221f8e122d9376586c9bb235a02cfe651a4dd13a33bdeb3b2add781be1ca15b6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/minimalist-swiss.md": {
+      "sha256": "73d68098af447c80c08d10bdfb2873eb3f6693d64ac2be4624d4d5a4afb2662d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/nature.md": {
+      "sha256": "b1f5e7727eaf9a4994d84caf7a3bb32d19cdddf396cd0a72652424ab736883bb",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/paper-cut.md": {
+      "sha256": "c9b53d8adcf19a63814035da176404294f690d9f21c5a5d5afd24ffbe0c4e41b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/pixel-art.md": {
+      "sha256": "2c051c634c276635ae245ac5f940fb66f3ec8cb8d9bee4db4b54afcb8d290de0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/screen-print.md": {
+      "sha256": "ec7025ede1f7efb230d3cd33fd2bf427c2578659b3082226fe9ba548854de306",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/sketch-notes.md": {
+      "sha256": "d75ed2ae47dae7726113ac9d1f8aba145016c53458e0383dc8d027246c0667ef",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/vector-illustration.md": {
+      "sha256": "c48c2adb70de7fa8755f60718c27e46108e911bbf85343c64866e2e42901b2d4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/vintage-poster.md": {
+      "sha256": "fb786e91ab8d38f1bba5dee0c249a2892a6ee030bc8732a809f94b9449717501",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/warm-scene.md": {
+      "sha256": "4150f3d0962b90f04fec03326c941ccbc36fc1a9990d1b8437b88e15decca7ec",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-renderings/watercolor.md": {
+      "sha256": "abd6ebff80c41be95babd255c3e06f9f7cf5218a52c0e4da2e140ce032a39840",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-searcher.md": {
+      "sha256": "0d1b47c37614ea49286eac1dd4ef83b852788e1fdb83954356c8013d34a435ab",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/_index.md": {
+      "sha256": "148cbc52240b2925e1ef292d254c55dfd0e571ecf3592f3cdefd7f178f15bb41",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/comparison.md": {
+      "sha256": "3b2d1034893197bab33e43e8f489b831f5c4de867d35e5156896b4f1e24baff4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/cycle.md": {
+      "sha256": "2ddfd27ff8604096a465a84b2f4232f5f47d852e65166d9fb02263197b4dba73",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/flowchart.md": {
+      "sha256": "3ed7ced001098a0f3502187a23133e9fc7e12003f4cf3da6c00c7f6591db3e4e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/framework.md": {
+      "sha256": "ce675872c5960583e7f5671a5b9c88c0458851ba6b139f536e55dc99a1535cc6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/funnel.md": {
+      "sha256": "76b7fe30df7e0d3504528955bb2ff4529dd7d5357cbec83d06356d926416fdcd",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/infographic.md": {
+      "sha256": "0e0359ca4e82e1de76e7658672a8ac1fa69e7c1a4f8c81454742bce48f588a91",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/map.md": {
+      "sha256": "e1ae4d9a754749663d28bc8fca6e49efaf138ec8d911bad530874886da9801c5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/matrix.md": {
+      "sha256": "51c82cfc9462c51ea175999c72ca325fb33902754398ec09e960ee2170199ea0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/pyramid.md": {
+      "sha256": "546e047245a7d5e4ad4790b94c1c45b0f23b3f2e6d2feede325632dfb011fb88",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/scene.md": {
+      "sha256": "bf33876fe920cc77d08eb6e6d283432350f63bda3f2029ff29cdc1fa5a694157",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/image-type-templates/timeline.md": {
+      "sha256": "55836f8012e207cded2f859b44da1542e56f66294d8af88439a53db4ba79dc71",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/modes/_index.md": {
+      "sha256": "29a8fabf9eafaa25ba45a3bd12ec64fe17412b46c2c61b207ce1b6fab0f1fa41",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/modes/briefing.md": {
+      "sha256": "c303ca7c669e52e574a58fea1f63aa1acd66a17ff51a50c4441ae3110a811fb9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/modes/instructional.md": {
+      "sha256": "a188672ff898e0f83a989d38291319d011de88245e7208d8ed7a700dbc924837",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/modes/narrative.md": {
+      "sha256": "54195a7fd1cbfc414fe04a5137a5fc8d9e9b961dc3edc688234faabaaeeb2a6a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/modes/pyramid.md": {
+      "sha256": "dddbe0f33d0f2853c9c29f7ffcde695c2f7f1b1824fe301c4c59f2361de7005a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/modes/showcase.md": {
+      "sha256": "cc01de6475402fc73d5265c95f4ba303bc7b51e31c08b429254f8033264a914f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/native-data-interface.md": {
+      "sha256": "6776f4f7a2271360060a61e9fb6d123fc2a1fea30cb65c77184714ed7e0cbdb3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/native-shape-authoring.md": {
+      "sha256": "c1b55f9b90f6a4bbe848ac81fb28615d837e39932ed7a721f148606fb5bab0e5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/pptx-structure-interface.md": {
+      "sha256": "ee3af2e9d48e57b9d3d834d8ecf5db626266a7f7743c55f67abe9c91abe07b2a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/semantic-svg.md": {
+      "sha256": "581181d9977e7d172bbebbe9a4228f53b751a0c157b65384d7f9820c5e86e5d6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/shared-standards-core.md": {
+      "sha256": "de04224993db157917fa4f1e729aa0bb990e67d09fa119ae83921cb35f3fdb15",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/shared-standards.md": {
+      "sha256": "17dfd3ee4fefead7f56fa75bc762be6b66cad148ddc0fdd90477d9410229eaa4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/strategist-image.md": {
+      "sha256": "d702876ddd82af0851eed795eb7c0e89f62f48caad048662aa9a6c80ecc19877",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/strategist-template.md": {
+      "sha256": "d4bc711893c39a7f83c945e8b6b94df11e8c70231ecf6728ea58d10c31a5ae3a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/strategist.md": {
+      "sha256": "b956ce24e51e7649d453a9dc41fb108c0ede4358e90be31ad5b27b10c04fd907",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/svg-effects.md": {
+      "sha256": "a45bab826b3fbdd12355f84fa73693b2f14cc8f305111b80f7e1cc35decb81a7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/svg-image-embedding.md": {
+      "sha256": "6ce30cff835124aca85c99e62bf7059c8a163f4687621654b11de464bbf5e1f7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/template-designer.md": {
+      "sha256": "1064f2c9889718ba52e7f3c59e23d09c3bae6f3517b92b66e966e40a8c3d8838",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-review.md": {
+      "sha256": "d04cf5df7642c91a2130aa362208a0d65b008e218066c098b0f3ab2693d428e8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/_index.md": {
+      "sha256": "062157ff53bf6b6d67f9ed14c2e5d1c97a8fed323956232861e592ecc81d6f35",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/blueprint.md": {
+      "sha256": "eef5d72482a8890322ba714c97d2b20e4b3135b92c97d1883bfbe4032ff03ff8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/brutalist.md": {
+      "sha256": "55c9c9df41d8b0a6e9499f4acfd9544b8c5a311f936aa2f1f6943766d5bc5e27",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/chalkboard.md": {
+      "sha256": "91d38c892be80a3406290e118878f0c09e0302c0396cdde62e87ccc54c924806",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/dark-tech.md": {
+      "sha256": "d8c62ebe57eab40cc9827e574e14ac407f77fe257e1e2167e8216e933d976c33",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/data-journalism.md": {
+      "sha256": "0144ba1dc184136836c800f5a3d5754f8641a765ede9c27bc9dee42faa8489ed",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/editorial.md": {
+      "sha256": "a415bcf56055d21d6c570f4acc390124ea9bd1928e3f7c076ebb3e0bfdd3cb04",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/glassmorphism.md": {
+      "sha256": "056e4defef93df53d1a83a924640923872875816952908b36d9f8bf93ad4ffda",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/ink-notes.md": {
+      "sha256": "a3b959fcd540ebf845204abfa7301cd995be411dc12c5861a68330d19c6be80e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/ink-wash.md": {
+      "sha256": "f7a6d9b8d7c7d1521f2829112d8dd3ab1a141d5abd4c43c4f329ef99e764c513",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/memphis.md": {
+      "sha256": "56d46283cb4db7694db5e1c9d334974c101ed0da7ef9111c89aa1b7428e6e479",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/paper-cut.md": {
+      "sha256": "a564443307cb9339a87f66191dc2431661203f823294533f9796f8bf40df2f99",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/photo-editorial.md": {
+      "sha256": "da32daef7fff47ecd53dd1095fec4b0a211e043ff7d5c77e4c4dbac8fc40c5bc",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/pixel-art.md": {
+      "sha256": "cc80944524a7fdf1edf82cb5f2559fd21343a9df444bbd55e46ab31a77a6aaf9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/sketch-notes.md": {
+      "sha256": "a74f8fb81282eeb66faf668aca9408c8a3d7a6e899b1ed1d5c6821ddb0333acf",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/soft-rounded.md": {
+      "sha256": "0c02c8fa32936b854b9c91420318930a6453a138522d16a151543849c25abd44",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/swiss-minimal.md": {
+      "sha256": "85701fc6486ce8e22ff0f7fc5ed5af69a211199854c19af79cbb81225e2a969f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/vintage-poster.md": {
+      "sha256": "8957a0bf1ed6af9e6bef4dac0f7178ffda21cffc96879a8e9f8ed9288fdde879",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/references/visual-styles/zine.md": {
+      "sha256": "16005578b8d16b254fdb26dd8b1cb2740236a39e749df30b04b6a63723b1d1d1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/requirements-core.txt": {
+      "sha256": "f2da21e7f1d8fede1ea72adce71f38915db9ba65d5d523fc2a64ccc424999b20",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/requirements-maintainer.txt": {
+      "sha256": "5e1cf493cc9b14788b3a68bc3d977890981dacd083d84d8d9e46628ea76b8f71",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/requirements.txt": {
+      "sha256": "c65d157c753f6b44797fd7f7a3676dfaa4c9deea3511354b54c73ece2cd96c2b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/README.md": {
+      "sha256": "8836a54c346fc6a9464cdf4f7715fa72fdf0743dbffdabbd9933d63a3a7581c4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/analyze_images.py": {
+      "sha256": "8480c86984996151e7bd6c8048c128891481ddb4ba55eb0d73baca8bed64dd26",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/animation_config.py": {
+      "sha256": "f3b53941b0f9262a22f808687310df8029234a51b60a5b682fc9206c2ddfee59",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/attribution_guard.py": {
+      "sha256": "14df684aebca6829f7e71e9fe0578f5027dc2025cee19832ec39bfb0191842eb",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/batch_validate.py": {
+      "sha256": "af021aea160f9e53f43fdfc9f368a44eccb3595899277b0d01645d46c8036480",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/beautify_identity.py": {
+      "sha256": "ab11c4862be2baaf1a32bc15d9551b4eed139e01c5ce9cef4b7d9bedbd4b5139",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/beautify_inventory.py": {
+      "sha256": "b4fa3ba3d62244e3af0d013bf15430d58c6ef68c4dada38f37fd65e2c0119f94",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/chart_recall.py": {
+      "sha256": "0f3cf2cd5c56441375424f62551fcd44c360d13caccfa914ccb55b1f29f588d3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/check_annotations.py": {
+      "sha256": "559f4c914bd419ebdd0978de4ce50d660a64e8f48be04a9253901304038fdc97",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/compact_svg_coordinates.py": {
+      "sha256": "7523cf7733b4a0c04e75332e254c6ce4f59c9431b22974e644e7b29dcdc53f90",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/config.py": {
+      "sha256": "fafa68010741d7c30e9708e7bd1b4437e17db4ed07074cec7b5ea5d3c63541e2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/__init__.py": {
+      "sha256": "8d273fee6438797211ebfdea3df6876a91f4469292ed8300d89a10c9fbd643f9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/server.py": {
+      "sha256": "0d520faa9a683248d027fadec1446a84406476691f44825aeaa36dbe4228d9be",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/app.js": {
+      "sha256": "224ec51a7565792990c2965e283bb98c76f0e3fc1b87bc59582376dc896c5a3d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/catalogs.json": {
+      "sha256": "d5f446a6279e2783f2d3b306b05fe00a0822ba5befc2004082ea551c0a3dbfce",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/index.html": {
+      "sha256": "213e778e565c26b468a47c0fb1e208c147915b697a54ee1fa3f62a3180938eb5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style.css": {
+      "sha256": "0d6ed8adac70337b0fadc71946c30c73a924c96d6e81f48d7f3c9be9b5c3c4de",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/blueprint.svg": {
+      "sha256": "840842b4fb812d343643df551eed315f4f84d3936d7b3bb5f17f085e6d18b8f8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/brutalist.svg": {
+      "sha256": "4f1a9e2bffa5b1173c83de082699551ba1b3e83b2ba0686c636374d59b945da2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/chalkboard.svg": {
+      "sha256": "5d989bbbd8ca60e32b34af7ebf8fdf4adca500912413e09c45f05a368966877a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/dark-tech.svg": {
+      "sha256": "6e14ef72192735ced47b10536c518d52b2a4e0807f3ccdf48b4d772773fa91f6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/data-journalism.svg": {
+      "sha256": "7bd4e9644e95a3456c0a46df671917d97269efe168e01bc85405ded34b2f002c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/editorial.svg": {
+      "sha256": "56cd8435d9b29688f8fba1c1b27e377318e17f38891034cc2577b5a76217bb4f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/glassmorphism.svg": {
+      "sha256": "d9a8633de30ca63fc21e89e35ef0caa380c935d8357fe8d67b78d8d96fddb902",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/ink-notes.svg": {
+      "sha256": "d337f81da3330a59b14acc13a7cb7c32df0ed9e2cf5a115072a4874e7f7eaf5d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/ink-wash.svg": {
+      "sha256": "8d429878fe3e230ffecadd857d88821f35a06b0b16ad333bee9e87cbbbd8ef21",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/memphis.svg": {
+      "sha256": "1c82b7dee41c7edfe7e3f21d5bbf6c55fc9d5167afb76058366bb8e4ce6eabe2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/paper-cut.svg": {
+      "sha256": "b2314c4c453c8713698849f8d7cd5cdcff57388d4ffea0bcb540ac125ce8d0a8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/photo-editorial.svg": {
+      "sha256": "5a6428c7003e380d5a5f616d66655993163dca295b37ceda3fc44b0b315a4fc1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/pixel-art.svg": {
+      "sha256": "ae4b3b465961fe920cc224d091272665a440e953d82370c52ef5bdacb2b53140",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/sketch-notes.svg": {
+      "sha256": "7f16972aae8a6891e83e06b2cc22c335a94b0a5e1814540cc59ea690d465cce5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/soft-rounded.svg": {
+      "sha256": "288c3ba0fc9bddf3d0c0cd135e078ff7d43e0458f6edf93ee40a0325e2a56a53",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/swiss-minimal.svg": {
+      "sha256": "31c231ed198e83801e5b87f5545b6655c1bf7fdda8d86a8808cf6d486d72dc24",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/vintage-poster.svg": {
+      "sha256": "748e7cce18fea100d805bda72131fbaaae07a846881199656fa69e4956a3219e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/zine.svg": {
+      "sha256": "ee4b65e7418f53ddf82ccd73880ff3e02b594dcb039284f722c4c9cbcc2084ce",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/console_encoding.py": {
+      "sha256": "e5600a1da13e75ff13bb1b5880b9ca9467194b427ce036b429eba83c0a7b6a2e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/deterministic_layout.py": {
+      "sha256": "cacd597f4095502997d0a89e19d98eaea3d245a97330f54a011e29a841f6a1ea",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/scripts/docs/advanced-image-motion-smoke.md": {
+      "sha256": "622f621d9239e08840663b12a397fbb596d0c48a632e0bc9fc820686bc2bc18e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/chart-recall.md": {
+      "sha256": "47d6e389ab74ba543a9ca162f63381e9b24757b5626660b0c971523fbc6bcfc8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/confirm_ui.md": {
+      "sha256": "e34dc833e1df4d4a4edbc3d6ba4a469d43e78deba2bb60f23e8f0b9f727d4762",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/conversion.md": {
+      "sha256": "6d9bab539f9674c792d4094e91d744542cb3472a289920fd3f8d585db9b1c99f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/image.md": {
+      "sha256": "c0091041d21c086d31e0a393df8ce2d0e6173b76c66813d4bf222217910a4e40",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/mask-gradient-smoke.md": {
+      "sha256": "f6a91b45577e37201a8bb01b7869d90246a3aa0a900f6b4250807c6057e2dfa7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/multilingual-text-smoke.md": {
+      "sha256": "7aee2adbbc6311b7a5fafe18ad8fdf1ac084e2bd9d401da6fe8d49d75b7a64c9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/pptx-animations.md": {
+      "sha256": "b6bcedbb5c0e0d26cfa5c91062332a037b73b2542023a99513747a07a4113ed5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/pptx-transitions.md": {
+      "sha256": "5fa210974a1dde55e5b393bdafe2d2760066c8309ed55787d4d4302de691c9ce",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/project.md": {
+      "sha256": "5191442e77eb35d19d0bc706120edb9db70336631cc1bb67b264bd0d6cba648e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/prompt_audit.md": {
+      "sha256": "c4233d7f63d1f348c4ffa64b0d41ac436c3eb7b233c031d024f0abc8b6ac891d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/svg-pipeline.md": {
+      "sha256": "1a4456e1f3460e1c812f9db5547546d9e7fb614fca6241af382735780501ade0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/troubleshooting.md": {
+      "sha256": "478ff01b64195426a10f2c17a790813850f884495ca1b4f4cfe36f2e5af66478",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/update_spec.md": {
+      "sha256": "ac806dcc8c16179044e2e1e2d982e0fac86ef8663954bd94ce0cf107c3e0f651",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/docs/video-motion-plan.md": {
+      "sha256": "657e4bc8cb5be7693a0df4001ed3960b737db8113f53153f121fb10da1e2c044",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/error_helper.py": {
+      "sha256": "e5e7422c2e98b60ba0daa4b2c282d4040a3851a22a685b21032f11d7692154cd",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/extract_svg_assets.py": {
+      "sha256": "f05286b401853c33f0ef5771b580a8432ebdd54a52fffae2ab7fb1381577e84b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/extract_svg_pictures.py": {
+      "sha256": "49e4b7f23e4853a091a250e99ae052ec76c45d74785ddd445e19f213d8672bd1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/finalize_svg.py": {
+      "sha256": "bf280da8e79cbb868b4b14754214540a75d31f98f60ca8910fd3a80b3be10ace",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/__init__.py": {
+      "sha256": "53ebab82234aa9457b3e9dec33110ce5ce3a595669a1a8b8fa29bc90d25650e8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_bfl.py": {
+      "sha256": "6fb893c54a7f92db67b63f300edcb71c0b4ce00cfaf09bff5f58045c00bb09c1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_common.py": {
+      "sha256": "e9c4180d9eb230e0ac7216677c5a707363c36c6ba5f1308592219f93223aad95",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_fal.py": {
+      "sha256": "b32bbc27ebf6baabea3067d8dd81fb71ee297217387f147464873ce5b4a4e704",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_gemini.py": {
+      "sha256": "5c7d592a12012379be3c36361bf5b4501d4172becdcd67bf7062fedf55199e61",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_ideogram.py": {
+      "sha256": "da94cf19ae0c8300ba092f25628fe365b29dfcebe40943ce8766059e6b077204",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_minimax.py": {
+      "sha256": "3fcac95dd3bebedfe4909dc934a5a33e76ccfcf6a5835b50c43c6a33a15dd8d5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_modelscope.py": {
+      "sha256": "8f18fed306789b4a4f4beded9dbe28dc68c527dac59b7bda7f4674d63e3bafe0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_openai.py": {
+      "sha256": "d609d9274e7b158dbb628164b42a655c17c0dcc5c363574a0aa08f2067ffbde6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_openrouter.py": {
+      "sha256": "5472eb384a85e2c04f2183dd030918b0da720151007809c300922d5048f65f68",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_qwen.py": {
+      "sha256": "de02f3127c824a04a5ead8d1ae14bdc88ce9d97b20ee8bc2732043eaa9247073",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_replicate.py": {
+      "sha256": "f1a491af30155ea58405ebb40203ab1e25b19122ca50bf70f16f667fde6cd2c0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_siliconflow.py": {
+      "sha256": "d9b34f5fca90cb79a63568322884f34e8322f2f5c027769cde8949358256ba65",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_stability.py": {
+      "sha256": "2cb7eb853f1ec1a07af6cf5ac26fba6f08ff5ce272d90beab7574d66a01c674f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_volcengine.py": {
+      "sha256": "2132da035af329e416ea6dbd610b00a1e67a718f06967f854aa85aa37fa237ed",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_zhipu.py": {
+      "sha256": "2ced9b7d27ead534e88045f3fdbc8482eee669f8a111df8286c309e5c40670f7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_gen.py": {
+      "sha256": "b3c510078602eae72c52d7bca75d8dc87b1f0b775c60cf90402d6e8e07a4f28b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_search.py": {
+      "sha256": "ee45cb088e17b084c9d5a0ed4d9da1c02d7b227f6d950eb962e91ff37cf5d89c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_sources/__init__.py": {
+      "sha256": "0bdf995c811a5b4ca076c6c7e7988b7714a3becde20ec0683ef6551977a347fa",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_sources/provider_common.py": {
+      "sha256": "a15714e7c5697bdd06306287e98605d9929b2f420f41dce330f3414b3970ab24",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_sources/provider_openverse.py": {
+      "sha256": "42160e1562669f41c0c8cb6e3d25a90d21af39c0de4c2312fe8d9952385d3127",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_sources/provider_pexels.py": {
+      "sha256": "25ee6136e3ffde76207ff122a4f19fcaaa53c48e7453e5cd9c63a2d690fb2606",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_sources/provider_pixabay.py": {
+      "sha256": "055f1d6e4b7ae57dd5fb1528a126b2d8fd26ed2e92733bb57cbc5d4480a9c09c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/image_sources/provider_wikimedia.py": {
+      "sha256": "51931aa2b69d53dd5ade82b0042a0ebe4984d0064e6ffb62f8d258bdd30f08f8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/language_tags.py": {
+      "sha256": "fba21eaa282e4a12d1b14ab26440bb04c144ffc7dd6f865c9c3ffe45108015c1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/latex_render.py": {
+      "sha256": "330ad8fcb39ef44aa1b12bc8c05ebd460a01899f6231f4f7f226595724e3aaa4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/layout_trace_gate.py": {
+      "sha256": "a29ac5779d9b2009df183117006d3deb743a9b40026abec22295217a2f9f7de9",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/scripts/mirror_template_materialize.py": {
+      "sha256": "c7569917d441e09f9ccf57798173c1bac008418a8ed613fdd976f2844baf11c4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/narration_sync.py": {
+      "sha256": "3d18a89d5720791505908b07de641d1c6734341aa41fa4e6160c9c77b9f863c4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/native_enhance_pptx.py": {
+      "sha256": "b96547dacae5ecfa3f5ab404656f9eb65c577da5cb9d3c46e81b20d58789fa4c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/native_enhance_pptx_core.py": {
+      "sha256": "f9c5d32d5a37f053ba1f05c61519fc16818e5b9bf34770df80097cd3d74f0977",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/native_narration_pptx.py": {
+      "sha256": "483590e997f39c02fa65eb34c514ecf60e7f4bb236fc284a33cd3f5f75b1da19",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/native_payloads.py": {
+      "sha256": "8b5ab587310074379278aeab552006adc581e89aae330a64f839151a8282fcb6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/notes_to_audio.py": {
+      "sha256": "5215863c78b486a7df10c57466fb5018b1686090fc6d4ec7b52d11fb56c8a8ff",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/page_context.py": {
+      "sha256": "846b7286799ac91ca6ae74e388524ac2397ea84ced91f524a75141177225ffc7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/powerpoint_video.py": {
+      "sha256": "2d98684e42e8580b8430f52a87c446584328537b5bb106b2d35676d22d25e49b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_animations.py": {
+      "sha256": "821d7deb2a26b23b9b85f68752117be198aa04b94126596cd38971842c4273f6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_delivery_check.py": {
+      "sha256": "e7ff729c92aa4ce3e55e08995dd09bff605da6c86a1dc5b3a747f7d3799b7993",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_effects.py": {
+      "sha256": "57cb58900d45200074d0bc09f0c9290a8429522a0408a7aa2f1976c20d079f9e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_intake.py": {
+      "sha256": "324ed0f02e1d49637cbd0e265df5d4b709659d2d71d8ddec00bda45ad50caa9c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_opc_validation.py": {
+      "sha256": "0ce1113940a574fc56a8ca34edec43b2c25edec2febc6e36ad07c917e4dadefe",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/__init__.py": {
+      "sha256": "332d44a0ab3438cf4424843ffe2fd9d782f14672ac4f290369c316a46825e232",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/data/LICENSE-APACHE-2.0.txt": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "origin": "third-party-licensed"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/data/LICENSE-OPEN-XML-SDK-MIT.txt": {
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "origin": "third-party-licensed"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/data/NOTICE.md": {
+      "sha256": "266d49236bf635256ae4b0c5ef3470c7a51bdcb866b897f06e3d6757b69c7189",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/data/presetShapeDefinitions.xml": {
+      "sha256": "4a762444d8d85876881c02a5b1dedf6f73006fcd8acb7b4e393435615b37c780",
+      "origin": "third-party-licensed"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/data/shape_type_values.txt": {
+      "sha256": "f2c3bdcda8569b358ce3196cfeb183849e33bfc7955fac961dc85fceb6b3b587",
+      "origin": "third-party-licensed"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/errors.py": {
+      "sha256": "26455c45ae8cba9d62fd2822c4fe98cb05c206bbf1066f770d0f16283be7e052",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/formula.py": {
+      "sha256": "8e7a691046219c834bb009258c22cae45abf483537942a9d84c18add82c1cdc8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/loader.py": {
+      "sha256": "3d0ed9be6899872a23c56aa0ab58166ba0f19df8bba8320cea991cf8738b762c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/models.py": {
+      "sha256": "2368d477e49639089e8aea47246ba9d87a9d2f03ee8e1218ee0547e1d2e70be7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/registry.py": {
+      "sha256": "e75200a91ede70fc083fe2390509f6b4b48c44d3eb81ffd2095d24338623b631",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/semantic_hash.py": {
+      "sha256": "0cf7f6aac9a2656a793c260f0b65789d4812697ec0d87410a6d09f5a4662ccde",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/xml_safety.py": {
+      "sha256": "b411dc284fc176bee652de58ca27a93f293b952c8f804b2aaf44394c574dbc3c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_template_import.py": {
+      "sha256": "cf664682306cdf4a9a67e15863c5d3603a9c9a039cdb93af5664202f44b631e0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg.py": {
+      "sha256": "ebe24674045282b9b721e0a51283fa7b637ad03e4f185ecc90d54f938453f1f2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/__init__.py": {
+      "sha256": "4a5941d48756ae70027d6110d738e25515b8436fc7170a9bdc41649083e01bfb",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/chart_to_svg.py": {
+      "sha256": "3d7edbcca44bb3e63d8627586f815f0ce6f21071be671856d2a972a997b7a75b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/chartex_to_svg.py": {
+      "sha256": "e1edb143f314229ac0ccb8a2b4bdb3ea1584e986b722b9d3e406d522586df7a8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/color_resolver.py": {
+      "sha256": "654c2951e2a17789ed8008009133f0900539361c463e45785201f4563cdb1826",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/converter.py": {
+      "sha256": "5173a1fea4b6a4aaabf3cf4f468aaf3d7cf58751df0a93250765809c5ded7d55",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/custgeom_to_svg.py": {
+      "sha256": "15ae3847547b5add69b773ec2c827acc2f874bf4d26aebe559082838b80ae4c1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/effect_to_svg.py": {
+      "sha256": "d5f2bf904364f0fce36aceeafa7443785566993ff5909a6cebadae02fa82e340",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/emu_units.py": {
+      "sha256": "877ce22705f1cc87ad645ae855d06b4e765b2e29ac9e0489c9a0a45edb0e5bf1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/fill_to_svg.py": {
+      "sha256": "37f1e29771c46f13a0bd9c415f1efe44ccc28ec3a30f1763a0d1043ed1abd69a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/import_diagnostics.py": {
+      "sha256": "e2afb669681d6c06a3b7ad6c7d026a4552ea779e6f492d04f952374c278551a5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/ln_to_svg.py": {
+      "sha256": "6db9575e57e18f0b21ffd3d39e78fd23367e6d6cfe1c735c3f5092b47392731b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/normalized_chart_svg.py": {
+      "sha256": "6c7e85db006364eee74674049b2563508869b867daaa7425a16b789d8175e603",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/ooxml_loader.py": {
+      "sha256": "6f11c4ebf60144d84962dae1e53c43535b2aedbea13c21ddf468833860095cab",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/pic_to_svg.py": {
+      "sha256": "3c75cb281af672c23c3f730881a3b36b71db7cc38c8f645bcd218ea4b067c059",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/preset_authoring.py": {
+      "sha256": "6e6db531add42dce40985aa03401e86a70b80fcebd69593279be5a931b3d30f8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/preset_registry_to_svg.py": {
+      "sha256": "4dac45cf38e1a78a44e5144e1b571b35803559f048edb86e080ec262814f2d6d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/preset_svg_markup.py": {
+      "sha256": "68b9267f5ff45a9a2963c5c65f5f0530706a256e91b17eec83df80937969bf06",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/prstgeom_to_svg.py": {
+      "sha256": "bd087aac7757430b8ea5742403865fddcbbb2b6721885ec78757cec2c2c75445",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/shape_walker.py": {
+      "sha256": "76cd74ee437c5d706e5607d032b5314e8c1f420802646e4ebff1276f64797fd5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/slide_to_svg.py": {
+      "sha256": "d59269aa94a539369279c8083b5f66e5d6894f155f75dd796aa38d9eded6fbd4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/tbl_to_svg.py": {
+      "sha256": "16146b6ebf5871d61f9c71d1d279262e0510ed9e742523a887fec0bcd598b16b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/txbody_to_svg.py": {
+      "sha256": "25bb5ef17ce8efc136a58d884b73ce5bc149302df38ce4c0ae1bff68ce44c60e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/pptx_transitions.py": {
+      "sha256": "79ad9968b0eb2fd3639a02cc42d75b0bbf41a8be38388e633653c1571ba66bd6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/preset_shape_svg.py": {
+      "sha256": "bc0f53caffc9a764ed89f47023e717edc77dca11d39748c6c4f8c466a3be67d0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/privacy_receipts.py": {
+      "sha256": "934e89402b0957de7ea06961618b39df55d8793c5915aa2283b390c7b8d5f8c5",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/scripts/project_management/__init__.py": {
+      "sha256": "db59dfac6e2aa8d7eac13c9d99c0adcec14f33fdcc91eceb6bab21d4dee92ffc",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/project_management/cli.py": {
+      "sha256": "c14b30c92f57d4e43b1a3be028094489a6c4ec93a72b3fb5e8474a50ff6c099c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/project_management/page_context.py": {
+      "sha256": "3d75599683cb4d11f0870fb16f2df184f0055ce3d1fe901319a738b0ee920129",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/project_management/paths.py": {
+      "sha256": "fe4be5579ce8fb8703a5af625ed74c6db3c61852fa50cb342e3b5dde4c85f754",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/project_management/project_specs.py": {
+      "sha256": "c6b93850d325b0f56c692069ca82d081235819c2816aa2905c38635794072a30",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/project_manager.py": {
+      "sha256": "c0ddf49cc4f94d9a263bf1d4385e3e1e96a23a8567f6ca267b45d68d1227135d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/project_specs.py": {
+      "sha256": "7e6c1019c5c009aaf0e07033dd430ca461d8707d857039d43db923a2831aa557",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/project_utils.py": {
+      "sha256": "19f296bda40d94822a061b2538c3eb53f282d433e7a849ade40e25efd66ebb8f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/prompt_audit.py": {
+      "sha256": "8b2269e7da083db6f0ad97e8698421db3ec4a434d78df8450d393d9ae7667c94",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/prompt_audit_manifest.json": {
+      "sha256": "46814f7a3a1437c188737e59e8a33443af4724342c13e717ff3585281f999fe1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/register_template.py": {
+      "sha256": "9fda9818094613f426e8ab34e95c6fe83c6b43ed03efd4f63917e867162d8739",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/resource_paths.py": {
+      "sha256": "c015f24c4c08d028419c2f62ee0a1480217b8b123a53966cadccf7c0c31db9f7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/rotate_images.py": {
+      "sha256": "74da91d9fdd3e058901c8e75e12f88a71f43a696559896ac51a6cdd2a632a8ce",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/server_common.py": {
+      "sha256": "6c2c21311ca9ef795abdc096032814c02cf970eb09c096b9376d9f93af03ed24",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/shape_boolean_svg.py": {
+      "sha256": "d117d3832551a9b2b91c19cfc56edf86fb16f51e526b737c1b76031dcc346dae",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/slice_images.py": {
+      "sha256": "15f7e44889b2d1ecf4ec62d383641efcc95daea1cfa09f91d864b4cda5959944",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/slide_roster.py": {
+      "sha256": "0cf711ee30ed2ddf2cd303845b3e54312cda0953b512c96a1b10f388ac866c7b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/source_to_md.py": {
+      "sha256": "92841792fea5cf996698aa9d131a574b9d257affc48d0ce03d011c7029c2f121",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/_batch.py": {
+      "sha256": "ee295ba74aa173d20ff75f12b4a631cfa70f9e0b2c7594be0a69b5ae0e89bb21",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/_conversion_profile.py": {
+      "sha256": "2b63952c457c22be6f28c548a2188d2fe5ebf860204369a727246216f2493a23",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/_dispatcher.py": {
+      "sha256": "80120653c0baae7c9d4865b0c48eb710e6b75470d8cd9db11a8b4750df22b6cb",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/doc_to_md.py": {
+      "sha256": "77c0b7a53ad5ecb2436d4c4e7cbb34693e313adc2927f60c332492060daba3f2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/excel_to_md.py": {
+      "sha256": "03d9f565eb294b00871ce3ab47efa12a46be9be1174f0b09952aa6e691417720",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/pdf_to_md.py": {
+      "sha256": "b057a7dd4d47806b9d7968eb1d60dce60fdd688b791eb17f4914056854e9225f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/ppt_to_md.py": {
+      "sha256": "b1a844d02610d1c994b0b51078b1d64e0ecbb6ba5de079500f6bd9a2879f25d1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/web_to_md.py": {
+      "sha256": "bd6aa3650215b205711c931b0efc1d648d6bd2bf53f7f34e468ae1c453213749",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_authoring_view.py": {
+      "sha256": "7bead64d1f23555809b572db70ba707d1f90d24fbc011109eb103ab53fef2238",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/__init__.py": {
+      "sha256": "d9b8f2d7eb506be3f215aae64490661580a66ffd8cc5e0d596d87b9e85a81168",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/annotations.py": {
+      "sha256": "6e669972fcfaaf0719711919df594ace64d947f6103c258d569cef472cc1e8ed",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/server.py": {
+      "sha256": "0ccaa717e8637cf6b221e28c2f93885671695953d5331632eceebe16c3eb15f3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/static/app.js": {
+      "sha256": "112e3a90847c56de5d2118547571c386f511ac1ceec7e1d59fd028fe7121112b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/static/index.html": {
+      "sha256": "c8b9ab946d3a18a1372f2c90e8b1228cf582465de8d7045be335248abcdcdcc2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/static/style.css": {
+      "sha256": "887b7b12ccc18f162a51ad36cbb47ee39138373fe17b4ee7eeabdb1b44e368d9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/__init__.py": {
+      "sha256": "7ea7a774c2df7d075e53e792c028953d9c0a9d3e963d6d733df09ce8a177415a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/align_embed_images.py": {
+      "sha256": "c7648edd47cf77d853f35151a3b5fcaefdef2e588784784c7509a813c7d359e1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/crop_images.py": {
+      "sha256": "a0afaafdd46aece3e889e59ea1e61bff30237f28154bab3632284ec3a71fec03",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/embed_icons.py": {
+      "sha256": "b5063f515497e521f0fdd9b0c3274b754e302cc9766e62ab24bc35537843935d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/embed_images.py": {
+      "sha256": "87b8be5633ba167252f605cb6d223937aa9d4a3888a1664c338eb7741f6733de",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/fix_image_aspect.py": {
+      "sha256": "5e0519809ffa278a0de91f9ad6e0abde60053a3fc5204701e4452de9f2ce110f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/flatten_tspan.py": {
+      "sha256": "51b11bac4a2eaa457d7366556081b2b99bcf9b6aa014a38357ec7e8cbec79429",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/svg_rect_to_path.py": {
+      "sha256": "fb8403f14a6c431ea6a5865a1b83eba971feb16d84771ca42a2da11c81c13ce1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_position_calculator.py": {
+      "sha256": "0dc1ed54f2f5d5a1b6597865efbe4e727b582286f88dde9cd9cba33e32534338",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_quality/__init__.py": {
+      "sha256": "25f592f23af10a8d862cf49a6e8edd00740d75c2d207da572cc6164c70d87ed7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_quality/checker.py": {
+      "sha256": "4095ea3dbfd1215664fc1e401e5f537b6e53a00a46b290c44b7590c4f66bba05",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_quality/cli.py": {
+      "sha256": "e2d6a6f7dbe870eff94d6e37f036b10f51edc69acaae4eaf15b81635536b8306",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_quality/svg_contracts.py": {
+      "sha256": "136245c505a92e1fb68f4debaf993ad0bab6e87f8daa0b013cdf43f0069244c9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_quality/xml_support.py": {
+      "sha256": "691187478748472bd7c6b249db9b3753c5d9d779a48e38a810680099695a5dae",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_quality_checker.py": {
+      "sha256": "fd6f6fb9c3662d3a38a6b3ba038d2bd0a2c70ec6fcfb91bf1692b2b349a8600f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx.py": {
+      "sha256": "9f22df3d716b15066ade2535d990197e0addf7154fdd3348f7aa0e6aca95c244",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/__init__.py": {
+      "sha256": "fa5a8ef67ceeee7b5b33b478639422f4e99c16eb430545059c171cc7727f2a47",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/animation_config.py": {
+      "sha256": "5b6f39348741e85a446cd579b006d1a2ec4ff295b619be0815589888d4f3ef5d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/canvas_contract.py": {
+      "sha256": "0ed1a4e45f8f4d5cd2d4896ac2c64322388a2d3be62ed281f2c8214235d3eabf",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/__init__.py": {
+      "sha256": "9313e6cb2ce93064d10a3f96f65252241a95300efcbfa3de3455fc5e2d1775dd",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/context.py": {
+      "sha256": "a9016d9eedfc29b0be25004c6dfdf5a36f9b22e34d385d12552ebd237b5422cd",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/converter.py": {
+      "sha256": "9a17ac9031a0db523df77d2e5d81251c71b0bfd5aca5e38d75fbf6647bb95b14",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/elements.py": {
+      "sha256": "a00d6c7cb930950aa707166ac9633370302bc0f6764d3425de1f0bd3f1fde369",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/paths.py": {
+      "sha256": "3d8599d6510c9ad32a4b8ef1079a7ae65f0f09abd240f245366e6384b6103b90",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/styles.py": {
+      "sha256": "01d5d6bc5de56afb3b1effff79f02f045745d0dbb95ca3bacb4097d1e0f3c3e7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/text_properties.py": {
+      "sha256": "2c6ca452e0c33f266455da90ce5400580d44e51a7e5cd860d3006ef6a6ebe9aa",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/theme_colors.py": {
+      "sha256": "6b103d626900afee1ff5a59ff2da5ebadba040c004ae0d6ad7ddbcd61ae0b0ce",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/theme_fonts.py": {
+      "sha256": "8ff181ec8a457737de6d20f9ab2fb3df47a60f90ad56a08569119e777980a54b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/utils.py": {
+      "sha256": "bc4515fe9c64e3cf867e8fea520b81c314682fbf22e58c2158f154b11f2d11ec",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/geometry_properties.py": {
+      "sha256": "076390484ef03ee4edb3eeff39b765629d70f699553d0cd316f2279d70cc52be",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/__init__.py": {
+      "sha256": "8766f634ab9fd7b79d42a9a7204f90c62965560984dfb7141e950e95d7ff217b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/chart_data.py": {
+      "sha256": "7f8a936a596dd1f9a815e73d8a41ac6c6b3767e82fbe73e741f542755b086339",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/chart_style.py": {
+      "sha256": "5babb5381c25d9842009498b81171db3755b2e519bdd144d3780460dd97b2a17",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/chart_xml.py": {
+      "sha256": "da167fefa6d99c757ec75446b682f7d17494e18b78e319aa5e5583a1035dab8a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/chartex.py": {
+      "sha256": "58301af31c7ac33795b3a95577f1b90402a446bf87579d149bf7b97d79970b61",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/fallback_hash.py": {
+      "sha256": "4620f364c7749a1664ca18b9aa92a7615c39bad40c4a74c13c9798e07467e2d9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/marker_attributes.py": {
+      "sha256": "cf8d33207f1cfab4bdc364c24c45e8ba1d41e3db7107a2a26a76ebe41e06b87a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/marker_common.py": {
+      "sha256": "b815cfe07d14e1d4bf20850bbd19e898e49c4ae01a77d28db40e8e3ff19a4821",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/marker_status.py": {
+      "sha256": "884709f8524ffa91552f5d11fbbb65cca9b96212da854a637d16300849a3e85b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/table.py": {
+      "sha256": "d0723087df28fb83df664a3cbf3060939f919d4d538d77159c54e63c190cdad4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/workbook.py": {
+      "sha256": "f725bb2dc58aadc8ffc293bba994a91cf0477b871829fffbe965acaa36a5b3ea",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/__init__.py": {
+      "sha256": "78dce81eda479c89d16308e13a536bcd45de039778d80eb0f5a2184415c42f2d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/builder.py": {
+      "sha256": "5be028acd021f93f0f3ebc0791941a412582012d0cda4027f62f4f2f10e39a27",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/cli.py": {
+      "sha256": "344e97e37ae40094b5c61013c695d5359a385f2f64cf18aa7956984bc7e0ebd7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/dimensions.py": {
+      "sha256": "fc46ea5db3dfb8a05aa40876f4773cfa16b0217ae227968bcf891624fbaef676",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/discovery.py": {
+      "sha256": "2aa2ebdadf4e9083602382862ac1d7258d84f58f586c432f48d6085a99f1655c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/media.py": {
+      "sha256": "5d359bfc890d151160a980b46ebc3299efe89972fc5d3972956897c88eef87a3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/narration.py": {
+      "sha256": "0b2aeb22dcd4d0f95c5a55ae9db2ea4d13375e547b3425cbac31bbf7cdd3db8b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/notes.py": {
+      "sha256": "274d91315501af05eda440a2d7569c4ec0b1695aebdd93a68e1c6ce5c3a308c8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/slide_xml.py": {
+      "sha256": "922e2a706b8fd510bf398554e98bd5fa2e896cbcaf56186d3717779c149f3dfb",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/template_structure.py": {
+      "sha256": "e9edabf53bc811c90841d3d0a5cd7dd115755d6695f7ec8dc8ecba0459bfbe19",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/template_validation.py": {
+      "sha256": "db96f38d74b6a53c11e3838a885c29c7c33511a6d29b121dee23fe2e6d007037",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/semantic_markers.py": {
+      "sha256": "032f68e727c9ec79a1578638ff409171c74b6a9f05ed6ded6a45cf49ba5e5019",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/shape_boolean.py": {
+      "sha256": "39348746a036fd375b99d7d849e5ca2e1957a9c95bc7fa011872c9ba62280bad",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/text_outline.py": {
+      "sha256": "727c9362696b3499b38128b0ddffc53fdf4c05cd943f2636eb46729e3dee0dac",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/tspan_flattener.py": {
+      "sha256": "9ca19bce06103f25fd438f7d6f14bd7ea692fd69a6f8810b3edb487adf57bd41",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/use_expander.py": {
+      "sha256": "6aa69ca22bc978e894c5b27c6a18b59809807db4949e0a3b0315589a86f50944",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx.py": {
+      "sha256": "801e165a32d42dedef6ebeea71e6520823d07c1cdd54f83554ebb19de46096c2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/__init__.py": {
+      "sha256": "f90baa0eb5b41b013538d12c114ca6a7d701317b1691a6b7335f78acab7aca47",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/analyzer.py": {
+      "sha256": "2217baff21f3636e90d22eff39f51952b590c73a15f9488d340437f5abd4d72d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/applier.py": {
+      "sha256": "13f1d040cbbe7f30852e5521457793fe076a08ed7c6cd9f5a09732499b257584",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/chart_fill.py": {
+      "sha256": "79cf5f621453d692c8c8b05828e5a43edcaccc39a8bf22ed0bf7b6ef69a2f8c5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/chart_read.py": {
+      "sha256": "f63799f33da61fc5bcb4724c07a706fa3a4286b9223148a7ba41d69bd412a1d4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/checker.py": {
+      "sha256": "8806cfb764615f88401365466d1b803aee855c265f7f18b06de4baec19b1bb37",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/cli.py": {
+      "sha256": "7668ae83270a33f9daef5d4e2076dd3664ce20c6d7f1706ee3bc60353206e42d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/clone.py": {
+      "sha256": "b5c34d04f78b56d8d055358b2f397877e912b3e5005603269b9d8a5a5b549274",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/diagram_read.py": {
+      "sha256": "8db0db6fd4249eb7d2804382944e0a74b4fc3abd4e48751b50082e3fc2d7a95b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/edit_safety.py": {
+      "sha256": "28511d76db9bd3a7c015d5badaf341d9480935637fe8356e0220fdfc550f9c06",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/notes.py": {
+      "sha256": "8548715db966468dc98162410a77386917a83aa50c043537158b04e3e86ba7c4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/ooxml.py": {
+      "sha256": "63318feda82cc5f145da2dfbe16bcc2037f46e7d4a61985984170a60cbbbc741",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/package.py": {
+      "sha256": "89fd56fc644cb4455908013b4f98ff901915128643b6be228727e61180e9107d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/scaffolder.py": {
+      "sha256": "21ccb8451ee771e17c5c63aa17e78263a8a8d19c34e735606990c0b95a0bbdcf",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/selectors.py": {
+      "sha256": "fa7d17777c73a8e996944d625dfa2a3de079089d6c2c8688c7497d9febfd187e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/table_fill.py": {
+      "sha256": "fa258f877e731242992b83e64d0fb6ba6cb9643572831791d57def3c48672702",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/text_fill.py": {
+      "sha256": "80b57dca8c270414b9018b9d31acddad9390c5e0148ad7bbe4629115ca078300",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/transitions.py": {
+      "sha256": "9f118afaf8d3cd920f3e7d2ef7ec64679c5580b2e0a5b1c292f0c0cb02fb2f6e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/validator.py": {
+      "sha256": "de87885486285babe291b2d2ae83b75848d119a15f430d9b1674a29073917632",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_import/__init__.py": {
+      "sha256": "251eb559dbf7f8684f9fc877884fe6b8859b7b854cf3db1bc2695e7c9dd9efa2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_import/manifest.py": {
+      "sha256": "81f9687f614f4a398ee5d60bad33a8141dfe8aeae06ba604dfea5a0e9edd1e57",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_import/native_structure.py": {
+      "sha256": "1e021f4b0847d4280b303b40e4c7f6b23e81f09899153fabbb378b52dfe87e00",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_preview_pptx.py": {
+      "sha256": "8e50a02911fb2ead3bc7f32eaadbee7c3a5a9f3cc4a6ad79b2f7c54ee150b4ca",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/template_text_slots.py": {
+      "sha256": "d54ed3e596356635f82701e8c7d89b922d702f1c553c2bba8e27b05fc60b4822",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/total_md_split.py": {
+      "sha256": "e1fcaedc512b24909253803e6e0d6ece7ddd925bf4d9edb953538320680d7c0a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/__init__.py": {
+      "sha256": "7423387110e2d2fe1a807b4ca6949ffc80a50baeda63d43661e1b2472012d3a6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_common.py": {
+      "sha256": "6f9309536e280f4a424c0154e452ee261d14c5650a68c9d082c57c56dde26289",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_cosyvoice.py": {
+      "sha256": "0689c5d4fa5575522a0a3e7efee963633c8e49f9bf764da2d21e7a314b53f6be",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_edge.py": {
+      "sha256": "209efef246c317df3609374fb4af30f28c1e40dade126aba7ef8f7875a7661e7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_elevenlabs.py": {
+      "sha256": "3c2e0c0287fe7fa3a79e1aa23384ce72bd2717f4066f8e68f13b94b70fed465d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_minimax.py": {
+      "sha256": "b77cd5b8ea27f818247cfaa34c1295a883c3a524fa73190ed460a175db9fa486",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_qwen.py": {
+      "sha256": "4f580eeb1ef2f214274b2dd5863837b335861fc7ced660fcf6f1d6bdb79b040a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/update_spec.py": {
+      "sha256": "b668f0fce5d3af13d85eb29c6c3394c4f13c42f556faba3a44c1b0a37c4de6e3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/video_motion_plan.py": {
+      "sha256": "b07cfe3fc6fcd3a3dc6f172727aaa989179c498c3c61fd7e4e80fbc948dad159",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/video_subtitles.py": {
+      "sha256": "125bb6c0b30032f7b32f5729bbfddf5209867fb25c005751e456f4be41e8c732",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/visual_review.py": {
+      "sha256": "1b95cebb0f60da20012848be6f6da5f158be035a2d8b97a7ac84eb56cb8ad249",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/workflow_log.py": {
+      "sha256": "be96162c3697acf404276f26c5af210134d8e2c5393ed1ccd7f63598b607f742",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/scripts/workflow_transcript.py": {
+      "sha256": "e60407d77624cc80f60878b3f0ec0f2ae58fe9afcc2027b83b4b2c30bf7001ba",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/README.md": {
+      "sha256": "ca9d7c6e9af86a493ea73e51ef671227e8996cecc7e46014a7e35f815a7632d2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/brands/README.md": {
+      "sha256": "999a1b967cacb4bcd9f3c00238b3d6bb6fc506090e5d2dae556a9b4e6916c364",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/brands/brands_index.json": {
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/CHART_STYLE_GUIDE.md": {
+      "sha256": "e7dbe51369e1f00dc8c4ec104b6a028f3670886fdcbe058a0925f3f23cd95461",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/README.md": {
+      "sha256": "1662541d92094c25f7afb40cbe758a1015b190535756195f1a31fcdc7ceeb7a3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/agenda_list.svg": {
+      "sha256": "6635a137ccf6a84abe5f3852d01f770dadbb61abf2c9898ac13492f19223a2b0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/arc_anchored_list.svg": {
+      "sha256": "55d48ac535bda947b4230bc172cb4006a3374b6b4423b74caa141bc399b7d9c0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/area_chart.svg": {
+      "sha256": "4a3685dc3cd4f8af413b12f4dc54ac74ca7a344b0a71cd9b0f3bec2e1d9bce97",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/bar_of_pie_chart.svg": {
+      "sha256": "bcfc3e4d05ba3de64a555b667fe1cdf582c3d89a01c0fba82259b781ce446680",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/basic_table.svg": {
+      "sha256": "ec5e4867b050904486c703b69c232f77201b0f131b44575ae5660d633968a60f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/box_plot_chart.svg": {
+      "sha256": "f8380d7f9398e11ee86876ca3fe3e355b8449463568c7a46dc2c1c8a51fb425f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/bubble_chart.svg": {
+      "sha256": "b1178c4efb6e6fa0bfb61b41e0aa1e036a1d65293038a2ef44ce1e16e553fb4b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/bullet_chart.svg": {
+      "sha256": "ef3a31c2970ce67e17fa7d3ec039c8230bc8cfaaf0fb4fdcd79a806117bc5b5f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/butterfly_chart.svg": {
+      "sha256": "875a3be5ec856f669fc012d59b10d8b2b4311e57a75352945df4b1b8092e9242",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/charts_index.json": {
+      "sha256": "3dfd4f640fa4907c34983fb6cd90909cbe102af4353367cb070d63572deb42e7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/chevron_chain_with_tail.svg": {
+      "sha256": "9739d8eaa44e08531d723f7d99834d36bf6f30745b4e65eacad62ea1d64bc0c6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/chevron_process.svg": {
+      "sha256": "23842478cf35913af8035d37580a70e925ee711a84797c0d29adee071dd747fb",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/circular_stages.svg": {
+      "sha256": "75ec2ffb35feb3449b97175afb4d1ee607affbc09e75c3a6a56e2ad4186cefc6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/client_server_flow.svg": {
+      "sha256": "c9b79fc34ad8e01d1988a5be5cfa1a778318aff2f0d5dc2cf775d7154649eba8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/column_chart.svg": {
+      "sha256": "868aa1046149accf77fa3580694339b8986a65a3f88a39cd1cc5bfdb540c817e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/comparison_columns.svg": {
+      "sha256": "8bce7f1a3d7bfe4ab8c00c4edbc44b3efcb6a9350a05a9c580381a56823aec32",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/comparison_table.svg": {
+      "sha256": "b1d5dfbef1ab0e12546e23049544324790268aa7579f76df31e98a345048ac46",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/concentric_circles.svg": {
+      "sha256": "5d715888767b42b88cdf39fe93fd7dcaf94011b08344992d5e3dbf86fb8d9940",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/consulting_table.svg": {
+      "sha256": "42b3e86b715e8636b47100f09beeac1df69926d8d165be38978f9e3c09b1b81a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/donut_chart.svg": {
+      "sha256": "4740631a12eb18695313833f96a37053feb5273cf00e1e36875c85c602492b61",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/dual_axis_line_chart.svg": {
+      "sha256": "a460cf85f02add9f6f94fb389b1c2de6034b4573f30fe44f6fc33d571417db90",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/dumbbell_chart.svg": {
+      "sha256": "73380a1b8d4939e255f273a447855210d2b896d2e96d32547c612bb6e5ae7f2c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/feature_matrix_table.svg": {
+      "sha256": "994d80898adf031671b000eb19dbcf1ce288c8ba4b35a6d4b58d0560b5117652",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/financial_statement_table.svg": {
+      "sha256": "434eae43b2e4d3ca6c70b54dd4f2208d247898f2660fe2f43378fa4b94485e83",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/fishbone_diagram.svg": {
+      "sha256": "30ea8c013daf1d4f296d3e2732c2df80d4563003093ee630f4a443e93679dad3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/funnel_chart.svg": {
+      "sha256": "063df684beaf42a9159f39c90fa51b60c91fad46d1a0f7439f41eeaa38cc4c1b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/gantt_chart.svg": {
+      "sha256": "afaef9945f8bbfb1782908422e876220ffac4a585bb4f61967d4e44aebdc39fe",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/gauge_chart.svg": {
+      "sha256": "183fc7874c9a075284f3a5f268913f45eaa90cae0491dcae0cda0f43104099ea",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/grouped_bar_chart.svg": {
+      "sha256": "bb3fcc852740f42953728e0435ed2e55fedad1a7c53849933e69d3ce05e1d303",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/harvey_balls_table.svg": {
+      "sha256": "0387365d731933c429062472f060d13439d7d46a1d888440bc24d5311b9219c7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/heatmap_chart.svg": {
+      "sha256": "283381a81c40d22db38828adbc8974bb31b8477768eff9a167b657cd3f5339bc",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/histogram_chart.svg": {
+      "sha256": "033218ad50ad1171d9629156855a4e770de34ff305a3b91986b0b4854af59f03",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/horizontal_bar_chart.svg": {
+      "sha256": "ecb495dd72b594f6200dc3cf8571bffc9a5bc848f2e6ee72848d71f260d43989",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/hub_inward_arrows.svg": {
+      "sha256": "e57a11860ec59513bc470ba1463867e6e55ce6f3526133d2f67e6e2f950526ca",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/hub_spoke.svg": {
+      "sha256": "d0de6f4b2610304ffe88c6d307c47312ee14e1f9e515a8c106617733c9bbef4d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/icon_grid.svg": {
+      "sha256": "01b86e54347d30cc538b4dd23bfed8455380485a429750bf3188072b0286af03",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/isometric_stairs.svg": {
+      "sha256": "0343b0653048704d936224fae0431dc64465571178ff42b498c987ed87295a48",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/journey_map.svg": {
+      "sha256": "f0236514fda6093692f3894beab034ec73d5d68e9e4dd20e2818dda396d7a517",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/kpi_cards.svg": {
+      "sha256": "257ee3877a45ba493650b2073cc93590e48d5ef1af4ab138a98e0be18c56d9b1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/labeled_card.svg": {
+      "sha256": "62ace2aaf325cd2608ba9641936e28720f2154e1ba6be3f10068c22d4ae6ebc2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/layered_architecture.svg": {
+      "sha256": "3aad93a1cc0bf00d29d24a6934e9176ba48eb92d7aaa8a6787382f2d7ae0d35e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/line_chart.svg": {
+      "sha256": "07684473d8e33e7f5062c5918a6a5248045c9247e67ef991cbadb9bd3db28ce8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/matrix_2x2.svg": {
+      "sha256": "db37019510a1b5682b817ac96c6c98f0eab31c4e1409e2314ce13d6ae268d082",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/mind_map.svg": {
+      "sha256": "3d00b38183438ff96de538e987e0463e4532c95473af2f21543cbd4a71bf3d53",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/module_composition.svg": {
+      "sha256": "266b1398e122abd2ce0c8a0e991d73866bc7a8d618ddd429178e2336a3e25291",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/numbered_steps.svg": {
+      "sha256": "af284975e09cf911b8a3376439b8d8bbe814a689fc0f00e8167e7922679ff739",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/pareto_chart.svg": {
+      "sha256": "64e001cc99c891af611a50dcfa9f25313c52ffe1eeabc368ac79ba20db33d9c9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/pie_chart.svg": {
+      "sha256": "bfa0a088d57df6b646ee0e1f0d4dfb10a3be298edd03ca5152d4e11b9244ac70",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/pie_of_pie_chart.svg": {
+      "sha256": "584b20ac511d889738700bb406f97104763366573bf77bda9cc3009fb6870a6c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/pipeline_with_stages.svg": {
+      "sha256": "8d10178962d09fa98c44f7ce58e82cd8a6be75f3cef3b1f55144058ae5cbcede",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/process_flow.svg": {
+      "sha256": "b5ce6f4d5df14d87c82b8ac357c6345f72113389c501e2f7febea68dee1f5d77",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/progress_bar_chart.svg": {
+      "sha256": "d9fd102e51021689f1f14b2603fe1aa0fdbe0ad000536fff3aeed6481b321f07",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/project_schedule_table.svg": {
+      "sha256": "e9eb5b1a3d343019e9776b5afa4cca0873f79278d05a31dd0a7cfd43eda2de5f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/pros_cons_chart.svg": {
+      "sha256": "43b7214b133e86934bd0623bfa93e13548a78da0e4c3e0dbd4863d2e212892ec",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/pyramid_chart.svg": {
+      "sha256": "ca7304ca51c8201be13c8c43bf2a4579c4c1c09a25d8e713e1a13251c9a3128b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/pyramid_isometric.svg": {
+      "sha256": "d2e83a8628193d3e18799d37bc141c413fad61514b9b78699476b1a4141611c2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/quadrant_bubble_scatter.svg": {
+      "sha256": "535e80df2a79cb5ad31953f286156b9016c61bf2b9a3b569d91c487dc9ff83db",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/quadrant_text_bullets.svg": {
+      "sha256": "74893844d36afc96305f2180dac0fbcbd7fe722c64b704aaab7069d1431c31a8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/radar_chart.svg": {
+      "sha256": "751e851dc17e14e3c76bb1fcf2c986deb65ef219a6efc247d0ec92b4b3348a2c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/roadmap_vertical.svg": {
+      "sha256": "6df713f2b325c2e751046350f06d51587a0ff6b8d475782ca99fb79c64eecf44",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/sankey_chart.svg": {
+      "sha256": "fda92bbfc0d2503017e34cd17d8ce66165693091ca304129b7eb6cbe14f89365",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/scatter_chart.svg": {
+      "sha256": "adccbec1fd28fd482b38e1b96157407d5efddb26e1c84d1376effe5133a90df5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/segmented_wheel.svg": {
+      "sha256": "74d0361570f79389a7a4da96f4aea6037c4ebbef6bb52b7c05f0732cf932c391",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/snake_flow.svg": {
+      "sha256": "6f72b4afaac8e0c00e73da5eb12d1244019be0e4ba0f9cbb493116a8ad612fcd",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/stacked_area_chart.svg": {
+      "sha256": "48412239af496d03240830ab46ecb14fde27e1d3308ec3a72dfd9fd64ba1d23a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/stacked_bar_chart.svg": {
+      "sha256": "d11f43f161c4f3117a46d690bc6f463325ff0ed3e033e5463d880c8ca5f19eb7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/stock_chart.svg": {
+      "sha256": "0b18df25fa6a6e77a61311252e4609e06450a2c21d7866d64df3f2822690133d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/sunburst_chart.svg": {
+      "sha256": "bc6b3865fac02b42d3b58f1c17d779b7d0f1393c9b2e2459885ea08e78557881",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/team_roster.svg": {
+      "sha256": "2c0eb820d50e251320bae73428a20f9fdccc02660d30032c8c33cd9d8d82747a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/timeline.svg": {
+      "sha256": "499a82ef8de510d05192c65d2c41f8ba17079bece61adeb4a0bf6f0967cfb6cd",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/top_down_tree.svg": {
+      "sha256": "8237f01517de9bbc0bace09055c4cd72cd269bf7c258c58ce68c2a8431627981",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/treemap_chart.svg": {
+      "sha256": "df88960f5d5afcc6e922b8250843ac3b5945642d389f7287396d977e5d4013fe",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/venn_diagram.svg": {
+      "sha256": "543cb6ab400d9e4c6c2c7f22e8695a5388046ebecede8707b8e2593a1a00012a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/vertical_list.svg": {
+      "sha256": "603cd55d4d80aa5bf7a917f3fca60a7068a3bdcac4eb4cccf853953b44906bd0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/vertical_pillars.svg": {
+      "sha256": "55dc8a7a6b99455232fb87b7bda7ad1b01a2d79daefbda564a54cbdcf611b793",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/waterfall_chart.svg": {
+      "sha256": "c910c42a5a4b40ed19f1b13e2d1c39fd7da5c2eae727dd929f2475932ebfd9ae",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/charts/word_cloud.svg": {
+      "sha256": "e30de6f85ea1200d34034927dc7a34a7abda51597558e098f7e280aa5fc499d6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/decks/README.md": {
+      "sha256": "fe0c2d46df7da6bffc651c3cb4bb0aa88c40ddbec36ad0c155da37ba232b8e88",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/decks/decks_index.json": {
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/design_spec_reference.md": {
+      "sha256": "77b484555e03461847695e3e96317a679ac3b848e2ca6252d00074064ec6129e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/icons/README.md": {
+      "sha256": "b68587f2102b63464f5fbf91d65c2cb49a87009cf572003b9d3f12365f03b943",
+      "origin": "project-original"
+    },
+    "skills/build-editable-decks/templates/layouts/README.md": {
+      "sha256": "73beae4faea52d53372c4b919bd6afeeeb49b8c77a6e1b295fb2f3c6d32727a7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/01_hero_full.svg": {
+      "sha256": "6d92293e158269d3e953b9722f7d44367f43ccf159261b12d6482b3d8c8879d2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/02_hero_side_scrim.svg": {
+      "sha256": "0dfdacd42ed72ffdb2fa72f8bcf8910bada9542f474c37286ff6faf5ab8f45ac",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/03_split_bleed.svg": {
+      "sha256": "190d6508173d63f86bbffa2dff2754767a9ea0aeda1759b7492642c2eb211c81",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/04_split_bleed_reverse.svg": {
+      "sha256": "bff8c51b6e3e32ebfef1be5ed056e3371b4658d555b37e102bc567a380fe6578",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/05_chapter_full.svg": {
+      "sha256": "88d42262ffc185a325413ac742cbe462e30d764f85f664d453873d7ac703e16f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/06_quote_over_image.svg": {
+      "sha256": "1d91e4fdd91898c4047c8d266fa6687062097cf706fd8fccd742996b6b02aab0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/07_triptych.svg": {
+      "sha256": "852cbaf7380ca317408b5fd9e799fb0faa2d57ce2ce9dfca46c6257a8ac1d339",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/08_image_grid_four.svg": {
+      "sha256": "885d1fca7d17cfbae64ef40beb4e97b0f90c6cc227ba5fdb6d0a7d14378e9a4a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/09_full_statement.svg": {
+      "sha256": "390f0ff61d61f64c2ca4343362e86f3dcd54f5089cf0d7aac9ad2decf40dc194",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/10_closing_full.svg": {
+      "sha256": "babb8e732ae5865847a196052ddc314a184ec1cc84fe7d0965211659d4c6e10d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/design_spec.md": {
+      "sha256": "0520ceb00b87d01b1bf28a237ae6572bdb5879e290055f9e5c47c7a9d23398f1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/layouts_index.json": {
+      "sha256": "af1b9826e0bc07db538542be4c28cc949592fc3f1d51af4c180b0408cb8057e2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/01_cover.svg": {
+      "sha256": "a4ac4e8f932a50017bf2a8b5a96f3b1246bd63fc5b8d1d13e1249e45a469ed1d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/02_statement.svg": {
+      "sha256": "4e3c26507b7e0de695d132cabc59f33d1b103ac30ee90603c27410841d7fda15",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/03_title_content.svg": {
+      "sha256": "764db406e22664413dd436feb00f5c3dd51d37f84de671ca0503fb5a02e7e133",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/04_two_column.svg": {
+      "sha256": "3a0a97ac6378756b10c8f7284279eb6a1f1f30307a1bfb2748388a78d17f8352",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/05_three_row.svg": {
+      "sha256": "5772e9cb85783db0a8d7414b4b1bbd1895723b7cd76c933db5b6979a87063eb5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/06_image_center.svg": {
+      "sha256": "b34e30ad3a83411323d3ac1f531c8176eb8ff67b97be1f44cb21a3abb0a2b4a3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/07_image_full.svg": {
+      "sha256": "aff1c97288beeb5551343d8cb266addb9c32f37af77a68c0b675bc2750ed482f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/08_ending.svg": {
+      "sha256": "4b5bc7eef7ddb9f49243687d738c2521ed592602fa5c261de008d9b0ff5d97d4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/design_spec.md": {
+      "sha256": "130d2c510ae554608ef1b8d31a1455ce1559ddacd1db7c52cd092431f0cc3062",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/01_title_slide.svg": {
+      "sha256": "4cca35e8aab528bf1068e3f18b74d49630844472594212c86620d2692ecaa196",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/02_title_content.svg": {
+      "sha256": "88c7db2ef946876186ed20b2525154e05700451d6bc614e9a0536a428f17f4f8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/03_section_header.svg": {
+      "sha256": "37c5b2a28458c0ea526afdfbd11dde33294a8dbbd6122b07f58bd11ce572836a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/04_two_content.svg": {
+      "sha256": "9e3296744913c3d0597f2863b160072fa9ea46c36cdfd11707f14e9ced3386c5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/05_comparison.svg": {
+      "sha256": "1b42c03ea335db2ac5dc904a474804acc5b7ee0d91ba7fc96025ee4bbd806178",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/06_title_only.svg": {
+      "sha256": "40e61889f543754329af0ae2adb55c64551315aac4323ee17d091004ecad5c53",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/07_blank.svg": {
+      "sha256": "d0da47052299db2f941ee27ddca06fb05d3a6e05313d7163f3c4719623f1f920",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/08_content_caption.svg": {
+      "sha256": "c31f13eb7eecb4ce786d490f1b0703b96833d017c244f59cd285ec217b8b71d3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/09_picture_caption.svg": {
+      "sha256": "bf350c83bb1256c7275f085b82c6a78326a67efb7aaac8a5f2b6f9a8aec93a0e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/10_hero_statement.svg": {
+      "sha256": "d099a015d9fb57643558ee7773d284c67eb852483043511d13e808eef16cb8c8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/11_editorial_split.svg": {
+      "sha256": "99f9e230c57440e6e9693e5ed4a631177ed032904b2d102dd5144925f32d3e5a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/12_three_card.svg": {
+      "sha256": "c47c6eb3c9a3e22a05dfa2c56464e7cb182db862cfe289a3524362103379fbac",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/13_kpi_dashboard.svg": {
+      "sha256": "9de7710ea9c8706685809eed3b112e8d9b84ecec60f11a344b5e2b81c57e82e3",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/14_process_timeline.svg": {
+      "sha256": "698ea1fa2ff219e48ce9200e0290936d40c567942e1e82bee73f13066d4e496c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/15_data_story.svg": {
+      "sha256": "4318468579cb008224b03f50cc8a1ed341c2193ab9b7ec3563479cc359009e4a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/16_title_picture.svg": {
+      "sha256": "2b335d5281feacb1e2ac162a24454a22bb1e9447fe182f07ca6458c3ce749f77",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/17_two_picture_caption.svg": {
+      "sha256": "79656605f5dde83831e71931edd1edab6bd6d804de7c98e9f6b27d8dc24e6cc1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/18_screenshot_focus.svg": {
+      "sha256": "7286e89d066c6c68c63edf4e0c43c8d222a039047b26dd93f658221a670b97aa",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/19_chart_insight.svg": {
+      "sha256": "4bfdb9814c920c70c402f508d7386ce313c3d596a12b2a656eb17cbf0b46c851",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/20_table_summary.svg": {
+      "sha256": "a41859342c56e720897894b34d7d4c851b3d235622547eeebf9ad887bee004b5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/design_spec.md": {
+      "sha256": "14c54063ed5ad3c8aff164bf0c58e76ef1a70743e247dec5d5b1fef8e8915512",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/01_title_slide.svg": {
+      "sha256": "8b05c7458137065fa9de86792ef309d14535b2146c0287e8805b001518cff1e6",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/02_title_content.svg": {
+      "sha256": "10483d6ebb5111441becba2d97ac46eebc0246fde0e500ff650e4b2a4676d088",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/03_section_header.svg": {
+      "sha256": "fa85d3d2b62554f46776f877f243f223dc6ce5ebfe5d576c36c4611d7ae6ccee",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/04_two_content.svg": {
+      "sha256": "9b86ad082476a84c728d625457323702cc017053451d569e912ec9fd25dc582d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/05_comparison.svg": {
+      "sha256": "1cc6d2a38967eba89c1f19282c2ea13a64616e32e47b0e099234354d3700dfb1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/06_title_only.svg": {
+      "sha256": "2a61f59c0d91caebb0679f663eb69bbc3efacaa98025db606444dc0998d8fbc2",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/07_blank.svg": {
+      "sha256": "bb776d43c316b133a42c4e508d1bc3c3e60a1a8b217a2161376aa57228d9935a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/08_content_caption.svg": {
+      "sha256": "782fb95d7fb39d39e435ad99740389ad47494c6dad2b307b5d081f24139a354b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/09_picture_caption.svg": {
+      "sha256": "5399d1b180a764563415cded5e6bf392078c69550cd24daac1ae35360a020731",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/10_hero_statement.svg": {
+      "sha256": "9610e8d9e271bd5f7604a81ce9c619a5deae67349b909766086223c5dbc3aa0f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/11_three_card.svg": {
+      "sha256": "cef40030ccfc70b47518e322e7bffc46dcbc5f33ff1cf8b78a2d74d77e379f5a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/12_kpi_grid.svg": {
+      "sha256": "02cb83774c8c04f2f56425171f49200c4c2266b5d80fc90400cfa6b7f5417637",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/13_process_timeline.svg": {
+      "sha256": "9c95596945123ec3f5ae86daf3b549e10c1ef111ea287447cc51d152eb8f1962",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/14_stacked_split.svg": {
+      "sha256": "01aa8ee0fc62766670dbb98bbb12525497c77b5897c80b6aae47bf965a6a7668",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/15_chart_insight.svg": {
+      "sha256": "40d09e010de4ee5b3bcd4457e19ec91c4dfba0241f19b3fff3a960399a1dd246",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/16_table_summary.svg": {
+      "sha256": "0b5dd15696a7490ab56571de84245e3bcbab32b4bfc66fc6a1c71f06730426da",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/design_spec.md": {
+      "sha256": "ead0d6d1d72b5601933740bf32c9d1021c652c25293aaaa234445fe8d654bf1e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/01_cover.svg": {
+      "sha256": "fd28bbc6923e27c22861d5f19de24a8b59487e1e42e894af5475ddfdd5b4d0af",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/02_section_divider.svg": {
+      "sha256": "87f39817062a55f200e78f97139d6c71aabd0f933527f4af1fb847f5cc724c4a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/03_agenda.svg": {
+      "sha256": "f8736cc952e6dc91704291184266d6068ce31e5340aa2aebeee15c68e7c611c1",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/04_title_content.svg": {
+      "sha256": "40fac4b35434fb81d6bd1d5cb5f2dfdbd89c03f3132f0fb2e6f81beca49f3bfe",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/05_two_content.svg": {
+      "sha256": "8a5318fc837da3f4e0af5dd7c76b1da18e1ce14fe5e08c3132ac3aedef3e03e8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/06_three_block.svg": {
+      "sha256": "fae46f37d3b6ebf0e6b1bd4629458e9f6eb02789041359e11550e955029f0ae5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/07_kpi_row.svg": {
+      "sha256": "098971c9eb495e42051925125763457cd5f7ded82e2f3c5d0a279e8e90ab5981",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/08_chart_insight.svg": {
+      "sha256": "30f5c2b21708af8d0237223fff64f02dadd2c58794931de19d71519f08fe9c43",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/09_table_summary.svg": {
+      "sha256": "de63adee38563cfa7beca688f26753a930f101404207f67f4f0c27a550bdbd05",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/10_process_timeline.svg": {
+      "sha256": "c26d3d683cea65a95fee86b61835b498aaa8947336422fb177fc37b724c2e6df",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/11_matrix_2x2.svg": {
+      "sha256": "9e076f7c1989a2bd3a1e82572d751cecb5d7c7f1e7978194cbdb7456a3bfdf52",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/12_appendix.svg": {
+      "sha256": "1e21c3ca8eb86a05975790ed087dc33a67ea8ba56d7736d3cde210471f477cb7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/13_closing.svg": {
+      "sha256": "8a6c54f236f0f52e8ac340b6876d66aee5906314e351bccd8a98bcc182039ee9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/design_spec.md": {
+      "sha256": "7082e2b43ead049b33f8e1b01188984f2303e0921241050d12d0019426f2a8e4",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/01_cover.svg": {
+      "sha256": "2862813355b4befa2715f27d18ffbbdbc99c43f84437d7cd89362055e0543e2e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/02_statement.svg": {
+      "sha256": "e9bf81ae748a624ca794c922c19c4d0a7b12b5361199c38766bc97bacb12b20c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/03_title_content.svg": {
+      "sha256": "636d9b7043aa283034e015f4c1bbe46d0689cc6197682acf6f4b38c1ca16fab8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/04_numbered_list.svg": {
+      "sha256": "22cdcb697b7e8b70b71bbdeea3f274cb0867d36173564a1af6f366164b8978cf",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/05_image_full.svg": {
+      "sha256": "5d4144544d9d4fd56cbe72e75c606c597c5ed1fa0577f9db6539e1818d66de1b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/06_image_top_text.svg": {
+      "sha256": "edbba2a70ed1c2843bba1898ea168e1de9e49ec916631cba6431aa5f2bc9e8c9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/07_two_block.svg": {
+      "sha256": "d1e1b6c53439567b4887ee907ec8fea3aa17fc3fc2d90f84c05f40c1d14f21db",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/08_step_flow.svg": {
+      "sha256": "c4c0a9d27b06d43e7a5d5b969cb0039657153a95054432a209da1cb73e8a0380",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/09_ending.svg": {
+      "sha256": "9008788b340b6fa99bed750c040f46f5c205fb5c56b519717a91193c184abd2e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/design_spec.md": {
+      "sha256": "676d3485a5586360b7fa1206083e177465ec0d9c15f8ff2e2f5bf972ead25b90",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/01_cover.svg": {
+      "sha256": "cf99551973358db9e725dd7f250b76960feffeaae0128d608c270b903a0de72a",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/02_statement.svg": {
+      "sha256": "8468ed13b6cc389b032a6f6c5c02d83f17c6bd19ea989e400590b1f7e0b5b1dd",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/03_title_content.svg": {
+      "sha256": "0f070c74958b94b449e2d65390c561f393b030ad95e697e798e5a3e57742a531",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/04_numbered_list.svg": {
+      "sha256": "3667beea1fa3604208a4a7bcb71d716b3c1f989cc4121126057da54861f9aa03",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/05_two_card_stack.svg": {
+      "sha256": "e31e68c8a0fb5133ad1d7dd52e77a7ff70313d04e8ee6074e335ed66f2a36cab",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/06_image_top_text.svg": {
+      "sha256": "dad205a6d2730ae0876bd8f2f4894eaec78f8e6f1dee241f10314be1e87d50fb",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/07_image_full_caption.svg": {
+      "sha256": "5ce2325e1bf45621ef2d4ea7651ced2bc501a78957145c2ab637bf38de73bdd0",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/08_quote.svg": {
+      "sha256": "3064a9836dff9fbfac4ef68d73908da72245f2da6215f9d8ff1a25016e4bd22c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/09_step_flow.svg": {
+      "sha256": "6c7c196b37e359a350ef2721e75340c38c6dc95aeb415ae82c490cd528c4bd5d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/10_ending.svg": {
+      "sha256": "49626f80679099feac82941d99b9b50d2fa4f4048a4839fee6fb5e4550a7b7a9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/design_spec.md": {
+      "sha256": "46538197915324a12b6cd2a0cba74063530f6bdaa753bb19c5e0df848d580079",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/scaffolds/design_spec.md": {
+      "sha256": "3102ee4459a7fe7f628871b21c76a0754bc2ba846fa85d45789caa1576a45508",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/scaffolds/spec_lock.md": {
+      "sha256": "6f7114c5305e8da61077b038b24a84cf807b472c4140fbb2f0e379b95909415c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/schemas/design_spec.schema.json": {
+      "sha256": "256c2ba922c4da9d0c6183865039938260b0e912afa2fc8291cb333045ba534d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/schemas/spec_lock.schema.json": {
+      "sha256": "79141798f015a6cfdfb3ec8f631c000c5014171b773a527437f1b2bb79b64ed5",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/spec_lock_reference.md": {
+      "sha256": "973c637f39aa80914dcf08d9934561627430d58e4edd7194e95c030133cf155b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/README.md": {
+      "sha256": "473d19fa754d4ec0016410f06f565b06a7f946c71fab560bccb763e12e4e017f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/academic-research/templates/design_spec.md": {
+      "sha256": "1ceb141b84bdc32166a06b05d71571dec8d3752873dd104588d7cac9046d0f9e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/consulting-decision/templates/design_spec.md": {
+      "sha256": "f77a316ac8feab6cf76a8358967dd58e0dea4e01f1d03dc2cda1c00db0403e32",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/creative-pitch/templates/design_spec.md": {
+      "sha256": "9507337a934a7f1a53c05e800a48eb66ec61ce101753c4b77f9b21612a8eba7c",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/incident-postmortem/templates/design_spec.md": {
+      "sha256": "9d69543e5f65872f933104302eacc7c3f8156a034cb2a81f4348f1848ea65cad",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/investor-pitch/templates/design_spec.md": {
+      "sha256": "8c591f8cc1c8407656c8a3acf5e53162129c5d25705899bcb848650d33a182db",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/narrative-keynote/templates/design_spec.md": {
+      "sha256": "cac3aaa83c61cf064f57a2b773a6ec6344abccc0da43e59645a88c3978e1c6fe",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/operating-review/templates/design_spec.md": {
+      "sha256": "bfe7b85fa970a50d019e2235b30a687a906f9d82fa4f8c64198d97182ee14a78",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/product-launch/templates/design_spec.md": {
+      "sha256": "3ae62a3ed6da214d83d53a05f6d6a3b3e9c4d49edb35a6c238afadf42b08327e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/science-explainer/templates/design_spec.md": {
+      "sha256": "a68ac6e9bdda7c48518e8999c227df99d4099007048e4254faef934ae7947a02",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/solution-proposal/templates/design_spec.md": {
+      "sha256": "6f6d5e6d56d1273ea94db91d5b7d6e56cb4963757ca51a5fd154da0837382d65",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/styles_index.json": {
+      "sha256": "be6dbd77248152d28c25c77563471db74c06fef15a536472f9fc6f85bbaaa12e",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/technical-deepdive/templates/design_spec.md": {
+      "sha256": "8b56f50c9424c6b758b48798df4ff6fd642dd8d80ac0c2d3b716a64c761e90bc",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/templates/styles/workshop-teaching/templates/design_spec.md": {
+      "sha256": "166be96918552725d207267097f59881d3ef0cdd3dc564dda406363ae3c29a64",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/third_party/ppt-master/MIT.txt": {
+      "sha256": "80cefc234c1ec12a8cece4344f16300c634fa03df7891686fcf979e3828f0921",
+      "origin": "third-party-licensed"
+    },
+    "skills/build-editable-decks/workflows/create-template.md": {
+      "sha256": "85b17aba4830aa0f4e728995b7ed5d725336f349f152b2a8e79382d2b46c7736",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/create-template/create-brand.md": {
+      "sha256": "bdae0944c80182aaaf0afa82127bb051905abe9d1500f514b1457742cf7fb329",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/create-template/create-deck.md": {
+      "sha256": "99adac007d4e02e263c2d62b72258a93fb529c9d9016d9eeb5ff13bf4eae03bf",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/create-template/create-layout.md": {
+      "sha256": "dc7bb5d7b5a385c6efdd2b66bad27a4076150f1e217b0cc24f6e78f84847b1f7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/create-template/create-style.md": {
+      "sha256": "e2af1270595dc16326473a37fb3dbccf128b86aef5e9be7029f8c32e8bd3fc0f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/generate-pptx.md": {
+      "sha256": "394d43c4547d83497c3d43e387eebcfa5056d97c77b3be23121cd8c8840852b7",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/governance/failure-recovery.md": {
+      "sha256": "43b03c1e5267566ccfc04734888c8d2091964fe7439d5eacae776db5774732c8",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/index.md": {
+      "sha256": "d535210b3f9020b961d07bd7f02c6635edd742050365bfaf36ea2486c83a974d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/native-enhance-pptx.md": {
+      "sha256": "de66fd0c9651d3151126b5e4ed862ab8dfdc2c5f41260ce9a753b72a71230d55",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/profiles/beautify-pptx.md": {
+      "sha256": "7cc62bd0935ca21b1b69accbba826a07bb5fc36072cc09e53e0a7e292a4fef71",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/profiles/quick-generate.md": {
+      "sha256": "9870c439379d0c49aa27c4b4a7975d924262e36b9e28694d9bbdc154d9b762af",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/routing.md": {
+      "sha256": "3b5bf74b42d356c010100231dab03dabd3a3123eb8928afa93a0f7cca463a76b",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/stages/apply-template-workspace.md": {
+      "sha256": "18c966c1e77eaa77cdd02c8e18ac6a48b5b2fd4556c6bd4ee76ff4c6b6e3b503",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/stages/customize-animations.md": {
+      "sha256": "b95abf741548cf0a16a6d136254fa5dc36a58661e846fe273ad301c346606bab",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/stages/generate-audio.md": {
+      "sha256": "61e9d00d6955d417ade71aa3d154efff10aefb36fd21b7265ebf86ebd8f2173f",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/stages/live-preview.md": {
+      "sha256": "44b5b49ea44619cef54628b7664cb7887fa1654756460f7aff3ccfe42082d25d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/stages/refine-spec.md": {
+      "sha256": "1ca2d7e114554105da36233ad3de65e106f218202baf7937e5671aab030de227",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/stages/resume-execute.md": {
+      "sha256": "4cc2c8b367720669c6608195723ca28486d15d487c7a212e7aacf432fae3c70d",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/stages/topic-research.md": {
+      "sha256": "c735c2d613f3da26fab8753669117dea644020b1c39596b285e8ff5df20fba47",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/stages/verify-charts.md": {
+      "sha256": "5f7e51ad736db117bc9bd231186c23c16b7599dd5e66fc6f3b8d17e60af80b35",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/stages/visual-review.md": {
+      "sha256": "6a5d00d2a476990c8d89797304fef57acf369579d8739417cc01d2fa4ad592d9",
+      "origin": "adapted-mit-upstream"
+    },
+    "skills/build-editable-decks/workflows/template-fill-pptx.md": {
+      "sha256": "c7e3104b41f5fbce807a34037cb64b9d56d0141f502e8ae5e633bb8cb984d91a",
+      "origin": "adapted-mit-upstream"
+    },
+    "tests/test_certification_gate.py": {
+      "sha256": "b5a4b62b701e62cf67f76024c745de118273d9a0747b85195cdfecb41e927028",
+      "origin": "project-original"
+    },
+    "tests/test_deterministic_layout.py": {
+      "sha256": "30034fd2f0f39ca1898afe7ac99eb958b4b5d30e1ba17fe8ceab0244920d5fa7",
+      "origin": "project-original"
+    },
+    "tests/test_identity.py": {
+      "sha256": "9f9aecd8513cc19bf4aa60a343a571108f611f4cb51585c6a22764e8da4fab17",
+      "origin": "project-original"
+    },
+    "tests/test_layout_trace_gate.py": {
+      "sha256": "e7b2e462ec31ca7f9b0314969d5628faff68b568f3e88a34801c36e3b56881fa",
+      "origin": "project-original"
+    },
+    "tests/test_license_gate.py": {
+      "sha256": "710c16bfb37cb2e9b9c6818512c6640f5001fc139ffecfe92daaa6e08dea76ea",
+      "origin": "project-original"
+    },
+    "tests/test_privacy_gate.py": {
+      "sha256": "3a5377a7fa956a02cda4536ca08df8e7c4e8cc68458ae6e2faa1ed0dc37a9361",
+      "origin": "project-original"
+    },
+    "tests/test_release_build.py": {
+      "sha256": "d65acfc5fb878c15b4c41ac5710b4ee9c1739c657d91ab91db98628fda4533ca",
+      "origin": "project-original"
+    },
+    "tests/test_runtime_privacy.py": {
+      "sha256": "357166ce4750272c08f8c293961b9f20984418425423b60e8732c1c2c5fa7b44",
+      "origin": "project-original"
+    },
+    "third_party/ppt-master/MIT.txt": {
+      "sha256": "80cefc234c1ec12a8cece4344f16300c634fa03df7891686fcf979e3828f0921",
+      "origin": "third-party-licensed"
+    },
+    "tools/build_release.py": {
+      "sha256": "a34913299263ad4a79295565582bf32cec640e05941eae4e1989cd7f069d4b65",
+      "origin": "project-original"
+    },
+    "tools/certification_gate.py": {
+      "sha256": "7f52927f01c6e620b00b3719fa2f72884d78a66b79cb71ffeebe08dc2e429185",
+      "origin": "project-original"
+    },
+    "tools/license_gate.py": {
+      "sha256": "938ab5476af1f9eb21c0f838981d747da9ca7cd2e7af25d12e06fd6a0f0baf08",
+      "origin": "project-original"
+    },
+    "tools/privacy_gate.py": {
+      "sha256": "27f28dd1eb72d256ffe00f752e54c6e30ab645f1155d61b99cdc09571741d44a",
+      "origin": "project-original"
+    },
+    "tools/release_gate.py": {
+      "sha256": "d4698df20a560f8d82ff4c1fed4ffdd6e84b7dd2d7428006cb406e6fde104aa7",
+      "origin": "project-original"
+    },
+    "tools/update_upstream_map.py": {
+      "sha256": "8128411342e9b75e2648d2d1427a7137ce702ca62f18c4b1b62fef786a765697",
+      "origin": "project-original"
+    }
+  }
+}

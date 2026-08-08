@@ -1,0 +1,47 @@
+{
+  "schema": "deckestra-certification-policy/v1",
+  "policy_id": "whole-deck-blind-v1",
+  "claim_status": "target-only",
+  "profile": {
+    "id": "zh-cn-tech-brief-15-v1",
+    "language": "zh-CN",
+    "deck_type": "technical-brief",
+    "page_count": 15,
+    "authoring_lane": "deterministic",
+    "repair_budget": 2
+  },
+  "suite": {
+    "case_count": 1000,
+    "minimum_whole_deck_passes": 997,
+    "blind": true,
+    "frozen_before_execution": true,
+    "private_cases": "external-only",
+    "manual_fallback_allowed": false
+  },
+  "review": {
+    "render_reviewers_per_page": 2,
+    "reviewer_must_be_independent": true,
+    "reviewers_must_differ_from_generator": true,
+    "all_pages_reviewed": true,
+    "criteria": [
+      "content_fidelity",
+      "information_completeness",
+      "narrative_coherence",
+      "chinese_language_quality",
+      "no_overlap_or_clipping",
+      "readable_hierarchy",
+      "visual_consistency",
+      "native_editability"
+    ],
+    "page_pass": "all-criteria-pass-in-both-independent-reviews",
+    "deck_pass": "automated-gates-pass-and-every-page-passes"
+  },
+  "publication": {
+    "raw_cases": "forbidden",
+    "rendered_pages": "forbidden",
+    "review_comments": "forbidden",
+    "runtime_logs": "forbidden",
+    "public_evidence": "hashes-and-aggregate-counts-only",
+    "claim_requires_gate_pass": true
+  }
+}

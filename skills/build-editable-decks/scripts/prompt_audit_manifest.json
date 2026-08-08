@@ -1,0 +1,1287 @@
+{
+  "schema_version": 1,
+  "audit_only": true,
+  "runtime_consumed": false,
+  "budget_policy": "fixed_upper_bound",
+  "encoding": "o200k_base",
+  "documents": {
+    "include": [
+      "AGENTS.md",
+      "skills/build-editable-decks/**/*.md",
+      "skills/build-editable-decks/templates/charts/charts_index.json",
+      "skills/build-editable-decks/templates/schemas/*.json"
+    ],
+    "exclude": [],
+    "max_tokens": 450000
+  },
+  "file_budgets": {
+    "AGENTS.md": 2750,
+    "skills/build-editable-decks/SKILL.md": 1250,
+    "skills/build-editable-decks/references/executor-base.md": 9250,
+    "skills/build-editable-decks/references/executor-structured.md": 5500,
+    "skills/build-editable-decks/references/executor-chart.md": 3500,
+    "skills/build-editable-decks/references/executor-image.md": 2000,
+    "skills/build-editable-decks/references/executor-web-image.md": 750,
+    "skills/build-editable-decks/references/executor-notes.md": 1000,
+    "skills/build-editable-decks/references/deterministic-layout.md": 2000,
+    "skills/build-editable-decks/references/shared-standards.md": 500,
+    "skills/build-editable-decks/references/shared-standards-core.md": 13000,
+    "skills/build-editable-decks/references/svg-effects.md": 15000,
+    "skills/build-editable-decks/references/native-data-interface.md": 6750,
+    "skills/build-editable-decks/references/pptx-structure-interface.md": 4750,
+    "skills/build-editable-decks/references/strategist.md": 16000,
+    "skills/build-editable-decks/references/strategist-image.md": 2750,
+    "skills/build-editable-decks/references/strategist-template.md": 3000,
+    "skills/build-editable-decks/templates/design_spec_reference.md": 3750,
+    "skills/build-editable-decks/templates/spec_lock_reference.md": 2750,
+    "skills/build-editable-decks/workflows/generate-pptx.md": 16000,
+    "skills/build-editable-decks/workflows/stages/apply-template-workspace.md": 3500
+  },
+  "load_sets": {
+    "bootstrap.routing": {
+      "description": "Repository entry plus the single route-selection authority.",
+      "scope": "cumulative",
+      "files": [
+        "AGENTS.md",
+        "skills/build-editable-decks/SKILL.md",
+        "skills/build-editable-decks/workflows/routing.md"
+      ],
+      "max_tokens": 6750
+    },
+    "route.create-template.brand": {
+      "description": "Create Brand path; it authors no SVG and does not activate Template_Designer or SVG modules.",
+      "scope": "cumulative",
+      "include": [
+        "bootstrap.routing"
+      ],
+      "files": [
+        "skills/build-editable-decks/workflows/create-template.md",
+        "skills/build-editable-decks/workflows/create-template/create-brand.md",
+        "skills/build-editable-decks/templates/README.md",
+        "skills/build-editable-decks/templates/brands/README.md"
+      ],
+      "max_tokens": 36000
+    },
+    "route.create-template.style": {
+      "description": "Create Style path; it authors a roster-free direction/method spec and does not activate Template_Designer or SVG modules.",
+      "scope": "cumulative",
+      "include": [
+        "bootstrap.routing"
+      ],
+      "files": [
+        "skills/build-editable-decks/workflows/create-template.md",
+        "skills/build-editable-decks/workflows/create-template/create-style.md",
+        "skills/build-editable-decks/templates/README.md",
+        "skills/build-editable-decks/templates/styles/README.md"
+      ],
+      "max_tokens": 37000
+    },
+    "route.create-template.deck": {
+      "description": "Create Deck path through Template_Designer, SVG core, and the structured PPTX interface.",
+      "scope": "cumulative",
+      "include": [
+        "bootstrap.routing"
+      ],
+      "files": [
+        "skills/build-editable-decks/workflows/create-template.md",
+        "skills/build-editable-decks/workflows/create-template/create-deck.md",
+        "skills/build-editable-decks/references/template-designer.md",
+        "skills/build-editable-decks/references/shared-standards-core.md",
+        "skills/build-editable-decks/references/pptx-structure-interface.md",
+        "skills/build-editable-decks/references/canvas-formats.md",
+        "skills/build-editable-decks/templates/README.md",
+        "skills/build-editable-decks/templates/decks/README.md"
+      ],
+      "max_tokens": 67000
+    },
+    "route.create-template.layout": {
+      "description": "Create Layout path through Template_Designer, SVG core, and the structured PPTX interface.",
+      "scope": "cumulative",
+      "include": [
+        "bootstrap.routing"
+      ],
+      "files": [
+        "skills/build-editable-decks/workflows/create-template.md",
+        "skills/build-editable-decks/workflows/create-template/create-layout.md",
+        "skills/build-editable-decks/references/template-designer.md",
+        "skills/build-editable-decks/references/shared-standards-core.md",
+        "skills/build-editable-decks/references/pptx-structure-interface.md",
+        "skills/build-editable-decks/references/canvas-formats.md",
+        "skills/build-editable-decks/templates/README.md",
+        "skills/build-editable-decks/templates/layouts/README.md"
+      ],
+      "max_tokens": 67000
+    },
+    "route.enhance-native-pptx": {
+      "description": "Finished-PPTX native enhancement route.",
+      "scope": "cumulative",
+      "include": [
+        "bootstrap.routing"
+      ],
+      "files": [
+        "skills/build-editable-decks/workflows/native-enhance-pptx.md"
+      ],
+      "max_tokens": 11000
+    },
+    "route.fill-native-pptx": {
+      "description": "Raw-PPTX native fill route.",
+      "scope": "cumulative",
+      "include": [
+        "bootstrap.routing"
+      ],
+      "files": [
+        "skills/build-editable-decks/workflows/template-fill-pptx.md"
+      ],
+      "max_tokens": 13000
+    },
+    "route.generate.planning": {
+      "description": "Generate-PPTX planning through Strategist, including reference-first whole-document authoring and representative multi-source custom mode/style synthesis; schemas and optional scaffolds are tool-consumed.",
+      "scope": "cumulative",
+      "include": [
+        "bootstrap.routing"
+      ],
+      "files": [
+        "skills/build-editable-decks/workflows/generate-pptx.md",
+        "skills/build-editable-decks/references/artifact-ownership.md",
+        "skills/build-editable-decks/references/strategist.md",
+        "skills/build-editable-decks/templates/design_spec_reference.md",
+        "skills/build-editable-decks/templates/spec_lock_reference.md",
+        "skills/build-editable-decks/references/modes/_index.md",
+        "skills/build-editable-decks/references/visual-styles/_index.md",
+        "skills/build-editable-decks/scripts/docs/confirm_ui.md",
+        "skills/build-editable-decks/templates/icons/README.md",
+        {
+          "glob": "skills/build-editable-decks/references/modes/*.md",
+          "exclude": [
+            "*/_index.md"
+          ],
+          "select": 3,
+          "load_event": "strategist-custom",
+          "registry": "modes"
+        },
+        {
+          "glob": "skills/build-editable-decks/references/visual-styles/*.md",
+          "exclude": [
+            "*/_index.md"
+          ],
+          "select": 3,
+          "load_event": "strategist-custom",
+          "registry": "visual-styles"
+        }
+      ],
+      "max_tokens": 70000
+    },
+    "route.generate.quick-generate": {
+      "description": "Self-contained one-pass Generate profile with source intake, active-context mode/style selection, conditional resource preparation, and complete flat SVG visual-construction authorities.",
+      "scope": "cumulative",
+      "include": [
+        "bootstrap.routing"
+      ],
+      "files": [
+        "skills/build-editable-decks/workflows/profiles/quick-generate.md",
+        "skills/build-editable-decks/references/artifact-ownership.md",
+        "skills/build-editable-decks/references/shared-standards-core.md",
+        "skills/build-editable-decks/references/svg-effects.md",
+        "skills/build-editable-decks/references/native-shape-authoring.md",
+        "skills/build-editable-decks/references/semantic-svg.md",
+        "skills/build-editable-decks/references/modes/_index.md",
+        "skills/build-editable-decks/references/visual-styles/_index.md",
+        {
+          "glob": "skills/build-editable-decks/references/modes/*.md",
+          "exclude": [
+            "*/_index.md"
+          ],
+          "select": 3,
+          "load_event": "quick-mode",
+          "registry": "modes"
+        },
+        {
+          "glob": "skills/build-editable-decks/references/visual-styles/*.md",
+          "exclude": [
+            "*/_index.md"
+          ],
+          "select": 3,
+          "load_event": "quick-visual-style",
+          "registry": "visual-styles"
+        }
+      ],
+      "max_tokens": 80000
+    },
+    "route.generate.quick-generate.beautify": {
+      "description": "Quick Generate with the shared strict 1:1 Beautify profile.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.quick-generate",
+        "profile.generate.beautify-pptx"
+      ],
+      "files": [],
+      "max_tokens": 70000
+    },
+    "route.generate.quick-generate.template-fusion": {
+      "description": "Quick Generate with the maximum Brand, Style, Layout, and Deck exact-root fusion loaded for flat authoring.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.quick-generate",
+        "stage.generate.template.fusion-brand-style-layout-deck"
+      ],
+      "files": [],
+      "max_tokens": 88000
+    },
+    "route.generate.quick-generate.topic-research": {
+      "description": "Quick Generate with gap-targeted factual research before direct resource preparation and SVG authoring.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.quick-generate",
+        "stage.generate.topic-research"
+      ],
+      "files": [],
+      "max_tokens": 74000
+    },
+    "route.generate.quick-generate.icon": {
+      "description": "Quick Generate with native shapes or rights-cleared project-local icons.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.quick-generate"
+      ],
+      "files": [
+        "skills/build-editable-decks/templates/icons/README.md"
+      ],
+      "max_tokens": 74000
+    },
+    "route.generate.quick-generate.in-hand-image": {
+      "description": "Quick Generate with supplied, extracted, or placeholder image resources prepared before SVG authoring.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.quick-generate",
+        "stage.generate.executor.image"
+      ],
+      "files": [],
+      "max_tokens": 84000
+    },
+    "route.generate.quick-generate.formula": {
+      "description": "Quick Generate with manifest-driven formula rendering and formula-image realization.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.quick-generate",
+        "stage.generate.executor.image"
+      ],
+      "files": [
+        "skills/build-editable-decks/scripts/docs/image.md"
+      ],
+      "max_tokens": 87000
+    },
+    "route.generate.quick-generate.ai-two-types": {
+      "description": "Quick Generate with AI resource preparation, representative rendering inputs, and two local image types.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.quick-generate",
+        "stage.generate.image.ai-two-types",
+        "stage.generate.executor.image"
+      ],
+      "files": [],
+      "max_tokens": 110000
+    },
+    "route.generate.quick-generate.web-image": {
+      "description": "Quick Generate with web resource preparation, provenance, attribution, and image execution.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.quick-generate",
+        "stage.generate.image.web",
+        "stage.generate.executor.web-image"
+      ],
+      "files": [],
+      "max_tokens": 92000
+    },
+    "route.generate.quick-generate.chart": {
+      "description": "Quick Generate with bounded chart recall, chart/table authoring, optional native-data metadata, and in-context coordinate verification before the final checker.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.quick-generate",
+        "stage.generate.executor.chart",
+        "stage.generate.executor.native-data",
+        "stage.generate.chart-authoring",
+        "stage.generate.verify-charts"
+      ],
+      "files": [
+        "skills/build-editable-decks/scripts/docs/chart-recall.md"
+      ],
+      "max_tokens": 105000
+    },
+    "route.generate.planning-image": {
+      "description": "Generate-PPTX planning context after a non-none image source is proposed or confirmed, including the compact layout math and vocabulary.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning",
+        "stage.generate.strategist.image"
+      ],
+      "files": [],
+      "max_tokens": 81000
+    },
+    "route.generate.planning-formula": {
+      "description": "Formula-only planning context, including the shared image/formula layout math and vocabulary.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning",
+        "stage.generate.strategist.image"
+      ],
+      "files": [],
+      "max_tokens": 81000
+    },
+    "route.generate.planning-ai": {
+      "description": "Generate-PPTX planning when AI image direction is available, including representative multi-source custom rendering synthesis.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning-image"
+      ],
+      "files": [
+        "skills/build-editable-decks/references/image-renderings/_index.md",
+        {
+          "glob": "skills/build-editable-decks/references/image-renderings/*.md",
+          "exclude": [
+            "*/_index.md"
+          ],
+          "select": 3,
+          "load_event": "strategist-image-custom",
+          "registry": "image-renderings"
+        }
+      ],
+      "max_tokens": 86000
+    },
+    "stage.generate.apply-template-workspace": {
+      "description": "Post-Stage-1 Default or Quick exact-root workspace validation, installation, and fusion framework.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/workflows/stages/apply-template-workspace.md",
+        "skills/build-editable-decks/templates/README.md"
+      ],
+      "max_tokens": 5000
+    },
+    "stage.generate.template.brand": {
+      "description": "Conditional external Brand workspace application; public source bundles no Brand spec.",
+      "scope": "incremental",
+      "include": [
+        "stage.generate.apply-template-workspace"
+      ],
+      "files": [
+        "skills/build-editable-decks/templates/brands/README.md"
+      ],
+      "max_tokens": 7500
+    },
+    "stage.generate.template.style": {
+      "description": "Conditional roster-free Style workspace application.",
+      "scope": "incremental",
+      "include": [
+        "stage.generate.apply-template-workspace"
+      ],
+      "files": [
+        "skills/build-editable-decks/templates/styles/README.md",
+        {
+          "glob": "skills/build-editable-decks/templates/styles/*/templates/design_spec.md",
+          "select": 1,
+          "load_event": "template-application"
+        }
+      ],
+      "max_tokens": 9000
+    },
+    "stage.generate.template.layout": {
+      "description": "Conditional Layout workspace application with one selected Layout spec.",
+      "scope": "incremental",
+      "include": [
+        "stage.generate.apply-template-workspace"
+      ],
+      "files": [
+        "skills/build-editable-decks/templates/layouts/README.md",
+        {
+          "glob": "skills/build-editable-decks/templates/layouts/*/templates/design_spec.md",
+          "select": 1,
+          "load_event": "template-application"
+        }
+      ],
+      "max_tokens": 9000
+    },
+    "stage.generate.template.deck": {
+      "description": "Conditional external Deck workspace application; public source bundles no Deck spec.",
+      "scope": "incremental",
+      "include": [
+        "stage.generate.apply-template-workspace"
+      ],
+      "files": [
+        "skills/build-editable-decks/templates/decks/README.md"
+      ],
+      "max_tokens": 8500
+    },
+    "stage.generate.template.brand-two": {
+      "description": "Same-kind conflict path for two external Brand specs.",
+      "scope": "incremental",
+      "include": [
+        "stage.generate.apply-template-workspace"
+      ],
+      "files": [
+        "skills/build-editable-decks/templates/brands/README.md"
+      ],
+      "max_tokens": 8500
+    },
+    "stage.generate.template.fusion-brand-style-layout-deck": {
+      "description": "Maximum supported cross-kind fusion with Brand, Style, Layout, and Deck contracts.",
+      "scope": "incremental",
+      "include": [
+        "stage.generate.apply-template-workspace"
+      ],
+      "files": [
+        "skills/build-editable-decks/templates/brands/README.md",
+        "skills/build-editable-decks/templates/styles/README.md",
+        "skills/build-editable-decks/templates/layouts/README.md",
+        "skills/build-editable-decks/templates/decks/README.md",
+        {
+          "glob": "skills/build-editable-decks/templates/styles/*/templates/design_spec.md",
+          "select": 1,
+          "load_event": "template-application"
+        },
+        {
+          "glob": "skills/build-editable-decks/templates/layouts/*/templates/design_spec.md",
+          "select": 1,
+          "load_event": "template-application"
+        }
+      ],
+      "max_tokens": 16000
+    },
+    "route.generate.flat-no-image": {
+      "description": "Default fixed Generate-PPTX context with no image-acquisition role.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning",
+        "stage.generate.executor.flat",
+        "stage.generate.executor.notes"
+      ],
+      "files": [],
+      "max_tokens": 120000
+    },
+    "route.generate.flat-ai-two-types": {
+      "description": "Generate-PPTX context with AI images, representative multi-source custom rendering, and two local types.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning-ai",
+        "stage.generate.executor.flat",
+        "stage.generate.executor.image",
+        "stage.generate.executor.notes",
+        "stage.generate.image.ai-two-types"
+      ],
+      "files": [],
+      "max_tokens": 165000
+    },
+    "route.generate.flat-in-hand-image": {
+      "description": "Generate-PPTX context with provided, placeholder, or formula images and no acquisition role.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning-image",
+        "stage.generate.executor.flat",
+        "stage.generate.executor.image",
+        "stage.generate.executor.notes"
+      ],
+      "files": [],
+      "max_tokens": 135000
+    },
+    "route.generate.flat-web-image": {
+      "description": "Generate-PPTX context with web image acquisition.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning-image",
+        "stage.generate.executor.flat",
+        "stage.generate.executor.web-image",
+        "stage.generate.executor.notes",
+        "stage.generate.image.web"
+      ],
+      "files": [],
+      "max_tokens": 145000
+    },
+    "route.enhance-native-pptx.audio": {
+      "description": "Enhance Native PPTX with the shared narration-audio stage.",
+      "scope": "cumulative",
+      "include": [
+        "route.enhance-native-pptx",
+        "stage.shared.generate-audio"
+      ],
+      "files": [],
+      "max_tokens": 17000
+    },
+    "route.generate.beautify-flat-no-image": {
+      "description": "Generate-PPTX 1:1 beautify profile on the flat no-image path.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.flat-no-image",
+        "profile.generate.beautify-pptx"
+      ],
+      "files": [],
+      "max_tokens": 130000
+    },
+    "route.generate.flat-no-image-chart": {
+      "description": "Default flat Generate-PPTX path with chart authoring, native-data replacement, and verification.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.flat-no-image",
+        "stage.generate.executor.chart",
+        "stage.generate.executor.native-data",
+        "stage.generate.chart-authoring",
+        "stage.generate.verify-charts"
+      ],
+      "files": [],
+      "max_tokens": 145000
+    },
+    "route.generate.brand-flat-no-image": {
+      "description": "Brand-preset flat Generate-PPTX path without image acquisition.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning-template",
+        "stage.generate.executor.flat",
+        "stage.generate.executor.notes",
+        "stage.generate.template.brand"
+      ],
+      "files": [],
+      "max_tokens": 130000
+    },
+    "route.generate.style-flat-no-image": {
+      "description": "Style-workspace flat Generate-PPTX path without image acquisition.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning-template",
+        "stage.generate.executor.flat",
+        "stage.generate.executor.notes",
+        "stage.generate.template.style"
+      ],
+      "files": [],
+      "max_tokens": 130000
+    },
+    "route.generate.deck-structured-no-image": {
+      "description": "Deck-preset structured Generate-PPTX path without image acquisition.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning-template",
+        "stage.generate.executor.structured",
+        "stage.generate.executor.notes",
+        "stage.generate.template.deck"
+      ],
+      "files": [],
+      "max_tokens": 140000
+    },
+    "route.generate.layout-structured-no-image": {
+      "description": "Layout-preset structured Generate-PPTX path without image acquisition.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning-template",
+        "stage.generate.executor.structured",
+        "stage.generate.executor.notes",
+        "stage.generate.template.layout"
+      ],
+      "files": [],
+      "max_tokens": 140000
+    },
+    "route.generate.topic-only-flat-no-image": {
+      "description": "Topic research followed by the default flat no-image Generate-PPTX path.",
+      "scope": "cumulative",
+      "include": [
+        "stage.generate.topic-research",
+        "route.generate.flat-no-image"
+      ],
+      "files": [],
+      "max_tokens": 120000
+    },
+    "stage.generate.executor.flat": {
+      "description": "Incremental flat Executor core with complete visual-construction authorities and representative multi-source custom mode/style execution.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/deterministic-layout.md",
+        "skills/build-editable-decks/references/executor-base.md",
+        "skills/build-editable-decks/references/shared-standards-core.md",
+        "skills/build-editable-decks/references/svg-effects.md",
+        "skills/build-editable-decks/references/native-shape-authoring.md",
+        "skills/build-editable-decks/references/semantic-svg.md",
+        {
+          "glob": "skills/build-editable-decks/references/modes/*.md",
+          "exclude": [
+            "*/_index.md"
+          ],
+          "select": 3,
+          "load_event": "executor",
+          "registry": "modes",
+          "allow_repeat": true
+        },
+        {
+          "glob": "skills/build-editable-decks/references/visual-styles/*.md",
+          "exclude": [
+            "*/_index.md"
+          ],
+          "select": 3,
+          "load_event": "executor",
+          "registry": "visual-styles",
+          "allow_repeat": true
+        }
+      ],
+      "max_tokens": 48000
+    },
+    "stage.generate.executor.structured": {
+      "description": "Structured template execution layered on the flat/shared core.",
+      "scope": "incremental",
+      "include": [
+        "stage.generate.executor.flat"
+      ],
+      "files": [
+        "skills/build-editable-decks/references/executor-structured.md",
+        "skills/build-editable-decks/references/pptx-structure-interface.md"
+      ],
+      "max_tokens": 58000
+    },
+    "stage.generate.image.ai-two-types": {
+      "description": "Incremental AI-image role with representative multi-source custom rendering and two selected local types.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/image-base.md",
+        "skills/build-editable-decks/references/image-generator.md",
+        {
+          "glob": "skills/build-editable-decks/references/image-renderings/_index.md",
+          "select": 1,
+          "load_event": "image-generator",
+          "allow_repeat": true
+        },
+        "skills/build-editable-decks/references/image-type-templates/_index.md",
+        {
+          "glob": "skills/build-editable-decks/references/image-renderings/*.md",
+          "exclude": [
+            "*/_index.md"
+          ],
+          "select": 3,
+          "load_event": "image-generator",
+          "registry": "image-renderings",
+          "allow_repeat": true
+        },
+        {
+          "glob": "skills/build-editable-decks/references/image-type-templates/*.md",
+          "exclude": [
+            "*/_index.md"
+          ],
+          "select": 2,
+          "registry": "image-type-templates"
+        }
+      ],
+      "max_tokens": 26000
+    },
+    "stage.generate.image.web": {
+      "description": "Incremental web-image acquisition role.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/image-base.md",
+        "skills/build-editable-decks/references/image-searcher.md"
+      ],
+      "max_tokens": 8000
+    },
+    "stage.generate.resume-execute": {
+      "description": "Fresh-session resume plus the flat Executor core and post-SVG notes rules.",
+      "scope": "fresh-session",
+      "include": [
+        "bootstrap.routing",
+        "stage.generate.executor.flat",
+        "stage.generate.executor.notes"
+      ],
+      "files": [
+        "skills/build-editable-decks/workflows/generate-pptx.md",
+        "skills/build-editable-decks/workflows/stages/resume-execute.md",
+        "skills/build-editable-decks/references/artifact-ownership.md"
+      ],
+      "max_tokens": 77000
+    },
+    "stage.generate.resume-execute-image": {
+      "description": "Fresh-session resume when the locked resource plan contains image rows.",
+      "scope": "fresh-session",
+      "include": [
+        "stage.generate.resume-execute",
+        "stage.generate.executor.image"
+      ],
+      "files": [],
+      "max_tokens": 89000
+    },
+    "stage.generate.topic-research": {
+      "description": "Gap-targeted factual intake stage.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/workflows/stages/topic-research.md"
+      ],
+      "max_tokens": 2000
+    },
+    "profile.generate.beautify-pptx": {
+      "description": "Strict 1:1 wording, order, and page-count profile with Default and explicit Quick branches.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/workflows/profiles/beautify-pptx.md"
+      ],
+      "max_tokens": 7750
+    },
+    "stage.generate.refine-spec": {
+      "description": "Explicit post-confirmation spec refinement runbook.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/workflows/stages/refine-spec.md"
+      ],
+      "max_tokens": 1500
+    },
+    "stage.generate.verify-charts": {
+      "description": "Conditional chart-calibration gate.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/workflows/stages/verify-charts.md"
+      ],
+      "max_tokens": 7000
+    },
+    "stage.generate.chart-authoring": {
+      "description": "Conditional visualization-library authoring guidance.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/templates/charts/README.md",
+        "skills/build-editable-decks/templates/charts/CHART_STYLE_GUIDE.md"
+      ],
+      "max_tokens": 10000
+    },
+    "stage.generate.visual-review": {
+      "description": "Explicit visual-review stage plus its role reference.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/workflows/stages/visual-review.md",
+        "skills/build-editable-decks/references/visual-review.md"
+      ],
+      "max_tokens": 7750
+    },
+    "stage.generate.live-preview": {
+      "description": "Live preview and annotation stage.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/workflows/stages/live-preview.md"
+      ],
+      "max_tokens": 3000
+    },
+    "stage.generate.customize-animations": {
+      "description": "Page-transition and deterministic-Morph stage.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/workflows/stages/customize-animations.md",
+        "skills/build-editable-decks/references/animations.md",
+        "skills/build-editable-decks/scripts/docs/pptx-animations.md",
+        "skills/build-editable-decks/scripts/docs/pptx-transitions.md",
+        "skills/build-editable-decks/scripts/docs/svg-pipeline.md"
+      ],
+      "max_tokens": 35000
+    },
+    "stage.generate.video-motion-plan": {
+      "description": "Legacy/external resolved-trace video compatibility handoff.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/scripts/docs/video-motion-plan.md"
+      ],
+      "max_tokens": 1250
+    },
+    "stage.generate.animation-options": {
+      "description": "Conditional page-transition, auto-advance, and Morph options.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/animations.md"
+      ],
+      "max_tokens": 9000
+    },
+    "stage.shared.generate-audio": {
+      "description": "Shared narration-audio stage.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/workflows/stages/generate-audio.md"
+      ],
+      "max_tokens": 6000
+    },
+    "governance.failure-recovery": {
+      "description": "Global stop, retry, and resume policy.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/workflows/governance/failure-recovery.md"
+      ],
+      "max_tokens": 3250
+    },
+    "stage.shared.conversion-reference": {
+      "description": "Conditional source-conversion and import compatibility reference.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/scripts/docs/conversion.md"
+      ],
+      "max_tokens": 6750
+    },
+    "stage.shared.troubleshooting": {
+      "description": "Conditional troubleshooting reference for generation failures.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/scripts/docs/troubleshooting.md"
+      ],
+      "max_tokens": 1000
+    },
+    "stage.create-template.authored-preset": {
+      "description": "Conditional native preset and Boolean shape authoring reference for Create Layout/Create Deck.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/native-shape-authoring.md"
+      ],
+      "max_tokens": 5000
+    },
+    "route.generate.planning-template": {
+      "description": "Generate-PPTX planning context after an explicit template workspace is installed.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning",
+        "stage.generate.strategist.template"
+      ],
+      "files": [],
+      "max_tokens": 73000
+    },
+    "route.generate.planning-template-ai": {
+      "description": "Explicit template workspace plus confirmed AI-image planning.",
+      "scope": "cumulative",
+      "include": [
+        "route.generate.planning-template",
+        "route.generate.planning-ai"
+      ],
+      "files": [],
+      "max_tokens": 88000
+    },
+    "stage.generate.executor.chart": {
+      "description": "Conditional chart/table page execution rules.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/executor-chart.md"
+      ],
+      "max_tokens": 3500
+    },
+    "stage.generate.strategist.image": {
+      "description": "Conditional Strategist image/formula policy with the always-read layout math and compact composition vocabulary.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/strategist-image.md",
+        "skills/build-editable-decks/references/image-layout-spec.md",
+        "skills/build-editable-decks/references/image-layout-patterns.md"
+      ],
+      "max_tokens": 11000
+    },
+    "stage.generate.strategist.template": {
+      "description": "Conditional Strategist module for an explicitly installed template workspace.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/strategist-template.md"
+      ],
+      "max_tokens": 3000
+    },
+    "stage.generate.executor.native-data": {
+      "description": "Conditional preset-pattern and native chart/table metadata interface.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/native-data-interface.md"
+      ],
+      "max_tokens": 6750
+    },
+    "stage.generate.executor.image": {
+      "description": "Conditional image embedding and execution rules with the always-read layout math and compact composition vocabulary.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/executor-image.md",
+        "skills/build-editable-decks/references/image-layout-spec.md",
+        "skills/build-editable-decks/references/image-layout-patterns.md",
+        "skills/build-editable-decks/references/svg-image-embedding.md"
+      ],
+      "max_tokens": 13000
+    },
+    "stage.generate.executor.web-image": {
+      "description": "Conditional sourced-image attribution layered on image execution.",
+      "scope": "incremental",
+      "include": [
+        "stage.generate.executor.image"
+      ],
+      "files": [
+        "skills/build-editable-decks/references/executor-web-image.md"
+      ],
+      "max_tokens": 14000
+    },
+    "stage.generate.executor.notes": {
+      "description": "Post-SVG speaker-notes generation rules.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/executor-notes.md"
+      ],
+      "max_tokens": 1000
+    },
+    "stage.generate.executor.native-shape": {
+      "description": "Stock PowerPoint shape selection and Boolean materialization authority, always included in Generate Executor contexts.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/native-shape-authoring.md"
+      ],
+      "max_tokens": 5000
+    },
+    "stage.shared.svg-effects": {
+      "description": "Advanced SVG paint, effects, transforms, and geometry authority, always included in Generate Executor contexts and conditionally loaded by other SVG-authoring routes.",
+      "scope": "incremental",
+      "files": [
+        "skills/build-editable-decks/references/svg-effects.md"
+      ],
+      "max_tokens": 15000
+    }
+  },
+  "duplicates": {
+    "min_chars": 100,
+    "min_words": 20,
+    "shingle_words": 4,
+    "min_shared_shingles": 3,
+    "max_shingle_frequency": 24,
+    "near_similarity": 0.82,
+    "max_exact_results": 100,
+    "max_near_results": 100,
+    "accepted": []
+  },
+  "authority_edges": [
+    {
+      "concern": "package-entry",
+      "from": "AGENTS.md",
+      "to": "skills/build-editable-decks/SKILL.md"
+    },
+    {
+      "concern": "route-selection",
+      "from": "AGENTS.md",
+      "to": "skills/build-editable-decks/workflows/routing.md"
+    },
+    {
+      "concern": "route-selection",
+      "from": "skills/build-editable-decks/SKILL.md",
+      "to": "skills/build-editable-decks/workflows/routing.md"
+    },
+    {
+      "concern": "default-generate-workflow",
+      "from": "skills/build-editable-decks/workflows/routing.md",
+      "to": "skills/build-editable-decks/workflows/generate-pptx.md"
+    },
+    {
+      "concern": "quick-generate-workflow",
+      "from": "skills/build-editable-decks/workflows/routing.md",
+      "to": "skills/build-editable-decks/workflows/profiles/quick-generate.md"
+    },
+    {
+      "concern": "failure-policy",
+      "from": "skills/build-editable-decks/workflows/generate-pptx.md",
+      "to": "skills/build-editable-decks/workflows/governance/failure-recovery.md"
+    },
+    {
+      "concern": "artifact-ownership",
+      "from": "skills/build-editable-decks/workflows/generate-pptx.md",
+      "to": "skills/build-editable-decks/references/artifact-ownership.md"
+    },
+    {
+      "concern": "template-application",
+      "from": "skills/build-editable-decks/workflows/generate-pptx.md",
+      "to": "skills/build-editable-decks/workflows/stages/apply-template-workspace.md"
+    },
+    {
+      "concern": "quick-template-application",
+      "from": "skills/build-editable-decks/workflows/profiles/quick-generate.md",
+      "to": "skills/build-editable-decks/workflows/stages/apply-template-workspace.md"
+    },
+    {
+      "concern": "template-model",
+      "from": "skills/build-editable-decks/workflows/stages/apply-template-workspace.md",
+      "to": "skills/build-editable-decks/templates/README.md"
+    },
+    {
+      "concern": "template-kind-schema",
+      "from": "skills/build-editable-decks/workflows/stages/apply-template-workspace.md",
+      "to": "skills/build-editable-decks/templates/brands/README.md"
+    },
+    {
+      "concern": "template-kind-schema",
+      "from": "skills/build-editable-decks/workflows/stages/apply-template-workspace.md",
+      "to": "skills/build-editable-decks/templates/styles/README.md"
+    },
+    {
+      "concern": "template-kind-schema",
+      "from": "skills/build-editable-decks/workflows/stages/apply-template-workspace.md",
+      "to": "skills/build-editable-decks/templates/layouts/README.md"
+    },
+    {
+      "concern": "template-kind-schema",
+      "from": "skills/build-editable-decks/workflows/stages/apply-template-workspace.md",
+      "to": "skills/build-editable-decks/templates/decks/README.md"
+    },
+    {
+      "concern": "deterministic-layout-contract",
+      "from": "skills/build-editable-decks/workflows/generate-pptx.md",
+      "to": "skills/build-editable-decks/references/deterministic-layout.md"
+    },
+    {
+      "concern": "svg-core-contract",
+      "from": "skills/build-editable-decks/references/executor-base.md",
+      "to": "skills/build-editable-decks/references/shared-standards-core.md"
+    },
+    {
+      "concern": "structured-execution-contract",
+      "from": "skills/build-editable-decks/references/executor-structured.md",
+      "to": "skills/build-editable-decks/references/pptx-structure-interface.md"
+    },
+    {
+      "concern": "native-data-contract",
+      "from": "skills/build-editable-decks/references/executor-chart.md",
+      "to": "skills/build-editable-decks/references/native-data-interface.md"
+    },
+    {
+      "concern": "strategist-image-routing",
+      "from": "skills/build-editable-decks/references/strategist.md",
+      "to": "skills/build-editable-decks/references/strategist-image.md"
+    },
+    {
+      "concern": "strategist-template-routing",
+      "from": "skills/build-editable-decks/references/strategist.md",
+      "to": "skills/build-editable-decks/references/strategist-template.md"
+    },
+    {
+      "concern": "design-spec-schema",
+      "from": "skills/build-editable-decks/templates/design_spec_reference.md",
+      "to": "skills/build-editable-decks/templates/schemas/design_spec.schema.json"
+    },
+    {
+      "concern": "spec-lock-schema",
+      "from": "skills/build-editable-decks/templates/spec_lock_reference.md",
+      "to": "skills/build-editable-decks/templates/schemas/spec_lock.schema.json"
+    }
+  ],
+  "registries": [
+    {
+      "name": "image-layout-patterns",
+      "kind": "structured_markdown",
+      "source": "skills/build-editable-decks/references/image-layout-patterns.md",
+      "entry_pattern": "^-\\s+\\*\\*#(?P<id>[PMAC][1-9][0-9]*-[0-9]+)\\s+·\\s+",
+      "sequence_width": 2,
+      "prefix_counts": {
+        "P1": 13,
+        "P2": 10,
+        "P3": 23,
+        "M1": 11,
+        "M2": 9,
+        "M3": 7,
+        "A1": 4,
+        "A2": 3,
+        "A3": 3,
+        "C1": 1,
+        "C2": 2,
+        "C3": 1
+      },
+      "reference_terms": [
+        "image-layout-patterns",
+        "image-text layout patterns"
+      ],
+      "claim_nouns": [
+        "technique",
+        "techniques",
+        "pattern",
+        "patterns",
+        "entry",
+        "entries"
+      ]
+    },
+    {
+      "name": "modes",
+      "kind": "directory",
+      "source": "skills/build-editable-decks/references/modes/_index.md",
+      "validate_index_links": true,
+      "glob": "skills/build-editable-decks/references/modes/*.md",
+      "exclude": [
+        "*/_index.md"
+      ],
+      "reference_terms": [
+        "modes/_index.md",
+        "modes — index"
+      ],
+      "claim_nouns": [
+        "mode",
+        "modes"
+      ]
+    },
+    {
+      "name": "visual-styles",
+      "kind": "directory",
+      "source": "skills/build-editable-decks/references/visual-styles/_index.md",
+      "validate_index_links": true,
+      "glob": "skills/build-editable-decks/references/visual-styles/*.md",
+      "exclude": [
+        "*/_index.md"
+      ],
+      "reference_terms": [
+        "visual-styles/_index.md",
+        "visual styles"
+      ],
+      "claim_nouns": [
+        "style",
+        "styles",
+        "visual style",
+        "visual styles"
+      ]
+    },
+    {
+      "name": "image-renderings",
+      "kind": "directory",
+      "source": "skills/build-editable-decks/references/image-renderings/_index.md",
+      "validate_index_links": true,
+      "glob": "skills/build-editable-decks/references/image-renderings/*.md",
+      "exclude": [
+        "*/_index.md"
+      ],
+      "reference_terms": [
+        "image-renderings/_index.md",
+        "renderings — index"
+      ],
+      "claim_nouns": [
+        "rendering",
+        "renderings"
+      ]
+    },
+    {
+      "name": "image-type-templates",
+      "kind": "directory",
+      "source": "skills/build-editable-decks/references/image-type-templates/_index.md",
+      "validate_index_links": true,
+      "glob": "skills/build-editable-decks/references/image-type-templates/*.md",
+      "exclude": [
+        "*/_index.md"
+      ],
+      "reference_terms": [
+        "image-type-templates/_index.md",
+        "type templates"
+      ],
+      "claim_nouns": [
+        "type",
+        "types"
+      ]
+    },
+    {
+      "name": "chart-templates",
+      "kind": "json_collection",
+      "source": "skills/build-editable-decks/templates/charts/charts_index.json",
+      "key": "charts",
+      "reference_terms": [
+        "charts_index.json",
+        "chart catalog",
+        "catalog read"
+      ],
+      "claim_nouns": [
+        "chart",
+        "charts",
+        "summary",
+        "summaries",
+        "template",
+        "templates",
+        "type",
+        "types"
+      ]
+    }
+  ],
+  "schema_grammars": [
+    {
+      "source": "skills/build-editable-decks/templates/schemas/spec_lock.schema.json",
+      "fields": [
+        "font_family",
+        "image_rendering",
+        "page_charts",
+        "page_layouts",
+        "page_pptx_layouts",
+        "page_rhythm",
+        "pptx_layouts",
+        "pptx_masters",
+        "stroke_width"
+      ],
+      "scan": [
+        "skills/build-editable-decks/SKILL.md",
+        "skills/build-editable-decks/references/*.md",
+        "skills/build-editable-decks/references/**/*.md",
+        "skills/build-editable-decks/workflows/*.md",
+        "skills/build-editable-decks/workflows/**/*.md",
+        "skills/build-editable-decks/templates/*.md"
+      ]
+    },
+    {
+      "source": "skills/build-editable-decks/scripts/docs/confirm_ui.md",
+      "fields": [
+        "image_ai_path"
+      ],
+      "scan": [
+        "skills/build-editable-decks/SKILL.md",
+        "skills/build-editable-decks/references/*.md",
+        "skills/build-editable-decks/references/**/*.md",
+        "skills/build-editable-decks/workflows/*.md",
+        "skills/build-editable-decks/workflows/**/*.md",
+        "skills/build-editable-decks/templates/*.md"
+      ]
+    }
+  ],
+  "coverage": {
+    "exempt": [
+      {
+        "glob": "skills/build-editable-decks/workflows/index.md",
+        "reason": "Maintainer-only workflow inventory; never loaded during task execution."
+      },
+      {
+        "glob": "skills/build-editable-decks/references/image-palettes/*.md",
+        "reason": "Legacy tombstone and archived presets; _index.md forbids loading them in current generation."
+      },
+      {
+        "glob": "skills/build-editable-decks/scripts/README.md",
+        "reason": "Script inventory for maintainers; not loaded by generation roles."
+      },
+      {
+        "glob": "skills/build-editable-decks/scripts/docs/project.md",
+        "reason": "Maintainer command reference; route steps carry the required project commands."
+      },
+      {
+        "glob": "skills/build-editable-decks/scripts/docs/prompt_audit.md",
+        "reason": "Maintainer-only documentation for this audit tool."
+      },
+      {
+        "glob": "skills/build-editable-decks/scripts/docs/mask-gradient-smoke.md",
+        "reason": "Maintainer-only executable smoke; never loaded by generation roles."
+      },
+      {
+        "glob": "skills/build-editable-decks/scripts/docs/advanced-image-motion-smoke.md",
+        "reason": "Maintainer-only executable image-and-motion smoke; never loaded by generation roles."
+      },
+      {
+        "glob": "skills/build-editable-decks/scripts/docs/multilingual-text-smoke.md",
+        "reason": "Maintainer-only executable multilingual export smoke; never loaded by generation roles."
+      },
+      {
+        "glob": "skills/build-editable-decks/scripts/docs/update_spec.md",
+        "reason": "Maintainer command reference for an optional helper script."
+      },
+      {
+        "glob": "skills/build-editable-decks/scripts/pptx_shapes/data/NOTICE.md",
+        "reason": "License notice; never loaded as prompt context."
+      },
+      {
+        "glob": "skills/build-editable-decks/PRIVACY.md",
+        "reason": "Repository privacy policy for maintainers; runtime privacy rules are carried by SKILL.md."
+      },
+      {
+        "glob": "skills/build-editable-decks/THIRD_PARTY_NOTICES.md",
+        "reason": "Legal attribution notice; never loaded as prompt context."
+      },
+      {
+        "glob": "skills/build-editable-decks/references/shared-standards.md",
+        "reason": "Compatibility router only; runtime load sets select the core and triggered modules directly."
+      },
+      {
+        "glob": "skills/build-editable-decks/templates/charts/charts_index.json",
+        "reason": "Machine-consumed chart-recall registry; Strategist receives only the ranked candidate summaries."
+      },
+      {
+        "glob": "skills/build-editable-decks/templates/schemas/*.json",
+        "reason": "Machine-consumed validation schemas; they are not loaded into model runtime context."
+      },
+      {
+        "glob": "skills/build-editable-decks/templates/scaffolds/*.md",
+        "reason": "Machine-consumed optional CLI scaffolds; they are never loaded into model runtime context."
+      }
+    ]
+  }
+}

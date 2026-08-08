@@ -1,0 +1,2920 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "name": "hugohe3/ppt-master",
+    "commit": "bbb323f0ebd6a6a230dd6063209326b53bfd2e1d",
+    "license": "MIT"
+  },
+  "adapted_files": {
+    "skills/build-editable-decks/SKILL.md": {
+      "upstream_path": "skills/ppt-master/SKILL.md",
+      "upstream_git_blob_sha1": "eade1453f5f23984a31bf3ac505645b28a721134",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/animations.md": {
+      "upstream_path": "skills/ppt-master/references/animations.md",
+      "upstream_git_blob_sha1": "c7f82d4062aa5203200ba938a33d18245b94c42a",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/artifact-ownership.md": {
+      "upstream_path": "skills/ppt-master/references/artifact-ownership.md",
+      "upstream_git_blob_sha1": "1ada2620fc09ec9f579113df48d1633b481dd3ff",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/canvas-formats.md": {
+      "upstream_path": "skills/ppt-master/references/canvas-formats.md",
+      "upstream_git_blob_sha1": "d801b1b7001928b6d887f8bd80a0246c32da3804",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/executor-base.md": {
+      "upstream_path": "skills/ppt-master/references/executor-base.md",
+      "upstream_git_blob_sha1": "c60fd7b3bf331f0429dc9425ac4d1732c0a5b0ca",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/executor-chart.md": {
+      "upstream_path": "skills/ppt-master/references/executor-chart.md",
+      "upstream_git_blob_sha1": "5c4769d6bb880eb562b9b7d2179f5a5569cbc6af",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/executor-image.md": {
+      "upstream_path": "skills/ppt-master/references/executor-image.md",
+      "upstream_git_blob_sha1": "b9a48d28d65855c95e4568de1675e45792c928d1",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/executor-notes.md": {
+      "upstream_path": "skills/ppt-master/references/executor-notes.md",
+      "upstream_git_blob_sha1": "d99752b41f507a61e6e5053962e59ba9b4a2546f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/executor-structured.md": {
+      "upstream_path": "skills/ppt-master/references/executor-structured.md",
+      "upstream_git_blob_sha1": "312b674806f80ceb6e6a2d5b0022be79c5155546",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/executor-web-image.md": {
+      "upstream_path": "skills/ppt-master/references/executor-web-image.md",
+      "upstream_git_blob_sha1": "49fdf497ad140a57adccb7e0e52808db185d5c0e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-base.md": {
+      "upstream_path": "skills/ppt-master/references/image-base.md",
+      "upstream_git_blob_sha1": "aa5765cb11d1e1352a3ddba53f4e5d7a6c40b855",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/image-generator.md": {
+      "upstream_path": "skills/ppt-master/references/image-generator.md",
+      "upstream_git_blob_sha1": "0d6a95900c116e7e645f09d2232f6b56351ec7d8",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/image-layout-patterns.md": {
+      "upstream_path": "skills/ppt-master/references/image-layout-patterns.md",
+      "upstream_git_blob_sha1": "b959c238052facecab6a22f27d708cba0ae5b8f2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-layout-spec.md": {
+      "upstream_path": "skills/ppt-master/references/image-layout-spec.md",
+      "upstream_git_blob_sha1": "526e5116443c2e0ac8123924dd1bf01fc944956c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/_index.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/_index.md",
+      "upstream_git_blob_sha1": "71f5b5777d0b67f6477ea0b10ba883d79ff6d40f",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/image-palettes/cool-corporate.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/cool-corporate.md",
+      "upstream_git_blob_sha1": "84cb5c253bb82da82d6a777519768cb106a45016",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/dark-cinematic.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/dark-cinematic.md",
+      "upstream_git_blob_sha1": "bf81300e6a11b38fccecbc8d8fad2ac5ceb01328",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/duotone.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/duotone.md",
+      "upstream_git_blob_sha1": "957125325186ded4430aff40206e2c3be259e9a3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/earthy-dusty.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/earthy-dusty.md",
+      "upstream_git_blob_sha1": "8072822b6ba99988bf0b8313f35322bd4ad00dc8",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/editorial-classic.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/editorial-classic.md",
+      "upstream_git_blob_sha1": "f9db139888000170f17285352a72dda843b480a0",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/frost-ice.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/frost-ice.md",
+      "upstream_git_blob_sha1": "07a43b02271ac9f1a609bccaf0b98610f7f6bf3a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/jewel-tone.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/jewel-tone.md",
+      "upstream_git_blob_sha1": "f93d5cc6275fc41bf0a00d3b578e24da8da65197",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/macaron.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/macaron.md",
+      "upstream_git_blob_sha1": "acf2aab2412a831e7bffca800f019e20a5d86749",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/mono-ink.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/mono-ink.md",
+      "upstream_git_blob_sha1": "4c93d59469942a5455621bf94be645fab438cf1f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/nature-organic.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/nature-organic.md",
+      "upstream_git_blob_sha1": "b84486f9050f2b545a5f27a6e01beada50bd1da8",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/sunset-gradient.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/sunset-gradient.md",
+      "upstream_git_blob_sha1": "109e83c55eac6d0c1446b10d552284dd75275031",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/tech-neon.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/tech-neon.md",
+      "upstream_git_blob_sha1": "0412aabc920fed1fca897bbe9444a974cbbfe69e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/vivid-launch.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/vivid-launch.md",
+      "upstream_git_blob_sha1": "687d49770b64ae5a14c7eb71d64cd955cf59deff",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-palettes/warm-earth.md": {
+      "upstream_path": "skills/ppt-master/references/image-palettes/warm-earth.md",
+      "upstream_git_blob_sha1": "881707082f258ecae9e7de59e2230e0a8c8c42ba",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/3d-isometric.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/3d-isometric.md",
+      "upstream_git_blob_sha1": "a32f0196131f251f41c6b51442cd4f1592946f2c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/_index.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/_index.md",
+      "upstream_git_blob_sha1": "4e4cbe994dbe307d91823c6bcd3bb38cd12ac41f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/blueprint.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/blueprint.md",
+      "upstream_git_blob_sha1": "d27ab63bef6df199eb423593b0f7dd4642745dad",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/chalkboard.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/chalkboard.md",
+      "upstream_git_blob_sha1": "d4905ab2de39b077aecf5ba2e2a0d32421d1d80d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/corporate-photo.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/corporate-photo.md",
+      "upstream_git_blob_sha1": "cab1917b47a387b2761d8e485460c5f4b363cd19",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/digital-dashboard.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/digital-dashboard.md",
+      "upstream_git_blob_sha1": "2657e2505b8bed21ec82adecd47014b88ef0a396",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/editorial.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/editorial.md",
+      "upstream_git_blob_sha1": "ddbae5a173fabb62efdcb20d3411e6dbd5a6a42d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/fantasy-animation.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/fantasy-animation.md",
+      "upstream_git_blob_sha1": "cc985e4ad4bae3fde1b38d641cc41a1b4b574996",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/flat.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/flat.md",
+      "upstream_git_blob_sha1": "0ee8adc768e5a1937d9df86cad0b0321030c9daf",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/glassmorphism.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/glassmorphism.md",
+      "upstream_git_blob_sha1": "8362b34d68a9cd1c5e66ab7a116e596c403770f4",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/ink-notes.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/ink-notes.md",
+      "upstream_git_blob_sha1": "8fdbe91a9b3caa09e1321ae8d7278bcb1df1f1c1",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/minimalist-swiss.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/minimalist-swiss.md",
+      "upstream_git_blob_sha1": "e035ef58b7e332a47a9a5962bcdca40c723f5c15",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/nature.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/nature.md",
+      "upstream_git_blob_sha1": "e35d03248f84ccd93bac83cc17ceb03929a6e800",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/paper-cut.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/paper-cut.md",
+      "upstream_git_blob_sha1": "900d0590ef1125a04ece238a01a67a60f561f397",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/pixel-art.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/pixel-art.md",
+      "upstream_git_blob_sha1": "3619fea84f317de1971714517b3f4d5b3b0224ac",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/screen-print.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/screen-print.md",
+      "upstream_git_blob_sha1": "bf3b8cd18658f8c9d148709a48cdf476a8d19888",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/sketch-notes.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/sketch-notes.md",
+      "upstream_git_blob_sha1": "5e0b0a82c7575b633c71503c3276c94ea860a7d3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/vector-illustration.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/vector-illustration.md",
+      "upstream_git_blob_sha1": "7f0aca68fbced17188eb7c847530f45dddd5bd41",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/vintage-poster.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/vintage-poster.md",
+      "upstream_git_blob_sha1": "28490f4c43bc501dfebee0aad5e5e21b2cdc72fc",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/warm-scene.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/warm-scene.md",
+      "upstream_git_blob_sha1": "6b9291af663b4ca623d6d58e58ddf8404faaef60",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-renderings/watercolor.md": {
+      "upstream_path": "skills/ppt-master/references/image-renderings/watercolor.md",
+      "upstream_git_blob_sha1": "542208b69b778d9090221e308189f1c67ca96ec2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-searcher.md": {
+      "upstream_path": "skills/ppt-master/references/image-searcher.md",
+      "upstream_git_blob_sha1": "d8687b1a8dff8a67a2c52ff94e2a82ec3f660908",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/image-type-templates/_index.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/_index.md",
+      "upstream_git_blob_sha1": "f3656233f00942cf9122f6c70c44a13b36504e8b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/comparison.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/comparison.md",
+      "upstream_git_blob_sha1": "80a95da855b460f5752e37124a9c83ee0b05f0a4",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/cycle.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/cycle.md",
+      "upstream_git_blob_sha1": "1c08af0410ad0a6275ab31966ece838834ffb80a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/flowchart.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/flowchart.md",
+      "upstream_git_blob_sha1": "c59a29a09e2104ff114b425f0b690d92fe263b65",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/framework.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/framework.md",
+      "upstream_git_blob_sha1": "cc2705845e8ca9c1191b954470e91c31fcaa9e00",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/funnel.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/funnel.md",
+      "upstream_git_blob_sha1": "4121e3c1a53fd3db88be4186a628d978308e63b9",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/infographic.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/infographic.md",
+      "upstream_git_blob_sha1": "085147bc18835f704538abcb4a073f3ab501c5c2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/map.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/map.md",
+      "upstream_git_blob_sha1": "2396544919a2e9c389070ecebd5fb8efad755b29",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/matrix.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/matrix.md",
+      "upstream_git_blob_sha1": "a80ae9f0828c12e5f7e3066a9fec4a88d3155847",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/pyramid.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/pyramid.md",
+      "upstream_git_blob_sha1": "2f78190a96978dfe6c802a6347578a5722aff795",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/scene.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/scene.md",
+      "upstream_git_blob_sha1": "382b8bc5b3ce7c5a5ec592ec94f6ce9eb818df5f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/image-type-templates/timeline.md": {
+      "upstream_path": "skills/ppt-master/references/image-type-templates/timeline.md",
+      "upstream_git_blob_sha1": "2c50e2c781707d2a8ed746b34776cda2b9c4853e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/modes/_index.md": {
+      "upstream_path": "skills/ppt-master/references/modes/_index.md",
+      "upstream_git_blob_sha1": "34026dd778a4789094e64e2e9299686c412ef57d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/modes/briefing.md": {
+      "upstream_path": "skills/ppt-master/references/modes/briefing.md",
+      "upstream_git_blob_sha1": "04c2252c10a93a3561fdbe7ec14c4f19ce4bea3b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/modes/instructional.md": {
+      "upstream_path": "skills/ppt-master/references/modes/instructional.md",
+      "upstream_git_blob_sha1": "48b18e701168767f8db4d5fe4abb0f44264b15db",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/modes/narrative.md": {
+      "upstream_path": "skills/ppt-master/references/modes/narrative.md",
+      "upstream_git_blob_sha1": "94f2207a7c37f05492a85a3138c2a03e1e56e324",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/modes/pyramid.md": {
+      "upstream_path": "skills/ppt-master/references/modes/pyramid.md",
+      "upstream_git_blob_sha1": "33e50f1087512c583376584ad47f2be5872f69d2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/modes/showcase.md": {
+      "upstream_path": "skills/ppt-master/references/modes/showcase.md",
+      "upstream_git_blob_sha1": "132cddf75ae129b86b9de44b7589773252fbb4f3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/native-data-interface.md": {
+      "upstream_path": "skills/ppt-master/references/native-data-interface.md",
+      "upstream_git_blob_sha1": "53982ac07fcf35b837703b6f783469bb1b4faedf",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/native-shape-authoring.md": {
+      "upstream_path": "skills/ppt-master/references/native-shape-authoring.md",
+      "upstream_git_blob_sha1": "e61d9461fe86a87ab031dac951ceb557eecf6eb7",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/pptx-structure-interface.md": {
+      "upstream_path": "skills/ppt-master/references/pptx-structure-interface.md",
+      "upstream_git_blob_sha1": "03e3587e6aca2ac23335126d3d989f6152177d39",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/semantic-svg.md": {
+      "upstream_path": "skills/ppt-master/references/semantic-svg.md",
+      "upstream_git_blob_sha1": "d423094319b55e65240a6c2e33039e86d7d5b6ab",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/shared-standards-core.md": {
+      "upstream_path": "skills/ppt-master/references/shared-standards-core.md",
+      "upstream_git_blob_sha1": "5ad9eb049598e3fda9ff05f6d6ecdc8f98820fc1",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/shared-standards.md": {
+      "upstream_path": "skills/ppt-master/references/shared-standards.md",
+      "upstream_git_blob_sha1": "409813befa267af898aae233a1faee82568f341b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/strategist-image.md": {
+      "upstream_path": "skills/ppt-master/references/strategist-image.md",
+      "upstream_git_blob_sha1": "8b726bcb9bb9df9d317ea23d75e03438f54576d0",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/strategist-template.md": {
+      "upstream_path": "skills/ppt-master/references/strategist-template.md",
+      "upstream_git_blob_sha1": "91ad0e872860b367b7a14fb51d4b32661d9eb5a8",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/strategist.md": {
+      "upstream_path": "skills/ppt-master/references/strategist.md",
+      "upstream_git_blob_sha1": "a95bb3cf7e99e5996b362f8175d294a387156bd9",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/svg-effects.md": {
+      "upstream_path": "skills/ppt-master/references/svg-effects.md",
+      "upstream_git_blob_sha1": "2141b2c428d14b02d1153c0d5897e33c9f4bc18c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/svg-image-embedding.md": {
+      "upstream_path": "skills/ppt-master/references/svg-image-embedding.md",
+      "upstream_git_blob_sha1": "8c0ce506074c3ed7b240c2934a4918ca10ad05dd",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/template-designer.md": {
+      "upstream_path": "skills/ppt-master/references/template-designer.md",
+      "upstream_git_blob_sha1": "bb64acc877e126d09b80fb7e3b16e520d4f313fc",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/references/visual-review.md": {
+      "upstream_path": "skills/ppt-master/references/visual-review.md",
+      "upstream_git_blob_sha1": "269183934ab72ab03d2ada27f1252c0096b148f8",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/_index.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/_index.md",
+      "upstream_git_blob_sha1": "b837ec1df9aff9f0e6092af3ed16d6fa8015084a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/blueprint.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/blueprint.md",
+      "upstream_git_blob_sha1": "f4f7cb8bfa5db2777db6787e966f1a9af51c28d6",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/brutalist.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/brutalist.md",
+      "upstream_git_blob_sha1": "2c94793a1f5598a4a9ce66071a6a4bb4575523d5",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/chalkboard.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/chalkboard.md",
+      "upstream_git_blob_sha1": "2c14fa6fdf47e938d25ab0c7bd031371e86511c6",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/dark-tech.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/dark-tech.md",
+      "upstream_git_blob_sha1": "94338977641c58a46fbf0dbf46f74c3065e500f2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/data-journalism.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/data-journalism.md",
+      "upstream_git_blob_sha1": "188004151fbf7160bffcc43d1372167a2a232a37",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/editorial.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/editorial.md",
+      "upstream_git_blob_sha1": "4f46e2c33f8e8b1cde1efcb8eaba385c2dcf3542",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/glassmorphism.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/glassmorphism.md",
+      "upstream_git_blob_sha1": "88b653149460ded960450b7bb4e7e9e5da8fc376",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/ink-notes.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/ink-notes.md",
+      "upstream_git_blob_sha1": "60043e815ee3c4abfc5f05aef3cdc594e1493665",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/ink-wash.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/ink-wash.md",
+      "upstream_git_blob_sha1": "d0bfa9e5ca135d4847daa6e35f5f8599e32af554",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/memphis.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/memphis.md",
+      "upstream_git_blob_sha1": "3cbafaf35d427c07c0e8edf9684ddfa9be39f4bf",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/paper-cut.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/paper-cut.md",
+      "upstream_git_blob_sha1": "d4f0d84e35bda353d47faa098be7b2dd1f727144",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/photo-editorial.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/photo-editorial.md",
+      "upstream_git_blob_sha1": "435cacce05830bd50995f8ac0b5138261a54d9ad",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/pixel-art.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/pixel-art.md",
+      "upstream_git_blob_sha1": "68b970999f6599864441bc1ff079ee766e609c3c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/sketch-notes.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/sketch-notes.md",
+      "upstream_git_blob_sha1": "3ea85a5cf79d091786da5b81093316fb63b12544",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/soft-rounded.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/soft-rounded.md",
+      "upstream_git_blob_sha1": "b566e6958f2b5f691ae142de4f884c40b034bb19",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/swiss-minimal.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/swiss-minimal.md",
+      "upstream_git_blob_sha1": "c637ea8c3c886af3e21233f7c22f03989ffbce7d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/vintage-poster.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/vintage-poster.md",
+      "upstream_git_blob_sha1": "bd09f406931293635cdc5d5126fd3db915c98292",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/references/visual-styles/zine.md": {
+      "upstream_path": "skills/ppt-master/references/visual-styles/zine.md",
+      "upstream_git_blob_sha1": "eda1b17e46091c30055b81dde025c86feb48d08e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/requirements.txt": {
+      "upstream_path": "skills/ppt-master/requirements.txt",
+      "upstream_git_blob_sha1": "cd6ad82f810a105a2aa59827efec7f66e4ab7092",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/README.md": {
+      "upstream_path": "skills/ppt-master/scripts/README.md",
+      "upstream_git_blob_sha1": "1f32e13dae256b4a03dac40234d9cf738cfb8626",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/analyze_images.py": {
+      "upstream_path": "skills/ppt-master/scripts/analyze_images.py",
+      "upstream_git_blob_sha1": "5eceadef4646f10828716a2259bf07c71a0d018f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/animation_config.py": {
+      "upstream_path": "skills/ppt-master/scripts/animation_config.py",
+      "upstream_git_blob_sha1": "0b556d0463a9f4de60b9d10de0efe309d9179cda",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/attribution_guard.py": {
+      "upstream_path": "skills/ppt-master/scripts/attribution_guard.py",
+      "upstream_git_blob_sha1": "d43cb2be4490976d85d3ba0b7e92c57cd7aad3ac",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/batch_validate.py": {
+      "upstream_path": "skills/ppt-master/scripts/batch_validate.py",
+      "upstream_git_blob_sha1": "0981fe57cef3e026eff432b0dc4467198168f02e",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/beautify_identity.py": {
+      "upstream_path": "skills/ppt-master/scripts/beautify_identity.py",
+      "upstream_git_blob_sha1": "20dd54b47b733c096d32b419e57bce1c03e579c3",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/beautify_inventory.py": {
+      "upstream_path": "skills/ppt-master/scripts/beautify_inventory.py",
+      "upstream_git_blob_sha1": "40240f3c9d14106c74cadedb0731fcd2308fe9b7",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/chart_recall.py": {
+      "upstream_path": "skills/ppt-master/scripts/chart_recall.py",
+      "upstream_git_blob_sha1": "b050ccce1650ea123ef80b98ceac02b64d29aef2",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/check_annotations.py": {
+      "upstream_path": "skills/ppt-master/scripts/check_annotations.py",
+      "upstream_git_blob_sha1": "79d509d6882baa8471196e3e0b0463e7a6fea48b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/compact_svg_coordinates.py": {
+      "upstream_path": "skills/ppt-master/scripts/compact_svg_coordinates.py",
+      "upstream_git_blob_sha1": "cc3a5720f5b4c6b65de8bc2239df0b2a6a1ec093",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/config.py": {
+      "upstream_path": "skills/ppt-master/scripts/config.py",
+      "upstream_git_blob_sha1": "048207125d59ad825b74feea3d6d1c14ed4c4994",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/__init__.py",
+      "upstream_git_blob_sha1": "79e12956915ffa94ff85095bba6c0b6f49d6a8b7",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/server.py": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/server.py",
+      "upstream_git_blob_sha1": "1824473df49cf3d6ca4728806acf42ed29182d92",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/app.js": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/app.js",
+      "upstream_git_blob_sha1": "51a82d5e86990d751344905db19b8e2349996e5e",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/catalogs.json": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/catalogs.json",
+      "upstream_git_blob_sha1": "76e69ec840c500271e855689c40d9dcc31c24f2b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/index.html": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/index.html",
+      "upstream_git_blob_sha1": "d442e88bbbd6b5edc56b788aa6c26d0904e8015e",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style.css": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style.css",
+      "upstream_git_blob_sha1": "28f526b4dc21913a533a02265aa931f374f949c0",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/blueprint.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/blueprint.svg",
+      "upstream_git_blob_sha1": "34155ad2231bfb4e71fb2e38aa0d68f3262e6802",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/brutalist.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/brutalist.svg",
+      "upstream_git_blob_sha1": "f0fd59bc99b1d9ae78417833729c3acec8d499ad",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/chalkboard.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/chalkboard.svg",
+      "upstream_git_blob_sha1": "78c055f1b7dcacc908b46eccaf0d7f742a58f363",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/dark-tech.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/dark-tech.svg",
+      "upstream_git_blob_sha1": "57fd59837e505957a170db8e8b0dac0436496bae",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/data-journalism.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/data-journalism.svg",
+      "upstream_git_blob_sha1": "842e0ed2299cbb57d34ec38b3c875310ee8f5cb4",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/editorial.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/editorial.svg",
+      "upstream_git_blob_sha1": "e45afd57b71840a805be6adc179d1c82b79d268a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/glassmorphism.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/glassmorphism.svg",
+      "upstream_git_blob_sha1": "52a918b08b033b5b08e595cbd3b0c48ebaa63466",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/ink-notes.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/ink-notes.svg",
+      "upstream_git_blob_sha1": "d1caa2f200f8ee9687bb85588f0d3f4581239e45",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/ink-wash.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/ink-wash.svg",
+      "upstream_git_blob_sha1": "d36a2a04b2e5fb10a99f52f5d540b9099d2088f9",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/memphis.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/memphis.svg",
+      "upstream_git_blob_sha1": "f111d61f4139fa0f192f89e87d9668785ae74bc6",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/paper-cut.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/paper-cut.svg",
+      "upstream_git_blob_sha1": "374146dcb8f402439fb7e16fdd0b5a43e25c39f0",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/photo-editorial.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/photo-editorial.svg",
+      "upstream_git_blob_sha1": "df8255cc345d5881b4b8736a181639272b474a0e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/pixel-art.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/pixel-art.svg",
+      "upstream_git_blob_sha1": "638c70cc37e948dbfc5059507bbc3fa9407f90dd",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/sketch-notes.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/sketch-notes.svg",
+      "upstream_git_blob_sha1": "1af659fe944c87788b16dd44127de1bbc98bb99a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/soft-rounded.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/soft-rounded.svg",
+      "upstream_git_blob_sha1": "04b01cddedd00dd19874fb1c71a6086463a22fe3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/swiss-minimal.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/swiss-minimal.svg",
+      "upstream_git_blob_sha1": "8adc64d97c3c2c241404f903f98eb5ac1f3cd67b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/vintage-poster.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/vintage-poster.svg",
+      "upstream_git_blob_sha1": "ee7a441f0f035cd9ea97c35e5ced8db2db51c8cd",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/confirm_ui/static/style_previews/zine.svg": {
+      "upstream_path": "skills/ppt-master/scripts/confirm_ui/static/style_previews/zine.svg",
+      "upstream_git_blob_sha1": "add519774ff2334a8db7a305c2d28d1d01c235e9",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/console_encoding.py": {
+      "upstream_path": "skills/ppt-master/scripts/console_encoding.py",
+      "upstream_git_blob_sha1": "8970f24dc44f38d20f6a282a1ade383266855687",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/advanced-image-motion-smoke.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/advanced-image-motion-smoke.md",
+      "upstream_git_blob_sha1": "7884115d6493da8effa087a7f1a31ada76b88cef",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/chart-recall.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/chart-recall.md",
+      "upstream_git_blob_sha1": "9d78b8a8c465fce71cba2e272440aed737810db9",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/confirm_ui.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/confirm_ui.md",
+      "upstream_git_blob_sha1": "940528886f076c0a12fbeab62a9e1217a46fdde3",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/conversion.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/conversion.md",
+      "upstream_git_blob_sha1": "e8e683e1ebdebad40cbaff466c339ef32cbf9e12",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/image.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/image.md",
+      "upstream_git_blob_sha1": "9e3c6aaa814b3f8699a8b78327cf4a019a7f2766",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/mask-gradient-smoke.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/mask-gradient-smoke.md",
+      "upstream_git_blob_sha1": "aca5cc26524346f2f9898d39719ea14f0723e865",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/multilingual-text-smoke.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/multilingual-text-smoke.md",
+      "upstream_git_blob_sha1": "6896253a735b7c69d746f8c2f2a7bd94b22e2c8e",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/pptx-animations.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/pptx-animations.md",
+      "upstream_git_blob_sha1": "8a3964001adb044e7c8b9457ad2bdfedc0cb9084",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/pptx-transitions.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/pptx-transitions.md",
+      "upstream_git_blob_sha1": "33c77fc4f26c52a787b0aa92ca3d7bf569b6b8cd",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/project.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/project.md",
+      "upstream_git_blob_sha1": "e04ea7bcddad0e840cfebcdb8a5465f0a7355156",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/prompt_audit.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/prompt_audit.md",
+      "upstream_git_blob_sha1": "dc7d4cea3c2212ed237c9aebcfc1232d59cff82b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/svg-pipeline.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/svg-pipeline.md",
+      "upstream_git_blob_sha1": "bd4a5c346af52a352fc7a89d1c5ed2831b54693a",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/troubleshooting.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/troubleshooting.md",
+      "upstream_git_blob_sha1": "efb332654b024924a41d7bedebc70bd370c4e81c",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/update_spec.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/update_spec.md",
+      "upstream_git_blob_sha1": "c0202a38cfa788a7d041a8474a349e351a7f23d2",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/docs/video-motion-plan.md": {
+      "upstream_path": "skills/ppt-master/scripts/docs/video-motion-plan.md",
+      "upstream_git_blob_sha1": "822638d3c9ba8f118998e85a40be8c43fba2e640",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/error_helper.py": {
+      "upstream_path": "skills/ppt-master/scripts/error_helper.py",
+      "upstream_git_blob_sha1": "19b3a5fce67d5ba75732c92dbb29426c990237d4",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/extract_svg_assets.py": {
+      "upstream_path": "skills/ppt-master/scripts/extract_svg_assets.py",
+      "upstream_git_blob_sha1": "00221568406af3638b87be911632e677a875f594",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/extract_svg_pictures.py": {
+      "upstream_path": "skills/ppt-master/scripts/extract_svg_pictures.py",
+      "upstream_git_blob_sha1": "1555764d172bc414b8df5cc5373bc52cbca35e30",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/finalize_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/finalize_svg.py",
+      "upstream_git_blob_sha1": "7156a5bc8a162af6dd28e4e152290d7186b9bb08",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/__init__.py",
+      "upstream_git_blob_sha1": "11f791baa14c75a756510d53407eb266693886ff",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_bfl.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_bfl.py",
+      "upstream_git_blob_sha1": "d553365b9bd30bdf4f92db5ff30bf9b5081d5fac",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_common.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_common.py",
+      "upstream_git_blob_sha1": "56355666f311efb4e0c87e37cdabbe3bce311c71",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_fal.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_fal.py",
+      "upstream_git_blob_sha1": "0551960ffe5336727e9828f2ba8299111ec1c1bb",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_gemini.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_gemini.py",
+      "upstream_git_blob_sha1": "3f56e8bc5ea7f371dd690d8ec7ffa3f426fac96e",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_ideogram.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_ideogram.py",
+      "upstream_git_blob_sha1": "189d54013736973994b5581f0ebcebdfe08acd17",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_minimax.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_minimax.py",
+      "upstream_git_blob_sha1": "ea5bf6b21bec44e4e821a54e96a2a947b8e81c49",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_modelscope.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_modelscope.py",
+      "upstream_git_blob_sha1": "04243e907c279ff9db7227c778de12bbaddf104c",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_openai.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_openai.py",
+      "upstream_git_blob_sha1": "aa6918fb3fa1e37a4b1f3d197f3bea749ea5a1d5",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_openrouter.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_openrouter.py",
+      "upstream_git_blob_sha1": "c0851b45658572df5860d87d97f9acbe8fbdc07b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_qwen.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_qwen.py",
+      "upstream_git_blob_sha1": "7c4e19dc51a93d031d36cee9bd0dff26fa9bb2e0",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_replicate.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_replicate.py",
+      "upstream_git_blob_sha1": "00704cb5e3f2b761cdb3090845a7282f59f1260b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_siliconflow.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_siliconflow.py",
+      "upstream_git_blob_sha1": "6cf4f3340e6ad43bb80fd1d3876c82ddc5dddb9a",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_stability.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_stability.py",
+      "upstream_git_blob_sha1": "8bb80bc9c71ef2fd116d36fb1184a27e57967e54",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_volcengine.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_volcengine.py",
+      "upstream_git_blob_sha1": "3a82966cfd1eddcdf4c7569845e94c2a98297ef2",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_backends/backend_zhipu.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_backends/backend_zhipu.py",
+      "upstream_git_blob_sha1": "7b16671bd9737a2d18e0b3599fd52df6696eee86",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_gen.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_gen.py",
+      "upstream_git_blob_sha1": "ce01a34f34b4ff1387ca136f21b9c3f603143e7d",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_search.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_search.py",
+      "upstream_git_blob_sha1": "adea9ae0061b0e1f38976c2a075334f550f3ff4b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_sources/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_sources/__init__.py",
+      "upstream_git_blob_sha1": "e4f47c78527480d018792d4ed7ae6ecda783a0d0",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_sources/provider_common.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_sources/provider_common.py",
+      "upstream_git_blob_sha1": "90db688508ea6e7e82cc2b3ee44b06548196f53e",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_sources/provider_openverse.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_sources/provider_openverse.py",
+      "upstream_git_blob_sha1": "bcf7575f054f67312811012399cd0edf4c19bdcb",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_sources/provider_pexels.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_sources/provider_pexels.py",
+      "upstream_git_blob_sha1": "e48dbf856bef4c8e5a00a548a5fead4af80acc0f",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_sources/provider_pixabay.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_sources/provider_pixabay.py",
+      "upstream_git_blob_sha1": "5feb99911e26824cf8fea5d8aba896166629c809",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/image_sources/provider_wikimedia.py": {
+      "upstream_path": "skills/ppt-master/scripts/image_sources/provider_wikimedia.py",
+      "upstream_git_blob_sha1": "d3d6ddffce24718f7247722cdd6542e3abcbcbd2",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/language_tags.py": {
+      "upstream_path": "skills/ppt-master/scripts/language_tags.py",
+      "upstream_git_blob_sha1": "4ac532669d991251dd6d956a545f5f728e75a384",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/latex_render.py": {
+      "upstream_path": "skills/ppt-master/scripts/latex_render.py",
+      "upstream_git_blob_sha1": "1ae4f9ac90ef2544f115032e8e67e5b948dd11c3",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/mirror_template_materialize.py": {
+      "upstream_path": "skills/ppt-master/scripts/mirror_template_materialize.py",
+      "upstream_git_blob_sha1": "240508f9b54369bf8c1dd8ea998d2c170fde6b1d",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/narration_sync.py": {
+      "upstream_path": "skills/ppt-master/scripts/narration_sync.py",
+      "upstream_git_blob_sha1": "a5c53fbd3827a4c312b5d7c9a1c1821a80ba21d0",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/native_enhance_pptx.py": {
+      "upstream_path": "skills/ppt-master/scripts/native_enhance_pptx.py",
+      "upstream_git_blob_sha1": "0a87bb16e429b06d2c33718e3face8c2ea69fcda",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/native_enhance_pptx_core.py": {
+      "upstream_path": "skills/ppt-master/scripts/native_enhance_pptx_core.py",
+      "upstream_git_blob_sha1": "378f470bc1e84652001069f05506e5cfbc6b3620",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/native_narration_pptx.py": {
+      "upstream_path": "skills/ppt-master/scripts/native_narration_pptx.py",
+      "upstream_git_blob_sha1": "e9d0c604f3329e0454e4b6a4eb1d8492634e6c5f",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/native_payloads.py": {
+      "upstream_path": "skills/ppt-master/scripts/native_payloads.py",
+      "upstream_git_blob_sha1": "a68c94f72aba4229f291162ea8b060445ac9582c",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/notes_to_audio.py": {
+      "upstream_path": "skills/ppt-master/scripts/notes_to_audio.py",
+      "upstream_git_blob_sha1": "e75353c54d19890dcb609d0a7b204a3e30093665",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/page_context.py": {
+      "upstream_path": "skills/ppt-master/scripts/page_context.py",
+      "upstream_git_blob_sha1": "55b2689fd26cb9f60eee3bd03aa2590c7041ad4e",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/powerpoint_video.py": {
+      "upstream_path": "skills/ppt-master/scripts/powerpoint_video.py",
+      "upstream_git_blob_sha1": "f5991dde821d702af2ed74121f01d739e1c18b2d",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_animations.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_animations.py",
+      "upstream_git_blob_sha1": "fae4d227795eeac7da9f29a2c667a41cfdef4baa",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_delivery_check.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_delivery_check.py",
+      "upstream_git_blob_sha1": "d889c31ca78359e7cdc443be24836a656866caf6",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_effects.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_effects.py",
+      "upstream_git_blob_sha1": "be6517cc2d944259f4ab5d1f10af8e8b60d82303",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_intake.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_intake.py",
+      "upstream_git_blob_sha1": "63610b035576aef856a5e7fc7d95d56cfe924dcd",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_opc_validation.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_opc_validation.py",
+      "upstream_git_blob_sha1": "5d159ba9e6327fd0c9402c35334ba3e891c3dbb6",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_shapes/__init__.py",
+      "upstream_git_blob_sha1": "5e72483881292ea167eab06ef84cbc0b61857759",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/data/NOTICE.md": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_shapes/data/NOTICE.md",
+      "upstream_git_blob_sha1": "0f1424823026959f8ba871dc8951c883f5cd53bc",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/errors.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_shapes/errors.py",
+      "upstream_git_blob_sha1": "e0d3199a4f02ed18deccbd44655c501752fd19a7",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/formula.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_shapes/formula.py",
+      "upstream_git_blob_sha1": "3c07a23f196a72c4d88be0285213c032211ba2ae",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/loader.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_shapes/loader.py",
+      "upstream_git_blob_sha1": "8089a2a2672a4334f540707c94be903782a50eac",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/models.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_shapes/models.py",
+      "upstream_git_blob_sha1": "0c60151953d9842f00e9cbbf4a831fe287b7553b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/registry.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_shapes/registry.py",
+      "upstream_git_blob_sha1": "adb8cc14fc4a1e8af62154f3ddf1d73ef5acdc68",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/semantic_hash.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_shapes/semantic_hash.py",
+      "upstream_git_blob_sha1": "88cea092f8838ffa612b5975ce1bca4b42d37bca",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_shapes/xml_safety.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_shapes/xml_safety.py",
+      "upstream_git_blob_sha1": "c0b717e6a7856780ae7382b92f68060a428d7c20",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_template_import.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_template_import.py",
+      "upstream_git_blob_sha1": "bd0bc4e78d3c494d9f7f4d89385c001797956ac5",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/__init__.py",
+      "upstream_git_blob_sha1": "31ed220b2ee39f5cc54b8ea345e7b3dbca5c00fd",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/chart_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/chart_to_svg.py",
+      "upstream_git_blob_sha1": "e2568b1fba123a3d2aa3979aa706610840f02897",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/chartex_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/chartex_to_svg.py",
+      "upstream_git_blob_sha1": "669028d9e794613e1fe67aa460173710c87f3050",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/color_resolver.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/color_resolver.py",
+      "upstream_git_blob_sha1": "4785377cbfe8ff9b17fba19280bdb78e16296c70",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/converter.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/converter.py",
+      "upstream_git_blob_sha1": "370b0dd416fd9c7425b71c2c3263eb4cd5570b6c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/custgeom_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/custgeom_to_svg.py",
+      "upstream_git_blob_sha1": "e976fd01b8583fdbe28d2a21e1fb0269ea48d1a2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/effect_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/effect_to_svg.py",
+      "upstream_git_blob_sha1": "7ea6e400fd340224bdf155247280a84d6901f46b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/emu_units.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/emu_units.py",
+      "upstream_git_blob_sha1": "ab48120449dd0c184c4f00cfd36420a9a87d9e2a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/fill_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/fill_to_svg.py",
+      "upstream_git_blob_sha1": "760af4a4f51171d25a6974f45a7fa36a950404d2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/import_diagnostics.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/import_diagnostics.py",
+      "upstream_git_blob_sha1": "a6f10b974c4c827317edc8fb00ea88d92d0ccfd4",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/ln_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/ln_to_svg.py",
+      "upstream_git_blob_sha1": "7e61361630dcba46a8c79e01446911f1582b222b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/normalized_chart_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/normalized_chart_svg.py",
+      "upstream_git_blob_sha1": "f4065dbce29bd315cd66c95f1faa8848a768bbaa",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/ooxml_loader.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/ooxml_loader.py",
+      "upstream_git_blob_sha1": "47ae6cd42f67605851aac7d7170974dd09108b32",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/pic_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/pic_to_svg.py",
+      "upstream_git_blob_sha1": "d6325225ed1d05e1d2de2a1e15c4a271cdda038a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/preset_authoring.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/preset_authoring.py",
+      "upstream_git_blob_sha1": "74ced55fc75f26940dbf6a535f5760ed26190893",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/preset_registry_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/preset_registry_to_svg.py",
+      "upstream_git_blob_sha1": "db0a7fd25add19f5917a7cd0b031f8ca988a9304",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/preset_svg_markup.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/preset_svg_markup.py",
+      "upstream_git_blob_sha1": "d64532378569fc189b4b054e9ce2ead65d88be4c",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/prstgeom_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/prstgeom_to_svg.py",
+      "upstream_git_blob_sha1": "e60b1a083394f5dad1970463224a5a286b2e761c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/shape_walker.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/shape_walker.py",
+      "upstream_git_blob_sha1": "945e80bb2770cbdc084752565b7cc8f0f495fb70",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/slide_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/slide_to_svg.py",
+      "upstream_git_blob_sha1": "8fb881e842fa105cc1dfd09319c081a748bc76a8",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/tbl_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/tbl_to_svg.py",
+      "upstream_git_blob_sha1": "1f1ce21078a00091e9aeb2f8ff498bebe198b65b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg/txbody_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg/txbody_to_svg.py",
+      "upstream_git_blob_sha1": "b3240f1ea10e88a531d96735c71ca19ac053a871",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_to_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_to_svg.py",
+      "upstream_git_blob_sha1": "60340ee4e792cd863aed620f841054403e7d3792",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/pptx_transitions.py": {
+      "upstream_path": "skills/ppt-master/scripts/pptx_transitions.py",
+      "upstream_git_blob_sha1": "d96da2b48b76a23384f248e55dabbea47d4b6940",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/preset_shape_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/preset_shape_svg.py",
+      "upstream_git_blob_sha1": "24b8a0abe6173b6227dc1be66981197aa4366ffe",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/project_management/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/project_management/__init__.py",
+      "upstream_git_blob_sha1": "93a20f3bdbf493ed29983c33aedac3708ae5f2b6",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/project_management/cli.py": {
+      "upstream_path": "skills/ppt-master/scripts/project_management/cli.py",
+      "upstream_git_blob_sha1": "dc2b0f7b4b9915d1b35ac7b429712193ab721ae2",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/project_management/page_context.py": {
+      "upstream_path": "skills/ppt-master/scripts/project_management/page_context.py",
+      "upstream_git_blob_sha1": "3bbf273276bb81d434a11858f0ca622554916301",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/project_management/paths.py": {
+      "upstream_path": "skills/ppt-master/scripts/project_management/paths.py",
+      "upstream_git_blob_sha1": "fbb3b9ca47daffb042633f714bb7fa17ce0e040b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/project_management/project_specs.py": {
+      "upstream_path": "skills/ppt-master/scripts/project_management/project_specs.py",
+      "upstream_git_blob_sha1": "3260e0ee11d9f6ce207cc439a52937ee2b1bcb94",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/project_manager.py": {
+      "upstream_path": "skills/ppt-master/scripts/project_manager.py",
+      "upstream_git_blob_sha1": "d307f095295951d032719e2e3574dd13cd244ac2",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/project_specs.py": {
+      "upstream_path": "skills/ppt-master/scripts/project_specs.py",
+      "upstream_git_blob_sha1": "9cd0533c64a18ff5177e35c24a6fe24449e3c976",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/project_utils.py": {
+      "upstream_path": "skills/ppt-master/scripts/project_utils.py",
+      "upstream_git_blob_sha1": "4a3295e1c73bf499cb08549f5ffc8298c2307895",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/prompt_audit.py": {
+      "upstream_path": "skills/ppt-master/scripts/prompt_audit.py",
+      "upstream_git_blob_sha1": "b3156d6d42f7e15f15f45cc939f04665731f8f2b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/prompt_audit_manifest.json": {
+      "upstream_path": "skills/ppt-master/scripts/prompt_audit_manifest.json",
+      "upstream_git_blob_sha1": "dbb4555e45dcb583d84304f53ac36aefb30ff1f3",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/register_template.py": {
+      "upstream_path": "skills/ppt-master/scripts/register_template.py",
+      "upstream_git_blob_sha1": "b6d3ed1a265bac51b0143dd1d52edec074732ea2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/resource_paths.py": {
+      "upstream_path": "skills/ppt-master/scripts/resource_paths.py",
+      "upstream_git_blob_sha1": "ff7f3d3dc54c7399313e978167183390b6c09a81",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/rotate_images.py": {
+      "upstream_path": "skills/ppt-master/scripts/rotate_images.py",
+      "upstream_git_blob_sha1": "3c784ed9c1de8d1d0f1f19d2a183a9f7b2752bbf",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/server_common.py": {
+      "upstream_path": "skills/ppt-master/scripts/server_common.py",
+      "upstream_git_blob_sha1": "6efdbdd7963c83fb4742a03b2d5892fbc159e9f1",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/shape_boolean_svg.py": {
+      "upstream_path": "skills/ppt-master/scripts/shape_boolean_svg.py",
+      "upstream_git_blob_sha1": "f8ac8ee77e92d3ced9ea0f7dfc48578150606b78",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/slice_images.py": {
+      "upstream_path": "skills/ppt-master/scripts/slice_images.py",
+      "upstream_git_blob_sha1": "2bfe79c755433b9a343faa0661f62043f3cce396",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/slide_roster.py": {
+      "upstream_path": "skills/ppt-master/scripts/slide_roster.py",
+      "upstream_git_blob_sha1": "89022e6be643990dd387f7e737279c19ed700940",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/_batch.py": {
+      "upstream_path": "skills/ppt-master/scripts/source_to_md/_batch.py",
+      "upstream_git_blob_sha1": "ef98a09f3fa660f349cf6603c87a4805403dabca",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/_conversion_profile.py": {
+      "upstream_path": "skills/ppt-master/scripts/source_to_md/_conversion_profile.py",
+      "upstream_git_blob_sha1": "f9303fb774a6e60885a1b7dfc6b303a4142c64ca",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/_dispatcher.py": {
+      "upstream_path": "skills/ppt-master/scripts/source_to_md/_dispatcher.py",
+      "upstream_git_blob_sha1": "36240fa075387d6619630914ebb9ddaa7eb0a2c8",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/doc_to_md.py": {
+      "upstream_path": "skills/ppt-master/scripts/source_to_md/doc_to_md.py",
+      "upstream_git_blob_sha1": "9d2801c3eff5ad63e61120271a9adefc067b98e6",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/excel_to_md.py": {
+      "upstream_path": "skills/ppt-master/scripts/source_to_md/excel_to_md.py",
+      "upstream_git_blob_sha1": "54506a1f60e8fabac2af571a3f37701a1f4a2b69",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/pdf_to_md.py": {
+      "upstream_path": "skills/ppt-master/scripts/source_to_md/pdf_to_md.py",
+      "upstream_git_blob_sha1": "f73c3a92d298918bc0f3cab0ee4d6f8cf5a82fb5",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/ppt_to_md.py": {
+      "upstream_path": "skills/ppt-master/scripts/source_to_md/ppt_to_md.py",
+      "upstream_git_blob_sha1": "9e2a8d85a5530a8436cfe982081d324b5c4c4c4b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/source_to_md/web_to_md.py": {
+      "upstream_path": "skills/ppt-master/scripts/source_to_md/web_to_md.py",
+      "upstream_git_blob_sha1": "b000933cb24fb757ff20dee75e428da4ef28c102",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/source_to_md.py": {
+      "upstream_path": "skills/ppt-master/scripts/source_to_md.py",
+      "upstream_git_blob_sha1": "68bb3d93455d9279073d4bc45a9b899d0d45e928",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_authoring_view.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_authoring_view.py",
+      "upstream_git_blob_sha1": "6cb23164afcfd241d5367ebac61c8b1d8164b562",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_editor/__init__.py",
+      "upstream_git_blob_sha1": "43dad8925d04dad818162d9490e72a442928971a",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/annotations.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_editor/annotations.py",
+      "upstream_git_blob_sha1": "d7e252effdcae56ca737e4e1bdc9078bc9b340d8",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/server.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_editor/server.py",
+      "upstream_git_blob_sha1": "db0c82bbcfede83f7ffe4811cf9ce9467b43808c",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/static/app.js": {
+      "upstream_path": "skills/ppt-master/scripts/svg_editor/static/app.js",
+      "upstream_git_blob_sha1": "be7451f41d39e7fbf78ac4f6589b6d93d87d5a67",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/static/index.html": {
+      "upstream_path": "skills/ppt-master/scripts/svg_editor/static/index.html",
+      "upstream_git_blob_sha1": "d6569933764fad4497eaa4da6f03321c736801ce",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_editor/static/style.css": {
+      "upstream_path": "skills/ppt-master/scripts/svg_editor/static/style.css",
+      "upstream_git_blob_sha1": "8200404a9b62b84fb5a721b24ca0c2dfa1a4527d",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_finalize/__init__.py",
+      "upstream_git_blob_sha1": "4434081c9df6ad0b62b868f76620db4ba6c97581",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/align_embed_images.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_finalize/align_embed_images.py",
+      "upstream_git_blob_sha1": "624d104a89bc4b4d16a42579237b889230e4e8d2",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/crop_images.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_finalize/crop_images.py",
+      "upstream_git_blob_sha1": "028bc3190f5c9d2f10878649bbc8a712473154ae",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/embed_icons.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_finalize/embed_icons.py",
+      "upstream_git_blob_sha1": "0b4638dd971e703a2db4f10027e4f14feba3297c",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/embed_images.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_finalize/embed_images.py",
+      "upstream_git_blob_sha1": "08be8b7c1a6297b4f337a47c22ff83c8ee4835d5",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/fix_image_aspect.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_finalize/fix_image_aspect.py",
+      "upstream_git_blob_sha1": "1e47a6ce8468d2cf8d792ee55a5a2c96a77b7613",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/flatten_tspan.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_finalize/flatten_tspan.py",
+      "upstream_git_blob_sha1": "b5e5d91770d60dcc7df87510ef2b668bad85932a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_finalize/svg_rect_to_path.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_finalize/svg_rect_to_path.py",
+      "upstream_git_blob_sha1": "b793bac9ba3e3b76b3d07ad224c17a40427b50ba",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_position_calculator.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_position_calculator.py",
+      "upstream_git_blob_sha1": "7278d60c63a0c2c6dcd6e5f5d59dfb4e9003b27c",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_quality/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_quality/__init__.py",
+      "upstream_git_blob_sha1": "8c3c7741fad4f74a4e9fd9f21e6521495b7e1991",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_quality/checker.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_quality/checker.py",
+      "upstream_git_blob_sha1": "a9948f1db3137261b5c7d30043d35a3caa077fb8",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_quality/cli.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_quality/cli.py",
+      "upstream_git_blob_sha1": "a367d1770e6735b3d995c01c3213584ad3200f34",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_quality/svg_contracts.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_quality/svg_contracts.py",
+      "upstream_git_blob_sha1": "b135061aa7b7ff7a088fbfc7052806c3bdd47954",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_quality/xml_support.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_quality/xml_support.py",
+      "upstream_git_blob_sha1": "17df13f3441304b9524a07e0be73171868deb698",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_quality_checker.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_quality_checker.py",
+      "upstream_git_blob_sha1": "601339128ea54c9b0dcd4086a44857e8480f809f",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/__init__.py",
+      "upstream_git_blob_sha1": "f8a1e412623c9ea590565ef97ff0b101e53f5c45",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/animation_config.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/animation_config.py",
+      "upstream_git_blob_sha1": "3adbb289f98221cc4866f5f03dc3bc6ce8739935",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/canvas_contract.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/canvas_contract.py",
+      "upstream_git_blob_sha1": "f8e2f5aec82f01200c9861dc1bc19547e75d7fde",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/drawingml/__init__.py",
+      "upstream_git_blob_sha1": "a892d4d57c43b20428aecf052b192961671e8553",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/context.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/drawingml/context.py",
+      "upstream_git_blob_sha1": "fed823d97636b04eaf5a7933501bc632e1be0836",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/converter.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/drawingml/converter.py",
+      "upstream_git_blob_sha1": "d5342139aa5be4edf219d7bc904e7d8e248b49bf",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/elements.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/drawingml/elements.py",
+      "upstream_git_blob_sha1": "887c531eec81cf215f8b3d98bed551858db27899",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/paths.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/drawingml/paths.py",
+      "upstream_git_blob_sha1": "a12a6594e3e4d2bb1ba02d8b1e765f922612bdee",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/styles.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/drawingml/styles.py",
+      "upstream_git_blob_sha1": "6f9d57842bab592d7b164e04f50f52a07640b4b1",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/text_properties.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/drawingml/text_properties.py",
+      "upstream_git_blob_sha1": "317be3e3d5eccc89689bd31988faa5b47a0bdc6f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/theme_colors.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/drawingml/theme_colors.py",
+      "upstream_git_blob_sha1": "a296d9d4fc7793f143be804bd3aad23e4a9b897d",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/theme_fonts.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/drawingml/theme_fonts.py",
+      "upstream_git_blob_sha1": "645c52b1c9bae0a6768eb9ea970cc25dd34d2af2",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/drawingml/utils.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/drawingml/utils.py",
+      "upstream_git_blob_sha1": "447c7a54eafb6c7e42421244d3f91c9acea617a5",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/geometry_properties.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/geometry_properties.py",
+      "upstream_git_blob_sha1": "b1e26a7bc70d662b1e92b37dadcadd863389a89a",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/__init__.py",
+      "upstream_git_blob_sha1": "b58523813d91d956913703d68af93145b7d6b013",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/chart_data.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/chart_data.py",
+      "upstream_git_blob_sha1": "92c429928a4545707bc3961745d822ac6f708a2d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/chart_style.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/chart_style.py",
+      "upstream_git_blob_sha1": "9b311b7219c03ba6611e765a25d187de33e0c506",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/chart_xml.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/chart_xml.py",
+      "upstream_git_blob_sha1": "8ca2a59ace540ef28153e1837d83f56e9c225f91",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/chartex.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/chartex.py",
+      "upstream_git_blob_sha1": "e0577d8890da1c148b0bd2f6f85303073cf349cb",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/fallback_hash.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/fallback_hash.py",
+      "upstream_git_blob_sha1": "926f00aebd9f52ff0dee73f4177e999919dc8cd9",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/marker_attributes.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/marker_attributes.py",
+      "upstream_git_blob_sha1": "20b6f1f53473d3749a6ce5a997f7ed35b1be16f5",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/marker_common.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/marker_common.py",
+      "upstream_git_blob_sha1": "f667f70c02fe38f82b0f4df5ee85aa23b4ed875e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/marker_status.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/marker_status.py",
+      "upstream_git_blob_sha1": "cd59e20e5fe743896905c9df99df8865fb05aa8c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/table.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/table.py",
+      "upstream_git_blob_sha1": "28e1e332c61f30af319b0b1540199ac39183bcd6",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/native_objects/workbook.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/native_objects/workbook.py",
+      "upstream_git_blob_sha1": "29770395b01bcb33958134dbf705fda935eedcb3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/__init__.py",
+      "upstream_git_blob_sha1": "b677487d64dc9dc5656f5bf67f660ffebfd631c1",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/builder.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/builder.py",
+      "upstream_git_blob_sha1": "681f602d37e84b697491d2d3095128686df4b9f5",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/cli.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/cli.py",
+      "upstream_git_blob_sha1": "bdfcb1091400f80c02fac804ed81f1e67647c4eb",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/dimensions.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/dimensions.py",
+      "upstream_git_blob_sha1": "7a1446b69f751cfa8f5f708e4cc0b5e33d5b7eaf",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/discovery.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/discovery.py",
+      "upstream_git_blob_sha1": "9cd91c7a84ec392cb39c38f08200921ffc41bf8b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/media.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/media.py",
+      "upstream_git_blob_sha1": "e54c6a4302468cab7c98911c884ae6a5c86399cc",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/narration.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/narration.py",
+      "upstream_git_blob_sha1": "58ccdd22af278b6821c3bb43eb78630bbee1454d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/notes.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/notes.py",
+      "upstream_git_blob_sha1": "ef487089856bea88fa8afa8433ae3171a9a6f166",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/slide_xml.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/slide_xml.py",
+      "upstream_git_blob_sha1": "f9ec9e638613880f42d4b3fb50c8898539df2b20",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/template_structure.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/template_structure.py",
+      "upstream_git_blob_sha1": "85a4571c05c60741c62a914b855778d00e7651f8",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/pptx_package/template_validation.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/pptx_package/template_validation.py",
+      "upstream_git_blob_sha1": "77e12601f6f62e94c90d6dbed0acabf782ddac9c",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/semantic_markers.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/semantic_markers.py",
+      "upstream_git_blob_sha1": "f1dbb2e64c186765991a72bbf71a414518b0910e",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/shape_boolean.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/shape_boolean.py",
+      "upstream_git_blob_sha1": "8cd7cab047cc1c9f1c761d4079d2d3d9d991baa8",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/text_outline.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/text_outline.py",
+      "upstream_git_blob_sha1": "fe6d923b19d7fb75ccdb00b0f23522805538eaf7",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/tspan_flattener.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/tspan_flattener.py",
+      "upstream_git_blob_sha1": "ce4b93b7e91f04168e0748507b6af388ef608d34",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx/use_expander.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx/use_expander.py",
+      "upstream_git_blob_sha1": "e5216ea235f9b875d5db5b766edd7f8571821e25",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/svg_to_pptx.py": {
+      "upstream_path": "skills/ppt-master/scripts/svg_to_pptx.py",
+      "upstream_git_blob_sha1": "4240b6391a36d112c5006702b46ab4b2c3d75b5e",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/__init__.py",
+      "upstream_git_blob_sha1": "8f3a682c7357ce8cb07eb1d9707557be518c5df3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/analyzer.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/analyzer.py",
+      "upstream_git_blob_sha1": "9d8860d28ea85e27e5b4b1a94614fa4c3816ff4a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/applier.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/applier.py",
+      "upstream_git_blob_sha1": "7285f5068837f8413e5698afcf4eea969fba0980",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/chart_fill.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/chart_fill.py",
+      "upstream_git_blob_sha1": "d3c33257958ad77b64c40b6fa9b5274adb7537db",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/chart_read.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/chart_read.py",
+      "upstream_git_blob_sha1": "e3d9e65c375b48a4c4c1423b80920d6fc9e2882a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/checker.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/checker.py",
+      "upstream_git_blob_sha1": "61cda269174933fda39f7e45ca906bd8ec687a72",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/cli.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/cli.py",
+      "upstream_git_blob_sha1": "53b5ce856f93eb7f9b6dc37ee8b9154ec201d21e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/clone.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/clone.py",
+      "upstream_git_blob_sha1": "2790007f34129ff4a9687659c9fe799ee164a848",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/diagram_read.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/diagram_read.py",
+      "upstream_git_blob_sha1": "878763f0473e94eb97337b77596354ce22c3683a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/edit_safety.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/edit_safety.py",
+      "upstream_git_blob_sha1": "e3146910d93b3d9d18b87bb5c159f3ff3041a2c3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/notes.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/notes.py",
+      "upstream_git_blob_sha1": "807054076d64a27cced4efc5dac7261a1c1bbeb5",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/ooxml.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/ooxml.py",
+      "upstream_git_blob_sha1": "5dbdc6eca5ca0943e81edcf114080c6350c4279d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/package.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/package.py",
+      "upstream_git_blob_sha1": "8f728c9c7fdecd53c01ec7f0e42ff9d833e8d697",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/scaffolder.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/scaffolder.py",
+      "upstream_git_blob_sha1": "0560711c1e673fc16485469f9b1684c9c9b47cf4",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/selectors.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/selectors.py",
+      "upstream_git_blob_sha1": "2934006c4b251912aa261cf65babc2325f79217b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/table_fill.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/table_fill.py",
+      "upstream_git_blob_sha1": "7d43605ca600a55ee0ce3063094f108d1fb8d7e1",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/text_fill.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/text_fill.py",
+      "upstream_git_blob_sha1": "d441325aa9d2c954a2a9184a9c3543ac5066cc57",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/transitions.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/transitions.py",
+      "upstream_git_blob_sha1": "b59110d16c36e0821e8f4e5c6d6aa285b8e03fba",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx/validator.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx/validator.py",
+      "upstream_git_blob_sha1": "492593e01db58d8bc24a6e7490d2dd694fe9c1a3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_fill_pptx.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_fill_pptx.py",
+      "upstream_git_blob_sha1": "80baef832bda3f2febe3fe8fdb0750df68f5f3ad",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/template_import/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_import/__init__.py",
+      "upstream_git_blob_sha1": "ac7715c7915a420886e4743e65bfc64370d75920",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_import/manifest.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_import/manifest.py",
+      "upstream_git_blob_sha1": "a3310e806a6e42aecaf6653e047df2cdea913dde",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/template_import/native_structure.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_import/native_structure.py",
+      "upstream_git_blob_sha1": "0ca85605db37361d6fa574107e311042e65f2959",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/template_preview_pptx.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_preview_pptx.py",
+      "upstream_git_blob_sha1": "693ac02ee163130c3b1bc25c092daa4522743ce8",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/template_text_slots.py": {
+      "upstream_path": "skills/ppt-master/scripts/template_text_slots.py",
+      "upstream_git_blob_sha1": "2ffbc235fb928aa13f6fbe6ed5294b24a0675e86",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/total_md_split.py": {
+      "upstream_path": "skills/ppt-master/scripts/total_md_split.py",
+      "upstream_git_blob_sha1": "cd8cac240c2ab0d47fc16341af4594ac5f9733a8",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/__init__.py": {
+      "upstream_path": "skills/ppt-master/scripts/tts_backends/__init__.py",
+      "upstream_git_blob_sha1": "c4d2bd4c8848a6550cbe14c92d4aa69d8bc07c56",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_common.py": {
+      "upstream_path": "skills/ppt-master/scripts/tts_backends/backend_common.py",
+      "upstream_git_blob_sha1": "787a09266baa249e3de44a97b7d5535dd31eb2bf",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_cosyvoice.py": {
+      "upstream_path": "skills/ppt-master/scripts/tts_backends/backend_cosyvoice.py",
+      "upstream_git_blob_sha1": "e8cd7fcc014414bd76e7044d96f1626766a0565a",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_edge.py": {
+      "upstream_path": "skills/ppt-master/scripts/tts_backends/backend_edge.py",
+      "upstream_git_blob_sha1": "8d0856e0011cc9d4c070d74f7917b335fd200adc",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_elevenlabs.py": {
+      "upstream_path": "skills/ppt-master/scripts/tts_backends/backend_elevenlabs.py",
+      "upstream_git_blob_sha1": "ac3619ab870f63b93f6db45ff0a1f791fd49f9a3",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_minimax.py": {
+      "upstream_path": "skills/ppt-master/scripts/tts_backends/backend_minimax.py",
+      "upstream_git_blob_sha1": "46b7dd65ab38fe18e3cbfda9d6e24dc8feb569db",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/tts_backends/backend_qwen.py": {
+      "upstream_path": "skills/ppt-master/scripts/tts_backends/backend_qwen.py",
+      "upstream_git_blob_sha1": "325abdbac4708e0b867fa7ea22dae749026c035d",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/update_spec.py": {
+      "upstream_path": "skills/ppt-master/scripts/update_spec.py",
+      "upstream_git_blob_sha1": "ac73c9035c77cc25c0ecfc8f2ec1bf875fe2ca04",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/scripts/video_motion_plan.py": {
+      "upstream_path": "skills/ppt-master/scripts/video_motion_plan.py",
+      "upstream_git_blob_sha1": "c78215b47511d6df1585c3f3c2947b0f5fa31aa5",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/video_subtitles.py": {
+      "upstream_path": "skills/ppt-master/scripts/video_subtitles.py",
+      "upstream_git_blob_sha1": "9fe6f05c54d320429211403a57df80f772c4a739",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/visual_review.py": {
+      "upstream_path": "skills/ppt-master/scripts/visual_review.py",
+      "upstream_git_blob_sha1": "5f86200390e9feb1a5b18caafc89b73210a49d87",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/workflow_log.py": {
+      "upstream_path": "skills/ppt-master/scripts/workflow_log.py",
+      "upstream_git_blob_sha1": "486f83450d1564511d12abe1004b75c8ff7f9465",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/scripts/workflow_transcript.py": {
+      "upstream_path": "skills/ppt-master/scripts/workflow_transcript.py",
+      "upstream_git_blob_sha1": "6fb846d0ced8b40331e90bd5b4c4da16aa388089",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/README.md": {
+      "upstream_path": "skills/ppt-master/templates/README.md",
+      "upstream_git_blob_sha1": "944e6d877717361faca06f5c4aa9679681e51801",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/brands/README.md": {
+      "upstream_path": "skills/ppt-master/templates/brands/README.md",
+      "upstream_git_blob_sha1": "924f9e91964b538f9bc3ccdffe62cce8b8ce6660",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/brands/brands_index.json": {
+      "upstream_path": "skills/ppt-master/templates/brands/brands_index.json",
+      "upstream_git_blob_sha1": "73506d79fe3f5308dbc491f0e021205e7cf5d6f1",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/charts/CHART_STYLE_GUIDE.md": {
+      "upstream_path": "skills/ppt-master/templates/charts/CHART_STYLE_GUIDE.md",
+      "upstream_git_blob_sha1": "24553d2175d8ee62252daec4d0f015c927c19e47",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/charts/README.md": {
+      "upstream_path": "skills/ppt-master/templates/charts/README.md",
+      "upstream_git_blob_sha1": "413309741f60c6bd2fc09388ea55f65bd4a06381",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/charts/agenda_list.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/agenda_list.svg",
+      "upstream_git_blob_sha1": "af706a8b6e678648c0a65e12227af165e5064ace",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/arc_anchored_list.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/arc_anchored_list.svg",
+      "upstream_git_blob_sha1": "e9efb050f77d656be034af3f983251b24cf68c76",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/area_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/area_chart.svg",
+      "upstream_git_blob_sha1": "cd1bb28ad3fdff4de30230de2fea5b6dea409b25",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/bar_of_pie_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/bar_of_pie_chart.svg",
+      "upstream_git_blob_sha1": "274ecfba8281c039eb7ae2e8a3491138823ec03f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/basic_table.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/basic_table.svg",
+      "upstream_git_blob_sha1": "52e20f96df43fb6583b4b7123fcfae10cf939177",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/box_plot_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/box_plot_chart.svg",
+      "upstream_git_blob_sha1": "aa0a034cdeb33538159d06e52c8d39f32865eaab",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/bubble_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/bubble_chart.svg",
+      "upstream_git_blob_sha1": "13533944f0c14149e7aad8f0ed27754813807828",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/bullet_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/bullet_chart.svg",
+      "upstream_git_blob_sha1": "8e917bbcc276b27bdd14837734f06a1aaa6522b2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/butterfly_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/butterfly_chart.svg",
+      "upstream_git_blob_sha1": "e96b24a2da4cbd0d5d8c761011a76353300d80f7",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/charts_index.json": {
+      "upstream_path": "skills/ppt-master/templates/charts/charts_index.json",
+      "upstream_git_blob_sha1": "5d8d83f0a30cb18d01e6f5681fd30b5fb86c7072",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/chevron_chain_with_tail.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/chevron_chain_with_tail.svg",
+      "upstream_git_blob_sha1": "19e9bb7dcdc7eea4c9d2fb3c535974c05676594f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/chevron_process.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/chevron_process.svg",
+      "upstream_git_blob_sha1": "2f8e72fda4e3e5b7e387e1411128a945d89f4ad8",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/circular_stages.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/circular_stages.svg",
+      "upstream_git_blob_sha1": "092c1c1b0a15bab52810a946462d022742ec2973",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/client_server_flow.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/client_server_flow.svg",
+      "upstream_git_blob_sha1": "2dc3b61b4ecaf979276dc306b9e41fd9dd92cae5",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/column_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/column_chart.svg",
+      "upstream_git_blob_sha1": "a20eed0ba171c219322528bb5a4913fe0536fded",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/comparison_columns.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/comparison_columns.svg",
+      "upstream_git_blob_sha1": "2e942b2e0e9c43812616e7f404b554bd22cdb8e0",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/comparison_table.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/comparison_table.svg",
+      "upstream_git_blob_sha1": "ad71d5a3fa682656642928ce67f59d6d81181392",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/concentric_circles.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/concentric_circles.svg",
+      "upstream_git_blob_sha1": "994b4c5f629d75fdf1b11376a42937ba9b14317a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/consulting_table.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/consulting_table.svg",
+      "upstream_git_blob_sha1": "316e2cc418cc5d49d082c8897e7a873963ed6ffd",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/donut_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/donut_chart.svg",
+      "upstream_git_blob_sha1": "d189132d46cd8acb912cbf2af874dd71928dcaeb",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/dual_axis_line_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/dual_axis_line_chart.svg",
+      "upstream_git_blob_sha1": "f70d809138d28ce351a38c3fdc753400e01022d4",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/dumbbell_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/dumbbell_chart.svg",
+      "upstream_git_blob_sha1": "dcf61d28690c4f7dc023028ac3c095d59fe8270d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/feature_matrix_table.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/feature_matrix_table.svg",
+      "upstream_git_blob_sha1": "9b1a7a39e4cba9e5483d752a0fd3879bf60c9494",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/financial_statement_table.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/financial_statement_table.svg",
+      "upstream_git_blob_sha1": "29a47080f911d94f554ba8747b0da4e7cf1d4dac",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/fishbone_diagram.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/fishbone_diagram.svg",
+      "upstream_git_blob_sha1": "4072e5015f5562d56a49c8e64ca959288feb32a4",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/funnel_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/funnel_chart.svg",
+      "upstream_git_blob_sha1": "e121f24fb6d827570e4a73e115502f9b9d1d32ff",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/gantt_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/gantt_chart.svg",
+      "upstream_git_blob_sha1": "705b83e632a6c85b22bab0f226c3fcfe2c92236c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/gauge_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/gauge_chart.svg",
+      "upstream_git_blob_sha1": "a79838fa8acaca4fc45e2f9039691fa664c6abb3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/grouped_bar_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/grouped_bar_chart.svg",
+      "upstream_git_blob_sha1": "1eb48912a3b90c67c24c40e511fcc640ff3163fb",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/harvey_balls_table.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/harvey_balls_table.svg",
+      "upstream_git_blob_sha1": "381ed4393bdfed44b12bc77dd40fb28189774e8c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/heatmap_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/heatmap_chart.svg",
+      "upstream_git_blob_sha1": "df97c03add47fcc7f68b90d6fb61b660860d172a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/histogram_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/histogram_chart.svg",
+      "upstream_git_blob_sha1": "0c6527e11776072ea7d32f23b2b2536e6a8c445b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/horizontal_bar_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/horizontal_bar_chart.svg",
+      "upstream_git_blob_sha1": "b980ec6fc363a06284a1332359ec5b75571ab242",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/hub_inward_arrows.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/hub_inward_arrows.svg",
+      "upstream_git_blob_sha1": "163d29f44643eaeb4c4ea64b88ed1e398a68ca8a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/hub_spoke.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/hub_spoke.svg",
+      "upstream_git_blob_sha1": "f954a54ba3961b335ba6885d14aaf51f79e29073",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/icon_grid.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/icon_grid.svg",
+      "upstream_git_blob_sha1": "54ca667faa32326e6cbd96c7e7b6cc6274eb5e42",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/isometric_stairs.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/isometric_stairs.svg",
+      "upstream_git_blob_sha1": "e068e39411955ddc4146de713db7e7a95fc3a93c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/journey_map.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/journey_map.svg",
+      "upstream_git_blob_sha1": "071c245f60dfa95354a5b00d98c4c6c7a219cb2c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/kpi_cards.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/kpi_cards.svg",
+      "upstream_git_blob_sha1": "9b0a10bc5cdbf3acd402f5a35e26b813da18157b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/labeled_card.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/labeled_card.svg",
+      "upstream_git_blob_sha1": "ac81b9c937f4a21f331c10023fa22995fbf70a6e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/layered_architecture.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/layered_architecture.svg",
+      "upstream_git_blob_sha1": "4c6d34ed4cd4fff265c261d1530c6a5a254ee278",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/line_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/line_chart.svg",
+      "upstream_git_blob_sha1": "2f396280ce6af49d8013ebc4d04144355308e918",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/matrix_2x2.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/matrix_2x2.svg",
+      "upstream_git_blob_sha1": "ffca6995abd1c5093c7fd17f175f293367a43365",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/mind_map.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/mind_map.svg",
+      "upstream_git_blob_sha1": "1a186fb45f043ce704cfcc83888797bcd31f4226",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/module_composition.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/module_composition.svg",
+      "upstream_git_blob_sha1": "d14e9dfd21933b34b6cd6541ca8812c281ddffdd",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/numbered_steps.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/numbered_steps.svg",
+      "upstream_git_blob_sha1": "e7435e2bfeaae3c4c921c751de7c6885b6cc03da",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/pareto_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/pareto_chart.svg",
+      "upstream_git_blob_sha1": "348803219069b1941d570e28daacfe40762c53b7",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/pie_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/pie_chart.svg",
+      "upstream_git_blob_sha1": "455e62496667aa51168dc4f9aa538c1f1de3fef0",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/pie_of_pie_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/pie_of_pie_chart.svg",
+      "upstream_git_blob_sha1": "4bac829c32328e67164f0a5df93937651f94ec7e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/pipeline_with_stages.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/pipeline_with_stages.svg",
+      "upstream_git_blob_sha1": "ae5cc022f046f944e9529953af5ddb8c53803d71",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/process_flow.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/process_flow.svg",
+      "upstream_git_blob_sha1": "fa7d1197ab0706a02134598247716c2b9947b917",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/progress_bar_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/progress_bar_chart.svg",
+      "upstream_git_blob_sha1": "a0f3572b895ecc2ae95ee994bd0e4ae9a540a66f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/project_schedule_table.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/project_schedule_table.svg",
+      "upstream_git_blob_sha1": "7c838b62fa6f39c122f33ff944928f3c9c878607",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/pros_cons_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/pros_cons_chart.svg",
+      "upstream_git_blob_sha1": "7997cdd7ca7d1ddc7b89c4f3309f974fce6c5cd5",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/pyramid_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/pyramid_chart.svg",
+      "upstream_git_blob_sha1": "305905980689c6d874dbde6fdbe5401a67007846",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/pyramid_isometric.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/pyramid_isometric.svg",
+      "upstream_git_blob_sha1": "81501cb2047c263620af01625366665c71ee8ed3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/quadrant_bubble_scatter.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/quadrant_bubble_scatter.svg",
+      "upstream_git_blob_sha1": "7dbefe91a2f1aeb996d1e16633691cb6af0bea08",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/quadrant_text_bullets.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/quadrant_text_bullets.svg",
+      "upstream_git_blob_sha1": "51e604b9e78ced6810adfabc6f508d1456812dfe",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/radar_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/radar_chart.svg",
+      "upstream_git_blob_sha1": "15f511a44b9e258da2c2685d1dcee4b392eb9b54",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/roadmap_vertical.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/roadmap_vertical.svg",
+      "upstream_git_blob_sha1": "ea601c60f9769beedbfccb4d9d26d3e44e236cb3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/sankey_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/sankey_chart.svg",
+      "upstream_git_blob_sha1": "dc893f3f3c772fc72e2cbafa24ff5a291a16e856",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/scatter_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/scatter_chart.svg",
+      "upstream_git_blob_sha1": "7d54552f3a59726c040520c710f5d0e82fed6b38",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/segmented_wheel.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/segmented_wheel.svg",
+      "upstream_git_blob_sha1": "7e26e8ece692e8086ae1740f5c130a26520e7b2b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/snake_flow.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/snake_flow.svg",
+      "upstream_git_blob_sha1": "00873490e6ce4f17ea58396c81643771bcbb49f0",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/stacked_area_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/stacked_area_chart.svg",
+      "upstream_git_blob_sha1": "3adf38c3ca9e5274b0f6b380fdf93876e27defa4",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/stacked_bar_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/stacked_bar_chart.svg",
+      "upstream_git_blob_sha1": "986a342dc6674ada47d65836e9e1a2be3b7ced6b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/stock_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/stock_chart.svg",
+      "upstream_git_blob_sha1": "416888ed862be632a0f3c2969af81d87f6fae54f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/sunburst_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/sunburst_chart.svg",
+      "upstream_git_blob_sha1": "d4ded80d04453c0e559bce65edf9eb97b0874b7b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/team_roster.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/team_roster.svg",
+      "upstream_git_blob_sha1": "6369c230df2facc6c9328161f5860b56eb3af8b3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/timeline.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/timeline.svg",
+      "upstream_git_blob_sha1": "faf1b517ec675fa80121cfa6ba1d5986cb9812a2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/top_down_tree.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/top_down_tree.svg",
+      "upstream_git_blob_sha1": "5beb8393890d85491ea598a2b4dd8509628c51f8",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/treemap_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/treemap_chart.svg",
+      "upstream_git_blob_sha1": "d283bf60134bcd3681625dab30e84b6e71cb769e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/venn_diagram.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/venn_diagram.svg",
+      "upstream_git_blob_sha1": "f7416200ad22366bd103f43485f148a7099e2646",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/vertical_list.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/vertical_list.svg",
+      "upstream_git_blob_sha1": "c48c8e18674b13d6ee958a4c094082fef80ed7bb",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/vertical_pillars.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/vertical_pillars.svg",
+      "upstream_git_blob_sha1": "b3f5f560969b8b75a51d3483dd724d62c3fb122c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/waterfall_chart.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/waterfall_chart.svg",
+      "upstream_git_blob_sha1": "f71324968c9c6e6f5ed2ce66e6e48fd4dc051f82",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/charts/word_cloud.svg": {
+      "upstream_path": "skills/ppt-master/templates/charts/word_cloud.svg",
+      "upstream_git_blob_sha1": "9fea8d066d77c654e72b3825841d6d0e017e7415",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/decks/README.md": {
+      "upstream_path": "skills/ppt-master/templates/decks/README.md",
+      "upstream_git_blob_sha1": "bd96498ff2f4008ff4fc95e3548753334558aad0",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/decks/decks_index.json": {
+      "upstream_path": "skills/ppt-master/templates/decks/decks_index.json",
+      "upstream_git_blob_sha1": "2fc466ed20c1c019375074d17599b0414f3de50b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/design_spec_reference.md": {
+      "upstream_path": "skills/ppt-master/templates/design_spec_reference.md",
+      "upstream_git_blob_sha1": "2f97599790b4ca7bc96c9adeed3a389e86bb1ade",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/layouts/README.md": {
+      "upstream_path": "skills/ppt-master/templates/layouts/README.md",
+      "upstream_git_blob_sha1": "4bb5ec7d8dedc820df88c16a129eeb9640e9b888",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/01_hero_full.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/01_hero_full.svg",
+      "upstream_git_blob_sha1": "99738ed89e4430458b033980fefa09c249cdc420",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/02_hero_side_scrim.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/02_hero_side_scrim.svg",
+      "upstream_git_blob_sha1": "54b46d0227f8407b56681d95af15f8798ccce68f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/03_split_bleed.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/03_split_bleed.svg",
+      "upstream_git_blob_sha1": "029f4fffeca0b8925686ac0342cf6c07f74b920d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/04_split_bleed_reverse.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/04_split_bleed_reverse.svg",
+      "upstream_git_blob_sha1": "4be88180ae09e10c3a67fb3c6b0ceb5277df285a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/05_chapter_full.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/05_chapter_full.svg",
+      "upstream_git_blob_sha1": "16a5309977126e1b31b5b7353423c94eb33cbce1",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/06_quote_over_image.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/06_quote_over_image.svg",
+      "upstream_git_blob_sha1": "eab34f1c8deed9b0af5d7d44a02baf0483f20c2d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/07_triptych.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/07_triptych.svg",
+      "upstream_git_blob_sha1": "976b9cfe1539a311e292471ee5dcedf6c546c405",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/08_image_grid_four.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/08_image_grid_four.svg",
+      "upstream_git_blob_sha1": "34b82f0b9a8d37c6d02936891e692d6ef4256a72",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/09_full_statement.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/09_full_statement.svg",
+      "upstream_git_blob_sha1": "c293a7b74f5b0ccf8a81eddefdbb7f214a83b53b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/10_closing_full.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/10_closing_full.svg",
+      "upstream_git_blob_sha1": "250ea0bb315520245d9c9e756c3b9f92a3df9e9b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/editorial_bleed/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/layouts/editorial_bleed/templates/design_spec.md",
+      "upstream_git_blob_sha1": "eceaa54361129efcf17ce8e30cd666bd15d29d6e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/layouts_index.json": {
+      "upstream_path": "skills/ppt-master/templates/layouts/layouts_index.json",
+      "upstream_git_blob_sha1": "58f1e6045e9d53501636090b6bf606167176e917",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/01_cover.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/moments_square/templates/01_cover.svg",
+      "upstream_git_blob_sha1": "890e593ebb851774710bf5750cebe2965053f96e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/02_statement.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/moments_square/templates/02_statement.svg",
+      "upstream_git_blob_sha1": "efe63910de140e937b554d0f35395ca0d3ce2e97",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/03_title_content.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/moments_square/templates/03_title_content.svg",
+      "upstream_git_blob_sha1": "e23dd9721b623fda9f6fcb70fd8ca4b6602e9625",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/04_two_column.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/moments_square/templates/04_two_column.svg",
+      "upstream_git_blob_sha1": "e835bfcd3d0a323019a4b75831cc56e5ab33df92",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/05_three_row.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/moments_square/templates/05_three_row.svg",
+      "upstream_git_blob_sha1": "f8f35333271b78553ad649ab9e1d379d0e689fa8",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/06_image_center.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/moments_square/templates/06_image_center.svg",
+      "upstream_git_blob_sha1": "26c16c5812965acf73d3b4834182c48cab535892",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/07_image_full.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/moments_square/templates/07_image_full.svg",
+      "upstream_git_blob_sha1": "25734555f551edf3f9c35eb3d58392a16a298b05",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/08_ending.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/moments_square/templates/08_ending.svg",
+      "upstream_git_blob_sha1": "2488f1e0117611d1a80267a5aa23c8d96c747102",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/moments_square/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/layouts/moments_square/templates/design_spec.md",
+      "upstream_git_blob_sha1": "1c8b3b7c1a295bf910b951c379f744e5a3236c18",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/01_title_slide.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/01_title_slide.svg",
+      "upstream_git_blob_sha1": "95ccc962aceb7c8d4ee2d0fa07e487b414d36dd3",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/02_title_content.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/02_title_content.svg",
+      "upstream_git_blob_sha1": "5235367ec12c13886fe8b7ea6c1a20d47ce09ffb",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/03_section_header.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/03_section_header.svg",
+      "upstream_git_blob_sha1": "5f9a95adf949134982d9fef14a4f1830ac9ac22f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/04_two_content.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/04_two_content.svg",
+      "upstream_git_blob_sha1": "26754a3b3619444e741a35ceb21403d5f06c5366",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/05_comparison.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/05_comparison.svg",
+      "upstream_git_blob_sha1": "846182d045635b5942f1ac5dbfa35137f5544e9e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/06_title_only.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/06_title_only.svg",
+      "upstream_git_blob_sha1": "b6b33ebae57a74a0cd1aedbc5bf9c9c5ea7e2535",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/07_blank.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/07_blank.svg",
+      "upstream_git_blob_sha1": "82f51c316ae984755686d5ecaf1f1f29421e7923",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/08_content_caption.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/08_content_caption.svg",
+      "upstream_git_blob_sha1": "06c2d73442869ec8a665f706d28470e061afaf2a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/09_picture_caption.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/09_picture_caption.svg",
+      "upstream_git_blob_sha1": "4abe9a51601db29bb28b4ed83d9cdd15708d2c8f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/10_hero_statement.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/10_hero_statement.svg",
+      "upstream_git_blob_sha1": "0306bbb14918309cb35117bc3a7c500ee7de6353",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/11_editorial_split.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/11_editorial_split.svg",
+      "upstream_git_blob_sha1": "31f2cffe0bf8cb5695c99995e10cb0326423dec4",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/12_three_card.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/12_three_card.svg",
+      "upstream_git_blob_sha1": "656b7c6e5c8c120235e702dd2966e8cdefc833f2",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/13_kpi_dashboard.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/13_kpi_dashboard.svg",
+      "upstream_git_blob_sha1": "4089471b0139007a10009917873b6117c7982d1c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/14_process_timeline.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/14_process_timeline.svg",
+      "upstream_git_blob_sha1": "508677c5ae3b909ef914186f25e0823c81eed215",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/15_data_story.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/15_data_story.svg",
+      "upstream_git_blob_sha1": "03702dcf125a378a47f4e71f08423558a821590e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/16_title_picture.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/16_title_picture.svg",
+      "upstream_git_blob_sha1": "cc08358c10b900c255ea3af8cfe44d05df4d9cb6",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/17_two_picture_caption.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/17_two_picture_caption.svg",
+      "upstream_git_blob_sha1": "c3ac85abfbabd3f84debcf9f74146b1771eb8161",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/18_screenshot_focus.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/18_screenshot_focus.svg",
+      "upstream_git_blob_sha1": "63c459c6dd8c223939b47eb1849b1731500d7a12",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/19_chart_insight.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/19_chart_insight.svg",
+      "upstream_git_blob_sha1": "1e8d18415ad43487c360fb4f45e29e44f06fa063",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/20_table_summary.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/20_table_summary.svg",
+      "upstream_git_blob_sha1": "eb719943134b768658387b0d983737e92a6ed554",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core/templates/design_spec.md",
+      "upstream_git_blob_sha1": "be2a1626297ace9f405bb75b288c85f2b206eef0",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/01_title_slide.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/01_title_slide.svg",
+      "upstream_git_blob_sha1": "a990e8d6a812b857ba09425342baa721a6b2e698",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/02_title_content.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/02_title_content.svg",
+      "upstream_git_blob_sha1": "4c749bc04e5ec7fcd344281ae3f7d12eab11a23c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/03_section_header.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/03_section_header.svg",
+      "upstream_git_blob_sha1": "11366b8dc24b26633eb3d45729908f6b45ac96a9",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/04_two_content.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/04_two_content.svg",
+      "upstream_git_blob_sha1": "e19e8368c1bf4ca5d01941be87d677cf12b3b06e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/05_comparison.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/05_comparison.svg",
+      "upstream_git_blob_sha1": "4933c4a93258d6b1633c76e029de90de0c39cd94",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/06_title_only.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/06_title_only.svg",
+      "upstream_git_blob_sha1": "10344ca8b59425f545892dd76964e14935b410b8",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/07_blank.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/07_blank.svg",
+      "upstream_git_blob_sha1": "4070b87614e92e6172ba2e5ca88a47274cd64b41",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/08_content_caption.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/08_content_caption.svg",
+      "upstream_git_blob_sha1": "e1609f6c8620da9fcacce8af32e5d89598f8fd35",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/09_picture_caption.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/09_picture_caption.svg",
+      "upstream_git_blob_sha1": "682ab18cf7138d38a8cec9899073a7527a0dd28a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/10_hero_statement.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/10_hero_statement.svg",
+      "upstream_git_blob_sha1": "cd5ed9ca752a57d962165cdfa87675abc7654468",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/11_three_card.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/11_three_card.svg",
+      "upstream_git_blob_sha1": "bc8de2596f0d8442e2ef92d5ec5c03b49ac59aa0",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/12_kpi_grid.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/12_kpi_grid.svg",
+      "upstream_git_blob_sha1": "bedc943f9e9bf051ed71243393122527b107f99f",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/13_process_timeline.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/13_process_timeline.svg",
+      "upstream_git_blob_sha1": "a49c37343b66e143174e11adf1497167b1efa26a",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/14_stacked_split.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/14_stacked_split.svg",
+      "upstream_git_blob_sha1": "9923231c9c32b4f71da1d0c65c26b0c5ce9f4d4e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/15_chart_insight.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/15_chart_insight.svg",
+      "upstream_git_blob_sha1": "7c0de134bfbeb6c7e66db0bef3cbc82c7d7a8447",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/16_table_summary.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/16_table_summary.svg",
+      "upstream_git_blob_sha1": "b1f11cafb44a650583e722fc253ff5df0f0fa883",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/presentation_core_43/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/layouts/presentation_core_43/templates/design_spec.md",
+      "upstream_git_blob_sha1": "cc4ab2dda3fdb0c70de4fe78629907ef684a7dc1",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/01_cover.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/01_cover.svg",
+      "upstream_git_blob_sha1": "0b737c0a7fffc2e327825db5deae5b3da58d3acd",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/02_section_divider.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/02_section_divider.svg",
+      "upstream_git_blob_sha1": "03363ca03d4d9b74a0a0c624169b3e138e5fddfa",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/03_agenda.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/03_agenda.svg",
+      "upstream_git_blob_sha1": "cb922f0fda20272586e1df6c3a40dcd63a938589",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/04_title_content.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/04_title_content.svg",
+      "upstream_git_blob_sha1": "bcb67c22f560335eff619e6eff13a60f4df0db40",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/05_two_content.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/05_two_content.svg",
+      "upstream_git_blob_sha1": "7b038a7fe9b214195981edbdf6ef948e604ee31e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/06_three_block.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/06_three_block.svg",
+      "upstream_git_blob_sha1": "b2a7a9e04293d7678b2d34c3fc4e55e6e3995437",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/07_kpi_row.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/07_kpi_row.svg",
+      "upstream_git_blob_sha1": "28fea9643b45fbd8fb6b137099460c977adddf3e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/08_chart_insight.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/08_chart_insight.svg",
+      "upstream_git_blob_sha1": "6dbcef15d6504a014402fb193121a742e40af699",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/09_table_summary.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/09_table_summary.svg",
+      "upstream_git_blob_sha1": "b0bb9d1226778b2443501a5d1fcefbeaae82ea40",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/10_process_timeline.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/10_process_timeline.svg",
+      "upstream_git_blob_sha1": "6af3fbc59be55bd135f0ebe94faf8ede5697112c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/11_matrix_2x2.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/11_matrix_2x2.svg",
+      "upstream_git_blob_sha1": "eb3d49e12a2e3303c62ac09cc58e163765b8ec1c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/12_appendix.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/12_appendix.svg",
+      "upstream_git_blob_sha1": "c6fc4497b55e07cdc955a0ce720c029cd331fb2e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/13_closing.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/13_closing.svg",
+      "upstream_git_blob_sha1": "4cf196898d096e51e79fa99c05fbd30665f02f08",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/report_core/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/layouts/report_core/templates/design_spec.md",
+      "upstream_git_blob_sha1": "79a5b2c66dda1b5e577a40e9d776fe22379c12dc",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/01_cover.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/story_vertical/templates/01_cover.svg",
+      "upstream_git_blob_sha1": "8901bd685a13331e0a3e3279a9e2d340a7b94996",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/02_statement.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/story_vertical/templates/02_statement.svg",
+      "upstream_git_blob_sha1": "1b006d47509b60ba5f3cb59270e2434734eeef41",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/03_title_content.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/story_vertical/templates/03_title_content.svg",
+      "upstream_git_blob_sha1": "4efe4d5e338bc4d59259e961cac3eb74cc30c9d1",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/04_numbered_list.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/story_vertical/templates/04_numbered_list.svg",
+      "upstream_git_blob_sha1": "cf0b07364fa10dfa0b4877a6c99c2dbddba97ccd",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/05_image_full.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/story_vertical/templates/05_image_full.svg",
+      "upstream_git_blob_sha1": "9b17125d6f34a1526b58442fa736c6a252e84499",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/06_image_top_text.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/story_vertical/templates/06_image_top_text.svg",
+      "upstream_git_blob_sha1": "c0b0bdaeb274731f8634675e9d21e47ad83a431c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/07_two_block.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/story_vertical/templates/07_two_block.svg",
+      "upstream_git_blob_sha1": "eded2f200d0672fa5dca32ae2ba7772606124c9b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/08_step_flow.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/story_vertical/templates/08_step_flow.svg",
+      "upstream_git_blob_sha1": "b55d50ac35b772293a3de0f517cd912977114c03",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/09_ending.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/story_vertical/templates/09_ending.svg",
+      "upstream_git_blob_sha1": "be9d056a92a903792a09aeb2e0a8f9209ff9f9b7",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/story_vertical/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/layouts/story_vertical/templates/design_spec.md",
+      "upstream_git_blob_sha1": "091904349f212c1d44e01f427b2f0c412eb465d0",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/01_cover.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/01_cover.svg",
+      "upstream_git_blob_sha1": "1636cec2f14a098b23610216680e94eba2fd141d",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/02_statement.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/02_statement.svg",
+      "upstream_git_blob_sha1": "db412cdd8b9cb24f721590911977e14ba8a19581",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/03_title_content.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/03_title_content.svg",
+      "upstream_git_blob_sha1": "85bfca2f8a0c2f5fedbbc74f517f3c2119815a65",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/04_numbered_list.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/04_numbered_list.svg",
+      "upstream_git_blob_sha1": "28e498091e45557f5c9cc584f870a311c8442879",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/05_two_card_stack.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/05_two_card_stack.svg",
+      "upstream_git_blob_sha1": "b03de70c74ae061913aaf63e98bd262147aae349",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/06_image_top_text.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/06_image_top_text.svg",
+      "upstream_git_blob_sha1": "09aa0fe78e9c06003edc49edac9e459766922c93",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/07_image_full_caption.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/07_image_full_caption.svg",
+      "upstream_git_blob_sha1": "fa144b1761d00a0f890e0fe1b60207d208d2cdcd",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/08_quote.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/08_quote.svg",
+      "upstream_git_blob_sha1": "0789ae96e18c5fc48aae1cdcf748c28b7b1e09cb",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/09_step_flow.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/09_step_flow.svg",
+      "upstream_git_blob_sha1": "47047f747c7848c166df988b220be9aab00753be",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/10_ending.svg": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/10_ending.svg",
+      "upstream_git_blob_sha1": "e048b6aa59cdf9c9aab0f86305ffc8cf1fc6e840",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/layouts/xiaohongshu_post/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/layouts/xiaohongshu_post/templates/design_spec.md",
+      "upstream_git_blob_sha1": "a48c159e14266e60c17d50a6ba9de27f54f066ad",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/scaffolds/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/scaffolds/design_spec.md",
+      "upstream_git_blob_sha1": "59da2c9753c893e98aad149119684c57cedde9a9",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/scaffolds/spec_lock.md": {
+      "upstream_path": "skills/ppt-master/templates/scaffolds/spec_lock.md",
+      "upstream_git_blob_sha1": "e66e3bad7b0b6201bd47388251b5b13245a9ac14",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/schemas/design_spec.schema.json": {
+      "upstream_path": "skills/ppt-master/templates/schemas/design_spec.schema.json",
+      "upstream_git_blob_sha1": "4a561650e594f1b353f2e16c1d209ed517d22fb4",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/schemas/spec_lock.schema.json": {
+      "upstream_path": "skills/ppt-master/templates/schemas/spec_lock.schema.json",
+      "upstream_git_blob_sha1": "bba039023da355feb92632b44a1cc5e09c5ae2c5",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/spec_lock_reference.md": {
+      "upstream_path": "skills/ppt-master/templates/spec_lock_reference.md",
+      "upstream_git_blob_sha1": "28a368e3984c3962807ced296b15417eceba6330",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/styles/README.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/README.md",
+      "upstream_git_blob_sha1": "20d2a68e04f83cf1a4c1cb13aead69404708ab2e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/academic-research/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/academic-research/templates/design_spec.md",
+      "upstream_git_blob_sha1": "1c301817b4469ff70ebb17f505c5045208b0dbf7",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/consulting-decision/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/consulting-decision/templates/design_spec.md",
+      "upstream_git_blob_sha1": "914ce1cf78d1dc4af2ba61ba9051ea181e7c3cb5",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/templates/styles/creative-pitch/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/creative-pitch/templates/design_spec.md",
+      "upstream_git_blob_sha1": "9ef79b36bbd0f22696ad7edefa46e8da26b82212",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/incident-postmortem/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/incident-postmortem/templates/design_spec.md",
+      "upstream_git_blob_sha1": "b2a96f527c6f42c39d24df1b763faeeb9d94fc94",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/investor-pitch/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/investor-pitch/templates/design_spec.md",
+      "upstream_git_blob_sha1": "8fb82c8b26eaf0701b092df0b1d0d5db7698921c",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/narrative-keynote/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/narrative-keynote/templates/design_spec.md",
+      "upstream_git_blob_sha1": "72fcff72805a7e2e4f90292c5e6e6be2d6696c66",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/operating-review/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/operating-review/templates/design_spec.md",
+      "upstream_git_blob_sha1": "17586f9340b9280a04ab580436b8e46546a97ecc",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/product-launch/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/product-launch/templates/design_spec.md",
+      "upstream_git_blob_sha1": "42adaa52c67a21f56a4dafc02aee12c6fd3e853b",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/science-explainer/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/science-explainer/templates/design_spec.md",
+      "upstream_git_blob_sha1": "e13ddf46cd51403517a8c89a938a3bad1aae1769",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/solution-proposal/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/solution-proposal/templates/design_spec.md",
+      "upstream_git_blob_sha1": "3525c9a8090cfe7422447639313f2d25136892ef",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/styles_index.json": {
+      "upstream_path": "skills/ppt-master/templates/styles/styles_index.json",
+      "upstream_git_blob_sha1": "9e103aea1129f01c7b3b540a036a734703b5448e",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/technical-deepdive/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/technical-deepdive/templates/design_spec.md",
+      "upstream_git_blob_sha1": "8c0e7c7a4e20af6deeb8fb397ee79d0a94b3c4fa",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/templates/styles/workshop-teaching/templates/design_spec.md": {
+      "upstream_path": "skills/ppt-master/templates/styles/workshop-teaching/templates/design_spec.md",
+      "upstream_git_blob_sha1": "1d57697913f41044c4ef41bfb693b5529948b5bb",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/workflows/create-template/create-brand.md": {
+      "upstream_path": "skills/ppt-master/workflows/create-template/create-brand.md",
+      "upstream_git_blob_sha1": "608cb97743184a108404b24bfc6354134289e1d3",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/create-template/create-deck.md": {
+      "upstream_path": "skills/ppt-master/workflows/create-template/create-deck.md",
+      "upstream_git_blob_sha1": "236d347c73d7e95cc946eb860a0eed19dd507934",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/create-template/create-layout.md": {
+      "upstream_path": "skills/ppt-master/workflows/create-template/create-layout.md",
+      "upstream_git_blob_sha1": "da619a4b83711e9d1ac97574724c58156c2c6365",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/create-template/create-style.md": {
+      "upstream_path": "skills/ppt-master/workflows/create-template/create-style.md",
+      "upstream_git_blob_sha1": "37482218a5203fb6ebff24d229a6557c06701d4b",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/create-template.md": {
+      "upstream_path": "skills/ppt-master/workflows/create-template.md",
+      "upstream_git_blob_sha1": "a53763373bcb8454bc5d4b15a8831577fc6b508a",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/generate-pptx.md": {
+      "upstream_path": "skills/ppt-master/workflows/generate-pptx.md",
+      "upstream_git_blob_sha1": "2ea0174842863b96f9119d8932dcc73c701c31a2",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/governance/failure-recovery.md": {
+      "upstream_path": "skills/ppt-master/workflows/governance/failure-recovery.md",
+      "upstream_git_blob_sha1": "87bff55625eb1328cfd2b42ab6d77499523147cd",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/index.md": {
+      "upstream_path": "skills/ppt-master/workflows/index.md",
+      "upstream_git_blob_sha1": "a4d91b7aa614d3a0a1b2d4fe315b93b5799d4208",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/native-enhance-pptx.md": {
+      "upstream_path": "skills/ppt-master/workflows/native-enhance-pptx.md",
+      "upstream_git_blob_sha1": "28e86184b1143707ec900df3237b69ff8ec32471",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/profiles/beautify-pptx.md": {
+      "upstream_path": "skills/ppt-master/workflows/profiles/beautify-pptx.md",
+      "upstream_git_blob_sha1": "ef652a43042c259343339ddf8a9b36aea12746c3",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/profiles/quick-generate.md": {
+      "upstream_path": "skills/ppt-master/workflows/profiles/quick-generate.md",
+      "upstream_git_blob_sha1": "43b603ef95d872239186a832b4430abb83de044e",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/routing.md": {
+      "upstream_path": "skills/ppt-master/workflows/routing.md",
+      "upstream_git_blob_sha1": "cef01e4ccf9737244202a1e140bcdf8998a1f001",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/stages/apply-template-workspace.md": {
+      "upstream_path": "skills/ppt-master/workflows/stages/apply-template-workspace.md",
+      "upstream_git_blob_sha1": "3170cd07b9ef192768d8270e09385a576cf62ff0",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/stages/customize-animations.md": {
+      "upstream_path": "skills/ppt-master/workflows/stages/customize-animations.md",
+      "upstream_git_blob_sha1": "9750633ac96506475d6104dabc93179081978ede",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/stages/generate-audio.md": {
+      "upstream_path": "skills/ppt-master/workflows/stages/generate-audio.md",
+      "upstream_git_blob_sha1": "4855c0eeefbe210f1ce2007ffcd83bccc9b2e146",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/stages/live-preview.md": {
+      "upstream_path": "skills/ppt-master/workflows/stages/live-preview.md",
+      "upstream_git_blob_sha1": "e444e12f830776ef57fa5d1865a77c41a1ca5224",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/workflows/stages/refine-spec.md": {
+      "upstream_path": "skills/ppt-master/workflows/stages/refine-spec.md",
+      "upstream_git_blob_sha1": "a6c92c69a254416ebe3afec47b402aac38300e93",
+      "relation": "identical"
+    },
+    "skills/build-editable-decks/workflows/stages/resume-execute.md": {
+      "upstream_path": "skills/ppt-master/workflows/stages/resume-execute.md",
+      "upstream_git_blob_sha1": "0a237d58007f745954b7e039f2396f0b570bfba6",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/stages/topic-research.md": {
+      "upstream_path": "skills/ppt-master/workflows/stages/topic-research.md",
+      "upstream_git_blob_sha1": "17a5afbd1b816b8be57fc55af3045ac25733363d",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/stages/verify-charts.md": {
+      "upstream_path": "skills/ppt-master/workflows/stages/verify-charts.md",
+      "upstream_git_blob_sha1": "09ec600cc398c94a6c512ea61fb3f207616291d9",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/stages/visual-review.md": {
+      "upstream_path": "skills/ppt-master/workflows/stages/visual-review.md",
+      "upstream_git_blob_sha1": "f35d44c05dbb3a2f7b7197fc2b7a438db1bf5613",
+      "relation": "modified"
+    },
+    "skills/build-editable-decks/workflows/template-fill-pptx.md": {
+      "upstream_path": "skills/ppt-master/workflows/template-fill-pptx.md",
+      "upstream_git_blob_sha1": "80af10e75d893a4d3a217892451fe31807cf2f2a",
+      "relation": "modified"
+    }
+  }
+}

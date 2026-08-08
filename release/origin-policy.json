@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "skill_root": "skills/build-editable-decks",
+  "skill_path_roster_sha256": "32f1d078b867de7d32c3f270984ec891aa4a9469b26277cd4565ffa71605e5cd",
+  "upstream": {
+    "name": "hugohe3/ppt-master",
+    "commit": "bbb323f0ebd6a6a230dd6063209326b53bfd2e1d",
+    "license": "MIT"
+  },
+  "project_original_skill_paths": [
+    "LICENSE",
+    "PRIVACY.md",
+    "THIRD_PARTY_NOTICES.md",
+    "agents/openai.yaml",
+    "references/deck_ir.schema.json",
+    "references/deterministic-layout.md",
+    "requirements-core.txt",
+    "requirements-maintainer.txt",
+    "scripts/deterministic_layout.py",
+    "scripts/layout_trace_gate.py",
+    "scripts/privacy_receipts.py",
+    "templates/icons/README.md"
+  ],
+  "third_party_paths": [
+    "skills/build-editable-decks/scripts/pptx_shapes/data/LICENSE-APACHE-2.0.txt",
+    "skills/build-editable-decks/scripts/pptx_shapes/data/LICENSE-OPEN-XML-SDK-MIT.txt",
+    "skills/build-editable-decks/scripts/pptx_shapes/data/presetShapeDefinitions.xml",
+    "skills/build-editable-decks/scripts/pptx_shapes/data/shape_type_values.txt",
+    "skills/build-editable-decks/third_party/ppt-master/MIT.txt",
+    "third_party/ppt-master/MIT.txt"
+  ]
+}
