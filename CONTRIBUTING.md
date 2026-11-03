@@ -46,3 +46,34 @@ python tools/release_gate.py . --history --require-provenance
 The frozen certification suite remains external. Contributors may improve its
 public validator, but must not add cases, renders, comments, receipts, or raw
 evidence to the repository.
+
+## PPTX delivery regressions
+
+The release gate discovers `tests/test_pptx_delivery_check.py` automatically.
+It builds synthetic packages in temporary directories and checks both status
+and diagnostic codes for truncation, corrupt ZIP data, content types, broken
+relationships, duplicate parts, malformed XML, and CLI failures. No binary
+fixture or generated presentation belongs in the repository.
+
+`tests/test_deterministic_layout.py` reuses the native table/chart export smoke
+fixture. It rereads the actual export with python-pptx and checks slide count,
+table cells, chart categories, and series values. Its separate LibreOffice test
+imports and resaves that export with an isolated temporary profile, then checks
+the new package and its native content. A zero process exit code alone is not
+accepted. The input file must remain unchanged.
+
+Local runs report an explicit skip when LibreOffice is not installed. To require
+the application check, set `DECKESTRA_REQUIRE_LIBREOFFICE=1`. The release workflow
+installs LibreOffice Impress and sets this flag, so a missing executable fails
+CI. Run the normal release gate rather than a separate list of delivery tests.
+
+These checks establish different facts. Package validation detects structural
+damage; python-pptx rereading checks a second parser; LibreOffice import/resave
+checks that application's acceptance of a small synthetic deck. None proves
+Microsoft PowerPoint opening without repair, visual fidelity, font availability,
+or preservation of every supported feature. PowerPoint still requires testing
+on a host with that application installed.
+
+Download-link expiry, authentication, and incomplete HTTP transfer are separate
+delivery concerns. The tests do not contact download URLs. A saved HTML error
+response is rejected as a non-ZIP file, but its transport cause is not inferred.

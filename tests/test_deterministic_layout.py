@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -9,8 +11,13 @@ import unittest
 import zipfile
 from pathlib import Path
 
+from pptx import Presentation
 
-ROOT = Path(__file__).parents[1]
+ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS = ROOT / "skills" / "build-editable-decks" / "scripts"
+sys.path.insert(0, str(SCRIPTS))
+from pptx_delivery_check import audit_pptx_delivery  # noqa: E402
+
 MODULE_PATH = ROOT / "skills" / "build-editable-decks" / "scripts" / "deterministic_layout.py"
 SPEC = importlib.util.spec_from_file_location("deterministic_layout", MODULE_PATH)
 assert SPEC and SPEC.loader
@@ -106,59 +113,81 @@ class DeterministicLayoutTests(unittest.TestCase):
             self.assertIn("With warnings: 0 (0%)", result.stdout)
             self.assertIn("With errors: 0 (0%)", result.stdout)
 
+    def _export_native_smoke(self, project: Path) -> Path:
+        pages = [
+            {
+                "id": "P01",
+                "slug": "table",
+                "layout": "table",
+                "title": "Synthetic table",
+                "table": {"columns": ["Control", "State"], "rows": [["Schema", "Pass"], ["Privacy", "Pass"]]},
+            },
+            {
+                "id": "P02",
+                "slug": "chart",
+                "layout": "bar-chart",
+                "title": "Synthetic chart",
+                "chart": {"categories": ["A", "B", "C"], "values": [2, 6, 4]},
+            },
+        ]
+        input_path = project / "deck_ir.json"
+        input_path.write_text(json.dumps({"schema": "deckestra-ir/v1", "pages": pages}), encoding="utf-8")
+        trace = layout.execute(project, input_path)
+        self.assertEqual(trace["status"], "passed")
+
+        scripts = ROOT / "skills" / "build-editable-decks" / "scripts"
+        checker = subprocess.run(
+            [sys.executable, str(scripts / "svg_quality_checker.py"), str(project), "--stage", "final", "--quick-generate", "--json"],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(checker.returncode, 0, checker.stdout + checker.stderr)
+
+        output = project / "exports" / "native-smoke.pptx"
+        exporter = subprocess.run(
+            [
+                sys.executable,
+                str(scripts / "svg_to_pptx.py"),
+                str(project),
+                "--quick-generate",
+                "--no-notes",
+                "--native-charts-and-tables",
+                "--conversion-trace",
+                "-o",
+                str(output),
+            ],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(exporter.returncode, 0, exporter.stdout + exporter.stderr)
+        return output
+
+    def _assert_native_content(self, output: Path) -> None:
+        # This is an independent package reader, not an Office application.
+        reopened = Presentation(output)
+        self.assertEqual(len(reopened.slides), 2)
+        tables = [shape.table for shape in reopened.slides[0].shapes if shape.has_table]
+        charts = [shape.chart for shape in reopened.slides[1].shapes if shape.has_chart]
+        self.assertEqual(len(tables), 1)
+        self.assertEqual(len(charts), 1)
+        self.assertEqual(
+            [[cell.text for cell in row.cells] for row in tables[0].rows],
+            [["Control", "State"], ["Schema", "Pass"], ["Privacy", "Pass"]],
+        )
+        self.assertEqual([category.label for category in charts[0].plots[0].categories], ["A", "B", "C"])
+        self.assertEqual(tuple(charts[0].series[0].values), (2.0, 6.0, 4.0))
+        audit = audit_pptx_delivery(output)
+        self.assertEqual(audit["errors"], [], audit)
+        self.assertIn(audit["status"], {"passed", "passed-with-advisories"})
+
     def test_native_table_and_chart_export_smoke(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             project = Path(temporary)
-            pages = [
-                {
-                    "id": "P01",
-                    "slug": "table",
-                    "layout": "table",
-                    "title": "Synthetic table",
-                    "table": {"columns": ["Control", "State"], "rows": [["Schema", "Pass"], ["Privacy", "Pass"]]},
-                },
-                {
-                    "id": "P02",
-                    "slug": "chart",
-                    "layout": "bar-chart",
-                    "title": "Synthetic chart",
-                    "chart": {"categories": ["A", "B", "C"], "values": [2, 6, 4]},
-                },
-            ]
-            input_path = project / "deck_ir.json"
-            input_path.write_text(json.dumps({"schema": "deckestra-ir/v1", "pages": pages}), encoding="utf-8")
-            trace = layout.execute(project, input_path)
-            self.assertEqual(trace["status"], "passed")
-
-            scripts = ROOT / "skills" / "build-editable-decks" / "scripts"
-            checker = subprocess.run(
-                [sys.executable, str(scripts / "svg_quality_checker.py"), str(project), "--stage", "final", "--quick-generate", "--json"],
-                cwd=ROOT,
-                text=True,
-                capture_output=True,
-                check=False,
-            )
-            self.assertEqual(checker.returncode, 0, checker.stdout + checker.stderr)
-
-            output = project / "exports" / "native-smoke.pptx"
-            exporter = subprocess.run(
-                [
-                    sys.executable,
-                    str(scripts / "svg_to_pptx.py"),
-                    str(project),
-                    "--quick-generate",
-                    "--no-notes",
-                    "--native-charts-and-tables",
-                    "--conversion-trace",
-                    "-o",
-                    str(output),
-                ],
-                cwd=ROOT,
-                text=True,
-                capture_output=True,
-                check=False,
-            )
-            self.assertEqual(exporter.returncode, 0, exporter.stdout + exporter.stderr)
+            output = self._export_native_smoke(project)
             self.assertTrue(output.is_file())
             with zipfile.ZipFile(output) as archive:
                 table_slide = archive.read("ppt/slides/slide1.xml")
@@ -170,6 +199,37 @@ class DeterministicLayoutTests(unittest.TestCase):
             self.assertTrue(any(name.startswith("ppt/embeddings/") for name in names))
             report = json.loads((project / "validation" / "native-smoke.report.json").read_text(encoding="utf-8"))
             self.assertEqual(report["status"], "passed")
+            self._assert_native_content(output)
+
+    def test_native_export_libreoffice_open_and_resave(self) -> None:
+        executable = shutil.which("libreoffice") or shutil.which("soffice")
+        if executable is None:
+            if os.environ.get("DECKESTRA_REQUIRE_LIBREOFFICE") == "1":
+                self.fail("LibreOffice is required by this release environment but is unavailable")
+            self.skipTest("LibreOffice unavailable; Office compatibility was not tested")
+        with tempfile.TemporaryDirectory(prefix="deckestra-office-test-") as temporary:
+            project = Path(temporary)
+            output = self._export_native_smoke(project)
+            before = output.read_bytes()
+            destination = project / "office-roundtrip"
+            destination.mkdir()
+            result = subprocess.run(
+                [
+                    executable,
+                    f"-env:UserInstallation={(project / 'lo-profile').as_uri()}",
+                    "--headless", "--convert-to", "pptx:Impress MS PowerPoint 2007 XML",
+                    "--outdir", str(destination), str(output),
+                ],
+                capture_output=True, text=True, timeout=60, check=False,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            converted = destination / output.name
+            # LibreOffice can exit zero without producing a file. Require a
+            # fresh output and verify actual content, not just the exit status.
+            self.assertTrue(converted.is_file(), result.stdout + result.stderr)
+            self.assertGreater(converted.stat().st_size, 0)
+            self.assertEqual(output.read_bytes(), before)
+            self._assert_native_content(converted)
 
     def test_fixed_repair_sequence_recovers_without_truncation(self) -> None:
         ir = layout.validate_ir({

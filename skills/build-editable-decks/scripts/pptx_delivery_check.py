@@ -25,6 +25,7 @@ import sys
 import tempfile
 import unicodedata
 import zipfile
+import zlib
 from collections import Counter, defaultdict
 from pathlib import Path, PurePosixPath
 from xml.etree import ElementTree as ET
@@ -62,6 +63,20 @@ from svg_to_pptx.drawingml.utils import PPT_SAFE_FONTS  # noqa: E402
 REPORT_SCHEMA = "deckestra.pptx-delivery-check.v1"
 PACKAGE_REL_NS = "http://schemas.openxmlformats.org/package/2006/relationships"
 CONTENT_TYPES_NS = "http://schemas.openxmlformats.org/package/2006/content-types"
+OFFICE_REL_NS = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+_REQUIRED_REL_CONTENT_TYPES = {
+    f"{OFFICE_REL_NS}/officeDocument": {
+        "application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml",
+        "application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml",
+        "application/vnd.openxmlformats-officedocument.presentationml.template.main+xml",
+        "application/vnd.ms-powerpoint.presentation.macroEnabled.main+xml",
+        "application/vnd.ms-powerpoint.slideshow.macroEnabled.main+xml",
+        "application/vnd.ms-powerpoint.template.macroEnabled.main+xml",
+    },
+    f"{OFFICE_REL_NS}/slide": {
+        "application/vnd.openxmlformats-officedocument.presentationml.slide+xml",
+    },
+}
 DRAWINGML_NS = "http://schemas.openxmlformats.org/drawingml/2006/main"
 PRESENTATION_NS = (
     "http://schemas.openxmlformats.org/presentationml/2006/main"
@@ -337,6 +352,8 @@ def _relationship_inventory(
     archive: zipfile.ZipFile,
     part_names: set[str],
     errors: list[dict[str, object]],
+    defaults: dict[str, str],
+    overrides: dict[str, str],
 ) -> tuple[
     Counter[str],
     dict[str, set[str]],
@@ -345,6 +362,10 @@ def _relationship_inventory(
     reference_counts: Counter[str] = Counter()
     relationship_types: dict[str, set[str]] = defaultdict(set)
     external_counts: Counter[tuple[str, str, str]] = Counter()
+    office_document_count = 0
+    canonical_parts = {
+        canonical_opc_part_path(name): name for name in part_names
+    }
 
     for rels_name in sorted(
         name for name in part_names if name.endswith(".rels")
@@ -371,6 +392,12 @@ def _relationship_inventory(
                 relationship.attrib.get("TargetMode") or ""
             ).strip().lower()
             kind = _relationship_kind(relationship_type)
+            if (
+                rels_name == "_rels/.rels"
+                and relationship_type == f"{OFFICE_REL_NS}/officeDocument"
+                and target_mode != "external"
+            ):
+                office_document_count += 1
             if target_mode == "external":
                 if kind and target:
                     external_counts[(kind, target, relationship_type)] += 1
@@ -381,6 +408,35 @@ def _relationship_inventory(
             reference_counts[resolved] += 1
             if relationship_type:
                 relationship_types[resolved].add(relationship_type)
+            required_types = _REQUIRED_REL_CONTENT_TYPES.get(relationship_type)
+            raw_part = canonical_parts.get(resolved)
+            if required_types and raw_part is not None:
+                declared = _declared_content_type_for_part(raw_part, defaults, overrides)
+                if declared not in required_types:
+                    errors.append(
+                        _issue(
+                            "invalid_required_content_type",
+                            "Presentation and slide relationships require their specific content types.",
+                            part=raw_part,
+                            declared=declared,
+                            expected=sorted(required_types),
+                            relationship_part=rels_name,
+                        )
+                    )
+
+    # The reader's conventional-path fallback is useful for inspection, but is
+    # not evidence that a package has the required Office document entry point.
+    if office_document_count != 1:
+        errors.append(
+            _issue(
+                "missing_office_document_relationship"
+                if office_document_count == 0
+                else "duplicate_office_document_relationship",
+                "PPTX requires exactly one internal package-level Office document relationship.",
+                count=office_document_count,
+                part="_rels/.rels",
+            )
+        )
 
     external = [
         {
@@ -765,6 +821,15 @@ def audit_pptx_delivery(path: str | Path) -> dict[str, object]:
                 raise AssertionError("delivery report package container is invalid")
             try:
                 corrupt_member = archive.testzip()
+            except (zlib.error, EOFError) as exc:
+                package["zip_integrity"] = "failed"
+                errors.append(
+                    _issue(
+                        "zip_integrity_failed",
+                        f"PPTX ZIP member data is corrupt: {exc}.",
+                    )
+                )
+                return report
             except (NotImplementedError, RuntimeError) as exc:
                 package["zip_integrity"] = "failed"
                 errors.append(
@@ -803,6 +868,9 @@ def audit_pptx_delivery(path: str | Path) -> dict[str, object]:
                         part=corrupt_member,
                     )
                 )
+                # Reading a known-bad member again would obscure the CRC error
+                # with a later exception from XML or relationship inspection.
+                return report
             if duplicate_parts:
                 errors.append(
                     _issue(
@@ -869,7 +937,7 @@ def audit_pptx_delivery(path: str | Path) -> dict[str, object]:
                 errors,
             )
             reference_counts, relationship_types, external_media = (
-                _relationship_inventory(archive, part_names, errors)
+                _relationship_inventory(archive, part_names, errors, defaults, overrides)
             )
 
             media_infos = [
@@ -994,6 +1062,7 @@ def audit_pptx_delivery(path: str | Path) -> dict[str, object]:
                     )
                 )
     except zipfile.BadZipFile as exc:
+        report["package"]["zip_integrity"] = "failed"
         errors.append(
             _issue(
                 "invalid_zip_package",

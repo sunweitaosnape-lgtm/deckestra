@@ -16,7 +16,7 @@
       "origin": "project-original"
     },
     ".github/workflows/release-gate.yml": {
-      "sha256": "795256c2535ac4098e51f6245907bc5d0ec76938fa97891893ecc02e048bb054",
+      "sha256": "f5b878b090bbed1fa3ddd74ba6e8f5fd1aaf6a256b29fadc2ef4a4150a468da5",
       "origin": "project-original"
     },
     ".gitignore": {
@@ -32,7 +32,7 @@
       "origin": "project-original"
     },
     "CONTRIBUTING.md": {
-      "sha256": "b349aebb8321792a7e29759fa03d387db7d50f412d709ffd25b618a0444474a7",
+      "sha256": "917cc16e74e29934bf483047dadd6c183bf062c8d32f0089df87e7047db760e4",
       "origin": "project-original"
     },
     "LICENSE": {
@@ -892,7 +892,7 @@
       "origin": "adapted-mit-upstream"
     },
     "skills/build-editable-decks/scripts/pptx_delivery_check.py": {
-      "sha256": "e7ff729c92aa4ce3e55e08995dd09bff605da6c86a1dc5b3a747f7d3799b7993",
+      "sha256": "ac3ca2ea3bfa7cc02247c104792b7c912a5134f88069cfc2df17461e669989b8",
       "origin": "adapted-mit-upstream"
     },
     "skills/build-editable-decks/scripts/pptx_effects.py": {
@@ -2480,7 +2480,7 @@
       "origin": "project-original"
     },
     "tests/test_deterministic_layout.py": {
-      "sha256": "30034fd2f0f39ca1898afe7ac99eb958b4b5d30e1ba17fe8ceab0244920d5fa7",
+      "sha256": "493619df26c9c1f8254be263d0430f36f2aa2ba4f7956fc8d920b580d5b28bc8",
       "origin": "project-original"
     },
     "tests/test_identity.py": {
@@ -2493,6 +2493,10 @@
     },
     "tests/test_license_gate.py": {
       "sha256": "710c16bfb37cb2e9b9c6818512c6640f5001fc139ffecfe92daaa6e08dea76ea",
+      "origin": "project-original"
+    },
+    "tests/test_pptx_delivery_check.py": {
+      "sha256": "ee706b551e3d8cbc2347e8f9307bdbe7fd8990b2d554b4712d636dc66ba67d33",
       "origin": "project-original"
     },
     "tests/test_privacy_gate.py": {
