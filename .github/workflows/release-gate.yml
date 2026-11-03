@@ -15,6 +15,7 @@ jobs:
     env:
       PIP_DISABLE_PIP_VERSION_CHECK: "1"
       PYTHONDONTWRITEBYTECODE: "1"
+      DECKESTRA_REQUIRE_LIBREOFFICE: "1"
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -25,4 +26,9 @@ jobs:
           python-version: "3.12"
       - run: python -m pip install -r skills/build-editable-decks/requirements-maintainer.txt
       - run: python -m pip check
+      - name: Install LibreOffice for PPTX import and resave regression
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y libreoffice-impress
+          libreoffice --version
       - run: python tools/release_gate.py . --history --require-provenance
